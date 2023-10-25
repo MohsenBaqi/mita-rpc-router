@@ -12,7 +12,11 @@ export interface CommonParamsBySession {
   auth_remoteaddr: string
   date_type?: 'gregorian' | 'jalali' | 'relative'
 }
-type CommonParams = CommonParamsByCriteria | CommonParamsBySession
+export interface CommonParamsAnonymous {
+  auth_type: 'ANONYMOUS'
+  date_type?: 'gregorian' | 'jalali' | 'relative'
+}
+type CommonParams = CommonParamsByCriteria | CommonParamsBySession | CommonParamsAnonymous
 
 type ConditionalProps = CommonParams & interfaces
 

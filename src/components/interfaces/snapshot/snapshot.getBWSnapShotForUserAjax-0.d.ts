@@ -6,9 +6,9 @@
  */
 
 export interface SnapshotGetBWSnapShotForUserAjax {
-  method: "snapshot.getBWSnapShotForUserAjax";
-  auth_type: "ADMIN";
-  user_id?: number;
-  from?: string;
-  from_unit?: string;
+  method: 'snapshot.getBWSnapShotForUserAjax'
+  auth_type: 'ADMIN'
+  user_id?: number
+  from?: string
+  from_unit?: string
 }

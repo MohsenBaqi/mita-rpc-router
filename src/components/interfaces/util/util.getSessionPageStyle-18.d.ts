@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetSessionPageStyle {
-  method: "util.getSessionPageStyle";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER" | "ANONYMOUS";
+  method: 'util.getSessionPageStyle'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER' | 'ANONYMOUS'
 }

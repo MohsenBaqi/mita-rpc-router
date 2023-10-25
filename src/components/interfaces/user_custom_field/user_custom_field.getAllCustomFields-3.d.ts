@@ -6,6 +6,6 @@
  */
 
 export interface UserCustomFieldGetAllCustomFields {
-  method: "user_custom_field.getAllCustomFields";
-  auth_type: "ADMIN";
+  method: 'user_custom_field.getAllCustomFields'
+  auth_type: 'ADMIN'
 }

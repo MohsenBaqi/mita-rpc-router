@@ -6,7 +6,7 @@
  */
 
 export interface TelephonySupportGetCurrentCredit {
-  method: "telephony_support.getCurrentCredit";
-  auth_type: "ADMIN";
-  user_id: number;
+  method: 'telephony_support.getCurrentCredit'
+  auth_type: 'ADMIN'
+  user_id: number
 }

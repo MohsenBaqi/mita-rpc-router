@@ -6,11 +6,11 @@
  */
 
 export interface ReportGetConnections {
-  method: "report.getConnections";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "credit_used" | "login_time" | "logout_time" | "successful" | "service" | "ras_id" | "connection_log_id";
-  desc: boolean;
+  method: 'report.getConnections'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'credit_used' | 'login_time' | 'logout_time' | 'successful' | 'service' | 'ras_id' | 'connection_log_id'
+  desc: boolean
 }

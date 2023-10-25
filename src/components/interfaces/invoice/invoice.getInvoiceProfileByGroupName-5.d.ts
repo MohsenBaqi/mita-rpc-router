@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceGetInvoiceProfileByGroupName {
-  method: "invoice.getInvoiceProfileByGroupName";
-  auth_type: "ADMIN";
-  group_name: string;
+  method: 'invoice.getInvoiceProfileByGroupName'
+  auth_type: 'ADMIN'
+  group_name: string
 }

@@ -6,6 +6,6 @@
  */
 
 export interface UserGetRemainingDurationAndBytes {
-  method: "user.getRemainingDurationAndBytes";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
+  method: 'user.getRemainingDurationAndBytes'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
 }

@@ -6,10 +6,10 @@
  */
 
 export interface BwUpdateNode {
-  method: "bw.updateNode";
-  auth_type: "ADMIN";
-  node_id: number;
-  rate_kbits: number;
-  ceil_kbits: number;
-  priority: number;
+  method: 'bw.updateNode'
+  auth_type: 'ADMIN'
+  node_id: number
+  rate_kbits: number
+  ceil_kbits: number
+  priority: number
 }

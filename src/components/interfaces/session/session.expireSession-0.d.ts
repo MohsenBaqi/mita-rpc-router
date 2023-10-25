@@ -6,7 +6,7 @@
  */
 
 export interface SessionExpireSession {
-  method: "session.expireSession";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  session_id: string;
+  method: 'session.expireSession'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  session_id: string
 }

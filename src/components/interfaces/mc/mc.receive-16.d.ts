@@ -6,7 +6,7 @@
  */
 
 export interface McReceive {
-  method: "mc.receive";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  msg_info: unknown;
+  method: 'mc.receive'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  msg_info: unknown
 }

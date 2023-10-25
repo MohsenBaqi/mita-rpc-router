@@ -6,10 +6,10 @@
  */
 
 export interface UserChangeDeposit {
-  method: "user.changeDeposit";
-  auth_type: "ADMIN";
-  user_id: string;
-  deposit: number;
-  is_absolute_change: boolean;
-  deposit_comment: string;
+  method: 'user.changeDeposit'
+  auth_type: 'ADMIN'
+  user_id: string
+  deposit: number
+  is_absolute_change: boolean
+  deposit_comment: string
 }

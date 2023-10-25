@@ -6,10 +6,10 @@
  */
 
 export interface ReportGetConnectionUsages {
-  method: "report.getConnectionUsages";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "total_credit" | "total_duration" | "total_in_bytes" | "total_out_bytes";
+  method: 'report.getConnectionUsages'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'total_credit' | 'total_duration' | 'total_in_bytes' | 'total_out_bytes'
 }

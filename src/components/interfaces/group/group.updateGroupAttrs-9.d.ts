@@ -6,9 +6,9 @@
  */
 
 export interface GroupUpdateGroupAttrs {
-  method: "group.updateGroupAttrs";
-  auth_type: "ADMIN";
-  group_name: string;
-  attrs: unknown;
-  to_del_attrs: unknown[];
+  method: 'group.updateGroupAttrs'
+  auth_type: 'ADMIN'
+  group_name: string
+  attrs: unknown
+  to_del_attrs: unknown[]
 }

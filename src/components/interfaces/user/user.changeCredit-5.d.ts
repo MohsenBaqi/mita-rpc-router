@@ -6,10 +6,10 @@
  */
 
 export interface UserChangeCredit {
-  method: "user.changeCredit";
-  auth_type: "ADMIN";
-  user_id: string;
-  credit: number;
-  is_absolute_change: boolean;
-  credit_comment: string;
+  method: 'user.changeCredit'
+  auth_type: 'ADMIN'
+  user_id: string
+  credit: number
+  is_absolute_change: boolean
+  credit_comment: string
 }

@@ -6,6 +6,6 @@
  */
 
 export interface GroupGetGroupCredits {
-  method: "group.getGroupCredits";
-  auth_type: "ADMIN";
+  method: 'group.getGroupCredits'
+  auth_type: 'ADMIN'
 }

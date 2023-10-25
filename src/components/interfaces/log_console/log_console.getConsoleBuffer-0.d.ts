@@ -6,6 +6,6 @@
  */
 
 export interface LogConsoleGetConsoleBuffer {
-  method: "log_console.getConsoleBuffer";
-  auth_type: "ADMIN";
+  method: 'log_console.getConsoleBuffer'
+  auth_type: 'ADMIN'
 }

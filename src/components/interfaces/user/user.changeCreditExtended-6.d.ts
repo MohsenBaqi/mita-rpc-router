@@ -6,10 +6,10 @@
  */
 
 export interface UserChangeCreditExtended {
-  method: "user.changeCreditExtended";
-  auth_type: "ADMIN";
-  user_id: string;
-  credit: number;
-  change_type: "ADD" | "SET" | "MULTIPLY";
-  credit_comment: string;
+  method: 'user.changeCreditExtended'
+  auth_type: 'ADMIN'
+  user_id: string
+  credit: number
+  change_type: 'ADD' | 'SET' | 'MULTIPLY'
+  credit_comment: string
 }

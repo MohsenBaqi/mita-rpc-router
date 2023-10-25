@@ -6,8 +6,8 @@
  */
 
 export interface UserBulkKillUsers {
-  method: "user.bulkKillUsers";
-  auth_type: "ADMIN";
-  conds: unknown;
-  kill?: boolean;
+  method: 'user.bulkKillUsers'
+  auth_type: 'ADMIN'
+  conds: unknown
+  kill?: boolean
 }

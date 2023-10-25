@@ -6,6 +6,6 @@
  */
 
 export interface McGetAllActiveProviders {
-  method: "mc.getAllActiveProviders";
-  auth_type: "ADMIN";
+  method: 'mc.getAllActiveProviders'
+  auth_type: 'ADMIN'
 }

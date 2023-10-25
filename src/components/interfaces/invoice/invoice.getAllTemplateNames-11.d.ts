@@ -6,6 +6,6 @@
  */
 
 export interface InvoiceGetAllTemplateNames {
-  method: "invoice.getAllTemplateNames";
-  auth_type: "ADMIN";
+  method: 'invoice.getAllTemplateNames'
+  auth_type: 'ADMIN'
 }

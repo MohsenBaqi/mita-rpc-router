@@ -6,11 +6,11 @@
  */
 
 export interface ReportGetTemporaryExtendLogs {
-  method: "report.getTemporaryExtendLogs";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "temporary_extend_date" | "user_id" | "temporary_extend_hours" | "credit_usage";
-  desc: boolean;
+  method: 'report.getTemporaryExtendLogs'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'temporary_extend_date' | 'user_id' | 'temporary_extend_hours' | 'credit_usage'
+  desc: boolean
 }

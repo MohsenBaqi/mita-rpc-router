@@ -6,8 +6,8 @@
  */
 
 export interface BwDelLeafService {
-  method: "bw.delLeafService";
-  auth_type: "ADMIN";
-  leaf_service_id: number;
-  leaf_name: string;
+  method: 'bw.delLeafService'
+  auth_type: 'ADMIN'
+  leaf_service_id: number
+  leaf_name: string
 }

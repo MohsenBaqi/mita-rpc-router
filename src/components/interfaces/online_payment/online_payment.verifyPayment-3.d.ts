@@ -6,8 +6,8 @@
  */
 
 export interface OnlinePaymentVerifyPayment {
-  method: "online_payment.verifyPayment";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  unique_id: string;
-  web_attributes: unknown;
+  method: 'online_payment.verifyPayment'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  unique_id: string
+  web_attributes: unknown
 }

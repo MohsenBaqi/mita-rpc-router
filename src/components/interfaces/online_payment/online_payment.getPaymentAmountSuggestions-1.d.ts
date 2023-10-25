@@ -6,6 +6,6 @@
  */
 
 export interface OnlinePaymentGetPaymentAmountSuggestions {
-  method: "online_payment.getPaymentAmountSuggestions";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'online_payment.getPaymentAmountSuggestions'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
 }

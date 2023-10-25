@@ -6,6 +6,6 @@
  */
 
 export interface UtilCreateSessionForFailedUserByIP {
-  method: "util.createSessionForFailedUserByIP";
-  auth_type: "ANONYMOUS";
+  method: 'util.createSessionForFailedUserByIP'
+  auth_type: 'ANONYMOUS'
 }

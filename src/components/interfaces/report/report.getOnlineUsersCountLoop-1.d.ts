@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetOnlineUsersCountLoop {
-  method: "report.getOnlineUsersCountLoop";
-  auth_type: "ADMIN";
-  conds?: unknown;
+  method: 'report.getOnlineUsersCountLoop'
+  auth_type: 'ADMIN'
+  conds?: unknown
 }

@@ -6,23 +6,23 @@
  */
 
 export interface UserSaveSearchUser {
-  method: "user.saveSearchUser";
-  auth_type: "ADMIN";
-  conds: unknown;
+  method: 'user.saveSearchUser'
+  auth_type: 'ADMIN'
+  conds: unknown
   order_by:
-    | "normal_username"
-    | "voip_username"
-    | "user_id"
-    | "group_id"
-    | "creation_date"
-    | "owner_id"
-    | "credit"
-    | "deposit"
-    | "first_login"
-    | "serial"
-    | "serial_numeric";
-  desc: boolean;
-  basic: unknown[];
-  attrs: unknown[];
-  output_type: "csv" | "pdf";
+    | 'normal_username'
+    | 'voip_username'
+    | 'user_id'
+    | 'group_id'
+    | 'creation_date'
+    | 'owner_id'
+    | 'credit'
+    | 'deposit'
+    | 'first_login'
+    | 'serial'
+    | 'serial_numeric'
+  desc: boolean
+  basic: unknown[]
+  attrs: unknown[]
+  output_type: 'csv' | 'pdf'
 }

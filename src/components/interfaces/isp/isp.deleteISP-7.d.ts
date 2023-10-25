@@ -6,7 +6,7 @@
  */
 
 export interface IspDeleteISP {
-  method: "isp.deleteISP";
-  auth_type: "ADMIN";
-  isp_name: string;
+  method: 'isp.deleteISP'
+  auth_type: 'ADMIN'
+  isp_name: string
 }

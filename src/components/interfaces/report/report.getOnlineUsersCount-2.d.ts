@@ -6,6 +6,6 @@
  */
 
 export interface ReportGetOnlineUsersCount {
-  method: "report.getOnlineUsersCount";
-  auth_type: "ADMIN";
+  method: 'report.getOnlineUsersCount'
+  auth_type: 'ADMIN'
 }

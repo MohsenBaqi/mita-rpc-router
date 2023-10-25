@@ -6,10 +6,10 @@
  */
 
 export interface UserSetFeshfesheParams {
-  method: "user.setFeshfesheParams";
-  auth_type: "ADMIN";
-  user_id: number;
-  traffic: number;
-  date_from: string;
-  date_to: string;
+  method: 'user.setFeshfesheParams'
+  auth_type: 'ADMIN'
+  user_id: number
+  traffic: number
+  date_from: string
+  date_to: string
 }

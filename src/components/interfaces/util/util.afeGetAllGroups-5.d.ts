@@ -6,6 +6,6 @@
  */
 
 export interface UtilAfeGetAllGroups {
-  method: "util.afeGetAllGroups";
-  auth_type: "ADMIN";
+  method: 'util.afeGetAllGroups'
+  auth_type: 'ADMIN'
 }

@@ -6,7 +6,7 @@
  */
 
 export interface McActivateService {
-  method: "mc.activateService";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  cell_number: string;
+  method: 'mc.activateService'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  cell_number: string
 }

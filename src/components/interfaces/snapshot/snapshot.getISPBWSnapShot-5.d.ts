@@ -6,6 +6,6 @@
  */
 
 export interface SnapshotGetISPBWSnapShot {
-  method: "snapshot.getISPBWSnapShot";
-  auth_type: "ADMIN";
+  method: 'snapshot.getISPBWSnapShot'
+  auth_type: 'ADMIN'
 }

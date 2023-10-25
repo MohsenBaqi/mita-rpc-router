@@ -6,10 +6,10 @@
  */
 
 export interface ReportGetCallerIDUsages {
-  method: "report.getCallerIDUsages";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "creation_date" | "normal_username" | "sum";
+  method: 'report.getCallerIDUsages'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'creation_date' | 'normal_username' | 'sum'
 }

@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceGetPIByID {
-  method: "invoice.getPIByID";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  pi_id: number;
+  method: 'invoice.getPIByID'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  pi_id: number
 }

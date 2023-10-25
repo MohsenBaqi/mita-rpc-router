@@ -6,6 +6,6 @@
  */
 
 export interface AdminGetAllAdminUsernames {
-  method: "admin.getAllAdminUsernames";
-  auth_type: "ADMIN";
+  method: 'admin.getAllAdminUsernames'
+  auth_type: 'ADMIN'
 }

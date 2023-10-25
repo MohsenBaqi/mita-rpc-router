@@ -6,9 +6,9 @@
  */
 
 export interface GroupUpdateGroup {
-  method: "group.updateGroup";
-  auth_type: "ADMIN";
-  group_id: number;
-  group_name: string;
-  comment: string;
+  method: 'group.updateGroup'
+  auth_type: 'ADMIN'
+  group_id: number
+  group_name: string
+  comment: string
 }

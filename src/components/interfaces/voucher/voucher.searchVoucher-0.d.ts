@@ -6,11 +6,11 @@
  */
 
 export interface VoucherSearchVoucher {
-  method: "voucher.searchVoucher";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "pin" | "voucher_id";
-  desc: boolean;
+  method: 'voucher.searchVoucher'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'pin' | 'voucher_id'
+  desc: boolean
 }

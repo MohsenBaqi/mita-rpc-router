@@ -6,7 +6,7 @@
  */
 
 export interface PermDeletePermTemplate {
-  method: "perm.deletePermTemplate";
-  auth_type: "ADMIN";
-  perm_template_name: string;
+  method: 'perm.deletePermTemplate'
+  auth_type: 'ADMIN'
+  perm_template_name: string
 }

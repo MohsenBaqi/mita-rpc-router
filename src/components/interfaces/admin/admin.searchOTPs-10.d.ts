@@ -6,11 +6,11 @@
  */
 
 export interface AdminSearchOTPs {
-  method: "admin.searchOTPs";
-  auth_type: "ADMIN";
-  conds: unknown;
-  _from: number;
-  to: number;
-  sort_by: "otp_id" | "creation_date" | "used_date";
-  desc: boolean;
+  method: 'admin.searchOTPs'
+  auth_type: 'ADMIN'
+  conds: unknown
+  _from: number
+  to: number
+  sort_by: 'otp_id' | 'creation_date' | 'used_date'
+  desc: boolean
 }

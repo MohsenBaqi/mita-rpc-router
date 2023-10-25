@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetRasUsages {
-  method: "report.getRasUsages";
-  auth_type: "ADMIN";
-  conds: unknown;
+  method: 'report.getRasUsages'
+  auth_type: 'ADMIN'
+  conds: unknown
 }

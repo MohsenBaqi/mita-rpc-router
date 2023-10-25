@@ -6,22 +6,22 @@
  */
 
 export interface ReportGetExpiredUsers {
-  method: "report.getExpiredUsers";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
+  method: 'report.getExpiredUsers'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
   sort_by:
-    | "user_id"
-    | "normal_username"
-    | "voip_username"
-    | "group_id"
-    | "owner_id"
-    | "creation_date"
-    | "credit"
-    | "deposit"
-    | "first_login"
-    | "serial"
-    | "serial_numeric";
-  desc: boolean;
+    | 'user_id'
+    | 'normal_username'
+    | 'voip_username'
+    | 'group_id'
+    | 'owner_id'
+    | 'creation_date'
+    | 'credit'
+    | 'deposit'
+    | 'first_login'
+    | 'serial'
+    | 'serial_numeric'
+  desc: boolean
 }

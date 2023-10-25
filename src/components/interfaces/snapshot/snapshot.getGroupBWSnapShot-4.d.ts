@@ -6,6 +6,6 @@
  */
 
 export interface SnapshotGetGroupBWSnapShot {
-  method: "snapshot.getGroupBWSnapShot";
-  auth_type: "ADMIN";
+  method: 'snapshot.getGroupBWSnapShot'
+  auth_type: 'ADMIN'
 }

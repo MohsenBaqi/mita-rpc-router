@@ -6,11 +6,11 @@
  */
 
 export interface InvoiceSearchInvoices {
-  method: "invoice.searchInvoices";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  conds: unknown;
-  _from: number;
-  to: number;
-  sort_by: "issue_date" | "user_id" | "total_amount";
-  desc: boolean;
+  method: 'invoice.searchInvoices'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  conds: unknown
+  _from: number
+  to: number
+  sort_by: 'issue_date' | 'user_id' | 'total_amount'
+  desc: boolean
 }

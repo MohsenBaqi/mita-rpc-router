@@ -6,9 +6,9 @@
  */
 
 export interface InvoiceInvoicePaid {
-  method: "invoice.invoicePaid";
-  auth_type: "ADMIN";
-  invoice_id_list: unknown[];
-  paid_amount_list: unknown[];
-  payment_comment_list: unknown[];
+  method: 'invoice.invoicePaid'
+  auth_type: 'ADMIN'
+  invoice_id_list: unknown[]
+  paid_amount_list: unknown[]
+  payment_comment_list: unknown[]
 }

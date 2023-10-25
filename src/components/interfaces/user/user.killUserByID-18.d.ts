@@ -6,6 +6,6 @@
  */
 
 export interface UserKillUserByID {
-  method: "user.killUserByID";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
+  method: 'user.killUserByID'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
 }

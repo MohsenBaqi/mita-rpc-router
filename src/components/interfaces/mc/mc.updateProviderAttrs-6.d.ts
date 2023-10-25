@@ -6,8 +6,8 @@
  */
 
 export interface McUpdateProviderAttrs {
-  method: "mc.updateProviderAttrs";
-  auth_type: "ADMIN";
-  provider_name: string;
-  to_update_attrs: unknown;
+  method: 'mc.updateProviderAttrs'
+  auth_type: 'ADMIN'
+  provider_name: string
+  to_update_attrs: unknown
 }

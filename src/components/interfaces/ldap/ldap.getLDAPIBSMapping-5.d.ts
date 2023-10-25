@@ -6,7 +6,7 @@
  */
 
 export interface LdapGetLDAPIBSMapping {
-  method: "ldap.getLDAPIBSMapping";
-  auth_type: "ADMIN";
-  domain: string;
+  method: 'ldap.getLDAPIBSMapping'
+  auth_type: 'ADMIN'
+  domain: string
 }

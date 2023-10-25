@@ -6,10 +6,10 @@
  */
 
 export interface UserDelUser {
-  method: "user.delUser";
-  auth_type: "ADMIN";
-  user_id: string;
-  delete_comment: string;
-  del_connection_logs: boolean;
-  del_audit_logs: boolean;
+  method: 'user.delUser'
+  auth_type: 'ADMIN'
+  user_id: string
+  delete_comment: string
+  del_connection_logs: boolean
+  del_audit_logs: boolean
 }

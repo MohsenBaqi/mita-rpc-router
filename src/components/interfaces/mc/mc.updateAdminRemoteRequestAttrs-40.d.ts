@@ -6,10 +6,10 @@
  */
 
 export interface McUpdateAdminRemoteRequestAttrs {
-  method: "mc.updateAdminRemoteRequestAttrs";
-  auth_type: "ADMIN";
-  remote_report_status: string;
-  remote_report_command: string;
-  allowed_requesters: string;
-  attrs: unknown;
+  method: 'mc.updateAdminRemoteRequestAttrs'
+  auth_type: 'ADMIN'
+  remote_report_status: string
+  remote_report_command: string
+  allowed_requesters: string
+  attrs: unknown
 }

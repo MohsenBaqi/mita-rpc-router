@@ -6,7 +6,7 @@
  */
 
 export interface TelephonySupportCallerIDAuthenticate {
-  method: "telephony_support.callerIDAuthenticate";
-  auth_type: "ADMIN";
-  caller_id: string;
+  method: 'telephony_support.callerIDAuthenticate'
+  auth_type: 'ADMIN'
+  caller_id: string
 }

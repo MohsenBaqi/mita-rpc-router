@@ -6,14 +6,14 @@
  */
 
 export interface BwAddLeaf {
-  method: "bw.addLeaf";
-  auth_type: "ADMIN";
-  leaf_name: string;
-  parent_id: number;
-  default_rate_kbits: number;
-  default_ceil_kbits: number;
-  total_rate_kbits: number;
-  total_ceil_kbits: number;
-  default_priority: number;
-  total_priority: number;
+  method: 'bw.addLeaf'
+  auth_type: 'ADMIN'
+  leaf_name: string
+  parent_id: number
+  default_rate_kbits: number
+  default_ceil_kbits: number
+  total_rate_kbits: number
+  total_ceil_kbits: number
+  default_priority: number
+  total_priority: number
 }

@@ -6,7 +6,7 @@
  */
 
 export interface McResetProviderAttrs {
-  method: "mc.resetProviderAttrs";
-  auth_type: "ADMIN";
-  provider_name: string;
+  method: 'mc.resetProviderAttrs'
+  auth_type: 'ADMIN'
+  provider_name: string
 }

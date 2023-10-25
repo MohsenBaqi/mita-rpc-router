@@ -6,7 +6,7 @@
  */
 
 export interface ChargeDeleteCharge {
-  method: "charge.deleteCharge";
-  auth_type: "ADMIN";
-  charge_name: string;
+  method: 'charge.deleteCharge'
+  auth_type: 'ADMIN'
+  charge_name: string
 }

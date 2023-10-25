@@ -6,9 +6,9 @@
  */
 
 export interface UserBulkUpdateUserAttrs {
-  method: "user.bulkUpdateUserAttrs";
-  auth_type: "ADMIN";
-  conds: unknown;
-  attrs_to_update: unknown;
-  attrs_to_del: unknown[];
+  method: 'user.bulkUpdateUserAttrs'
+  auth_type: 'ADMIN'
+  conds: unknown
+  attrs_to_update: unknown
+  attrs_to_del: unknown[]
 }

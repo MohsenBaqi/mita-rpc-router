@@ -6,7 +6,7 @@
  */
 
 export interface AdminGetAdminISPID {
-  method: "admin.getAdminISPID";
-  auth_type: "ADMIN";
-  admin_username: string;
+  method: 'admin.getAdminISPID'
+  auth_type: 'ADMIN'
+  admin_username: string
 }

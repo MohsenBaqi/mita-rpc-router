@@ -6,7 +6,7 @@
  */
 
 export interface TelephonySupportGetLastConnection {
-  method: "telephony_support.getLastConnection";
-  auth_type: "ADMIN";
-  user_id: number;
+  method: 'telephony_support.getLastConnection'
+  auth_type: 'ADMIN'
+  user_id: number
 }

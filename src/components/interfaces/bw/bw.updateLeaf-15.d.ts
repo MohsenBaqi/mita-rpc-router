@@ -6,14 +6,14 @@
  */
 
 export interface BwUpdateLeaf {
-  method: "bw.updateLeaf";
-  auth_type: "ADMIN";
-  leaf_id: number;
-  leaf_name: string;
-  default_rate_kbits: number;
-  default_ceil_kbits: number;
-  total_rate_kbits: number;
-  total_ceil_kbits: number;
-  default_priority: number;
-  total_priority: number;
+  method: 'bw.updateLeaf'
+  auth_type: 'ADMIN'
+  leaf_id: number
+  leaf_name: string
+  default_rate_kbits: number
+  default_ceil_kbits: number
+  total_rate_kbits: number
+  total_ceil_kbits: number
+  default_priority: number
+  total_priority: number
 }

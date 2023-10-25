@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetDurations {
-  method: "report.getDurations";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  conds: unknown;
+  method: 'report.getDurations'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  conds: unknown
 }

@@ -6,11 +6,11 @@
  */
 
 export interface ReportGetCreditChanges {
-  method: "report.getCreditChanges";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "change_time" | "per_user_credit" | "isp_credit";
-  desc: boolean;
+  method: 'report.getCreditChanges'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'change_time' | 'per_user_credit' | 'isp_credit'
+  desc: boolean
 }

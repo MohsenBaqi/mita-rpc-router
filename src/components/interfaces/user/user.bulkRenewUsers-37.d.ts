@@ -6,8 +6,8 @@
  */
 
 export interface UserBulkRenewUsers {
-  method: "user.bulkRenewUsers";
-  auth_type: "ADMIN";
-  conds: unknown;
-  renew_comment: string;
+  method: 'user.bulkRenewUsers'
+  auth_type: 'ADMIN'
+  conds: unknown
+  renew_comment: string
 }

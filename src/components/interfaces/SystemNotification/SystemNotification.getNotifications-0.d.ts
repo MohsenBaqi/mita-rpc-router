@@ -6,8 +6,8 @@
  */
 
 export interface SystemNotificationGetNotifications {
-  method: "SystemNotification.getNotifications";
-  auth_type: "ADMIN";
-  last_notifications?: number;
-  only_unread?: boolean;
+  method: 'SystemNotification.getNotifications'
+  auth_type: 'ADMIN'
+  last_notifications?: number
+  only_unread?: boolean
 }

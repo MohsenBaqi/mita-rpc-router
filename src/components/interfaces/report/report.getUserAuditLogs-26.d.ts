@@ -6,11 +6,11 @@
  */
 
 export interface ReportGetUserAuditLogs {
-  method: "report.getUserAuditLogs";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "change_time" | "object_id" | "admin_id";
-  desc: boolean;
+  method: 'report.getUserAuditLogs'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'change_time' | 'object_id' | 'admin_id'
+  desc: boolean
 }

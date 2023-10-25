@@ -6,18 +6,18 @@
  */
 
 export interface ReportAutoCleanReports {
-  method: "report.autoCleanReports";
-  auth_type: "ADMIN";
-  connection_log_clean: number;
-  connection_log_unit: "Seconds" | "Minutes" | "Hours" | "Days" | "Months" | "Years";
-  credit_change_clean: number;
-  credit_change_unit: "Seconds" | "Minutes" | "Hours" | "Days" | "Months" | "Years";
-  user_audit_log_clean: number;
-  user_audit_log_unit: "Seconds" | "Minutes" | "Hours" | "Days" | "Months" | "Years";
-  snapshots_clean: number;
-  snapshots_unit: "Seconds" | "Minutes" | "Hours" | "Days" | "Months" | "Years";
-  bw_snapshots_clean: number;
-  bw_snapshots_unit: "Seconds" | "Minutes" | "Hours" | "Days" | "Months" | "Years";
-  web_analyzer_clean: number;
-  web_analyzer_unit: "Seconds" | "Minutes" | "Hours" | "Days" | "Months" | "Years";
+  method: 'report.autoCleanReports'
+  auth_type: 'ADMIN'
+  connection_log_clean: number
+  connection_log_unit: 'Seconds' | 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
+  credit_change_clean: number
+  credit_change_unit: 'Seconds' | 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
+  user_audit_log_clean: number
+  user_audit_log_unit: 'Seconds' | 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
+  snapshots_clean: number
+  snapshots_unit: 'Seconds' | 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
+  bw_snapshots_clean: number
+  bw_snapshots_unit: 'Seconds' | 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
+  web_analyzer_clean: number
+  web_analyzer_unit: 'Seconds' | 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
 }

@@ -6,7 +6,7 @@
  */
 
 export interface BwGetBwStaticIPInfo {
-  method: "bw.getBwStaticIPInfo";
-  auth_type: "ADMIN";
-  ip_addr: string;
+  method: 'bw.getBwStaticIPInfo'
+  auth_type: 'ADMIN'
+  ip_addr: string
 }

@@ -6,11 +6,11 @@
  */
 
 export interface ReportSaveConnectionUsages {
-  method: "report.saveConnectionUsages";
-  auth_type: "ADMIN";
-  report_type: "inout_usages" | "credit_usages" | "time_usages";
-  conds: unknown;
-  cols: unknown[];
-  sort_by: "creation_date" | "normal_username" | "sum";
-  output_type: "csv" | "pdf";
+  method: 'report.saveConnectionUsages'
+  auth_type: 'ADMIN'
+  report_type: 'inout_usages' | 'credit_usages' | 'time_usages'
+  conds: unknown
+  cols: unknown[]
+  sort_by: 'creation_date' | 'normal_username' | 'sum'
+  output_type: 'csv' | 'pdf'
 }

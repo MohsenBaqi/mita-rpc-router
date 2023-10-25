@@ -6,11 +6,11 @@
  */
 
 export interface McUserSearchSentMessage {
-  method: "mc.userSearchSentMessage";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "message_id" | "msg_type" | "transfer_date";
-  desc: boolean;
+  method: 'mc.userSearchSentMessage'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'message_id' | 'msg_type' | 'transfer_date'
+  desc: boolean
 }

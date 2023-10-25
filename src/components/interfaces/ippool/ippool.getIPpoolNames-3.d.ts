@@ -6,7 +6,7 @@
  */
 
 export interface IppoolGetIPpoolNames {
-  method: "ippool.getIPpoolNames";
-  auth_type: "ADMIN";
-  ippool_type: "load_balancing" | "";
+  method: 'ippool.getIPpoolNames'
+  auth_type: 'ADMIN'
+  ippool_type: 'load_balancing' | ''
 }

@@ -6,6 +6,6 @@
  */
 
 export interface ReportGetRequestCount {
-  method: "report.getRequestCount";
-  auth_type: "ADMIN";
+  method: 'report.getRequestCount'
+  auth_type: 'ADMIN'
 }

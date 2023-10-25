@@ -6,8 +6,8 @@
  */
 
 export interface ChargeDeleteChargeRule {
-  method: "charge.deleteChargeRule";
-  auth_type: "ADMIN";
-  charge_rule_id: number;
-  charge_name: string;
+  method: 'charge.deleteChargeRule'
+  auth_type: 'ADMIN'
+  charge_rule_id: number
+  charge_name: string
 }

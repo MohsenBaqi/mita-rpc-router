@@ -6,11 +6,11 @@
  */
 
 export interface VoucherVoucherSearchBatch {
-  method: "voucher.voucherSearchBatch";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "batch_id" | "batch_name" | "credit";
-  desc: boolean;
+  method: 'voucher.voucherSearchBatch'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'batch_id' | 'batch_name' | 'credit'
+  desc: boolean
 }

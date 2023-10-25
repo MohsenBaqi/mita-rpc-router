@@ -6,7 +6,7 @@
  */
 
 export interface RasGetRasIPpools {
-  method: "ras.getRasIPpools";
-  auth_type: "ADMIN";
-  ras_ip: string;
+  method: 'ras.getRasIPpools'
+  auth_type: 'ADMIN'
+  ras_ip: string
 }

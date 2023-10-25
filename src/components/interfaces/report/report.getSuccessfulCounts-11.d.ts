@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetSuccessfulCounts {
-  method: "report.getSuccessfulCounts";
-  auth_type: "ADMIN";
-  conds: unknown;
+  method: 'report.getSuccessfulCounts'
+  auth_type: 'ADMIN'
+  conds: unknown
 }

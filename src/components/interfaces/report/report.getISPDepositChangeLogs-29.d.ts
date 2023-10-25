@@ -6,15 +6,15 @@
  */
 
 export interface ReportGetISPDepositChangeLogs {
-  method: "report.getISPDepositChangeLogs";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
+  method: 'report.getISPDepositChangeLogs'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
   sort_by:
-    | "isp_deposit_change_admin_id"
-    | "isp_deposit_change_isp_id"
-    | "isp_deposit_change_time"
-    | "isp_deposit_change_amount";
-  desc: boolean;
+    | 'isp_deposit_change_admin_id'
+    | 'isp_deposit_change_isp_id'
+    | 'isp_deposit_change_time'
+    | 'isp_deposit_change_amount'
+  desc: boolean
 }

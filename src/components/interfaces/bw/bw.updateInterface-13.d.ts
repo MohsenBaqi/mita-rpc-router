@@ -6,11 +6,11 @@
  */
 
 export interface BwUpdateInterface {
-  method: "bw.updateInterface";
-  auth_type: "ADMIN";
-  interface_id: number;
-  hostname: string;
-  interface_name: string;
-  comment: string;
-  host_type: "Linux" | "Mikrotik";
+  method: 'bw.updateInterface'
+  auth_type: 'ADMIN'
+  interface_id: number
+  hostname: string
+  interface_name: string
+  comment: string
+  host_type: 'Linux' | 'Mikrotik'
 }

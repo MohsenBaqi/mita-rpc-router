@@ -6,9 +6,9 @@
  */
 
 export interface GroupAddNewGroup {
-  method: "group.addNewGroup";
-  auth_type: "ADMIN";
-  group_name: string;
-  comment: string;
-  isp_name: string;
+  method: 'group.addNewGroup'
+  auth_type: 'ADMIN'
+  group_name: string
+  comment: string
+  isp_name: string
 }

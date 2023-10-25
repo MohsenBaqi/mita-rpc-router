@@ -6,7 +6,7 @@
  */
 
 export interface UtilGetSessionISPID {
-  method: "util.getSessionISPID";
-  auth_type: "ANONYMOUS";
-  web_domain: string;
+  method: 'util.getSessionISPID'
+  auth_type: 'ANONYMOUS'
+  web_domain: string
 }

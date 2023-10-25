@@ -6,7 +6,7 @@
  */
 
 export interface ExtraChargeDeleteExtraChargeProfile {
-  method: "extra_charge.deleteExtraChargeProfile";
-  auth_type: "ADMIN";
-  profile_name: string;
+  method: 'extra_charge.deleteExtraChargeProfile'
+  auth_type: 'ADMIN'
+  profile_name: string
 }

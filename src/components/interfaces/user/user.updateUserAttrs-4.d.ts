@@ -6,9 +6,9 @@
  */
 
 export interface UserUpdateUserAttrs {
-  method: "user.updateUserAttrs";
-  auth_type: "ADMIN";
-  user_id: string;
-  attrs: unknown;
-  to_del_attrs: unknown[];
+  method: 'user.updateUserAttrs'
+  auth_type: 'ADMIN'
+  user_id: string
+  attrs: unknown
+  to_del_attrs: unknown[]
 }

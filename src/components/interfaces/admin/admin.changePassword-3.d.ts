@@ -6,8 +6,8 @@
  */
 
 export interface AdminChangePassword {
-  method: "admin.changePassword";
-  auth_type: "ADMIN";
-  admin_username: string;
-  new_password: string;
+  method: 'admin.changePassword'
+  auth_type: 'ADMIN'
+  admin_username: string
+  new_password: string
 }

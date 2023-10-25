@@ -6,8 +6,8 @@
  */
 
 export interface McUserDeleteMessage {
-  method: "mc.userDeleteMessage";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  message_ids: number;
-  target_box: "USER_SEND" | "USER_RECEIVE" | "QUEUE";
+  method: 'mc.userDeleteMessage'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  message_ids: number
+  target_box: 'USER_SEND' | 'USER_RECEIVE' | 'QUEUE'
 }

@@ -6,20 +6,20 @@
  */
 
 export interface OnlinePaymentAddGateway {
-  method: "online_payment.addGateway";
-  auth_type: "ADMIN";
-  gateway_name: string;
+  method: 'online_payment.addGateway'
+  auth_type: 'ADMIN'
+  gateway_name: string
   gateway_type:
-    | "Eghtesad_Novin"
-    | "Mellat-Shaparak"
-    | "Melli-shahparak"
-    | "Parsian"
-    | "Pasargad"
-    | "Saman"
-    | "Tejarat"
-    | "ZarinPal";
-  owner_isp_name: string;
-  priority: number;
-  comment: string;
-  attributes: unknown;
+    | 'Eghtesad_Novin'
+    | 'Mellat-Shaparak'
+    | 'Melli-shahparak'
+    | 'Parsian'
+    | 'Pasargad'
+    | 'Saman'
+    | 'Tejarat'
+    | 'ZarinPal'
+  owner_isp_name: string
+  priority: number
+  comment: string
+  attributes: unknown
 }

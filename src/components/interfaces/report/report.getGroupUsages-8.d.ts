@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetGroupUsages {
-  method: "report.getGroupUsages";
-  auth_type: "ADMIN";
-  conds: unknown;
+  method: 'report.getGroupUsages'
+  auth_type: 'ADMIN'
+  conds: unknown
 }

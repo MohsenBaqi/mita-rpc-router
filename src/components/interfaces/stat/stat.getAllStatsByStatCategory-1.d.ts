@@ -6,6 +6,6 @@
  */
 
 export interface StatGetAllStatsByStatCategory {
-  method: "stat.getAllStatsByStatCategory";
-  auth_type: "ADMIN";
+  method: 'stat.getAllStatsByStatCategory'
+  auth_type: 'ADMIN'
 }

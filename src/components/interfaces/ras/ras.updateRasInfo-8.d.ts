@@ -6,12 +6,12 @@
  */
 
 export interface RasUpdateRasInfo {
-  method: "ras.updateRasInfo";
-  auth_type: "ADMIN";
-  ras_id: number;
-  ras_ip: string;
-  ras_type: "ACS2" | "Cisco-IN" | "CiscoVPDN" | "Generic" | "Huawei" | "Mikrotik" | "Ruckus" | "ZTE";
-  radius_secret: string;
-  ras_description: string;
-  comment: string;
+  method: 'ras.updateRasInfo'
+  auth_type: 'ADMIN'
+  ras_id: number
+  ras_ip: string
+  ras_type: 'ACS2' | 'Cisco-IN' | 'CiscoVPDN' | 'Generic' | 'Huawei' | 'Mikrotik' | 'Ruckus' | 'ZTE'
+  radius_secret: string
+  ras_description: string
+  comment: string
 }

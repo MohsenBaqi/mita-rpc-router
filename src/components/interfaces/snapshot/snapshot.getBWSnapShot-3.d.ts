@@ -6,6 +6,6 @@
  */
 
 export interface SnapshotGetBWSnapShot {
-  method: "snapshot.getBWSnapShot";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'snapshot.getBWSnapShot'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
 }

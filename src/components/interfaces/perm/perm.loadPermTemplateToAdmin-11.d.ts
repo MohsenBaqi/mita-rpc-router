@@ -6,8 +6,8 @@
  */
 
 export interface PermLoadPermTemplateToAdmin {
-  method: "perm.loadPermTemplateToAdmin";
-  auth_type: "ADMIN";
-  perm_template_name: string;
-  admin_username: string;
+  method: 'perm.loadPermTemplateToAdmin'
+  auth_type: 'ADMIN'
+  perm_template_name: string
+  admin_username: string
 }

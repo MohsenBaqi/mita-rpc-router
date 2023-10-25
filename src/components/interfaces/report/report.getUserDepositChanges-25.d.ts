@@ -6,11 +6,11 @@
  */
 
 export interface ReportGetUserDepositChanges {
-  method: "report.getUserDepositChanges";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  conds: unknown;
-  from: number;
-  to: number;
-  sort_by: "change_time" | "user_id" | "deposit_change";
-  desc: boolean;
+  method: 'report.getUserDepositChanges'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  conds: unknown
+  from: number
+  to: number
+  sort_by: 'change_time' | 'user_id' | 'deposit_change'
+  desc: boolean
 }

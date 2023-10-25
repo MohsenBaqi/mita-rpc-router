@@ -6,7 +6,7 @@
  */
 
 export interface McGetActiveMSGTypes {
-  method: "mc.getActiveMSGTypes";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  view_type: "SEND" | "REPORT";
+  method: 'mc.getActiveMSGTypes'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  view_type: 'SEND' | 'REPORT'
 }

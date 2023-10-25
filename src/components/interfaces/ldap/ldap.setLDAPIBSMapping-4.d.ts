@@ -6,10 +6,10 @@
  */
 
 export interface LdapSetLDAPIBSMapping {
-  method: "ldap.setLDAPIBSMapping";
-  auth_type: "ADMIN";
-  domain: string;
-  ldap_attribute: string;
-  IBS_field: string;
-  sync: boolean;
+  method: 'ldap.setLDAPIBSMapping'
+  auth_type: 'ADMIN'
+  domain: string
+  ldap_attribute: string
+  IBS_field: string
+  sync: boolean
 }

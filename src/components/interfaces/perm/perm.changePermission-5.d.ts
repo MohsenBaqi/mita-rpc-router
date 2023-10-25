@@ -6,9 +6,9 @@
  */
 
 export interface PermChangePermission {
-  method: "perm.changePermission";
-  auth_type: "ADMIN";
-  admin_username: string;
-  perm_name: string;
-  perm_value: string;
+  method: 'perm.changePermission'
+  auth_type: 'ADMIN'
+  admin_username: string
+  perm_name: string
+  perm_value: string
 }

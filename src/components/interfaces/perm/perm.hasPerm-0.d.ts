@@ -6,8 +6,8 @@
  */
 
 export interface PermHasPerm {
-  method: "perm.hasPerm";
-  auth_type: "ADMIN";
-  perm_name: string;
-  admin_username: string;
+  method: 'perm.hasPerm'
+  auth_type: 'ADMIN'
+  perm_name: string
+  admin_username: string
 }

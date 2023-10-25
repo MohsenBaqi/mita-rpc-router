@@ -6,11 +6,11 @@
  */
 
 export interface McAdminSearchQueuedMessage {
-  method: "mc.adminSearchQueuedMessage";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "message_id" | "msg_type" | "transfer_date";
-  desc: boolean;
+  method: 'mc.adminSearchQueuedMessage'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'message_id' | 'msg_type' | 'transfer_date'
+  desc: boolean
 }

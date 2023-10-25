@@ -6,12 +6,12 @@
  */
 
 export interface VoucherVoucherAddBatch {
-  method: "voucher.voucherAddBatch";
-  auth_type: "ADMIN";
-  batch_dict: unknown;
-  pin_prefix: string;
-  pin_len: number;
-  serial_prefix: string;
-  serial_start: number;
-  count: number;
+  method: 'voucher.voucherAddBatch'
+  auth_type: 'ADMIN'
+  batch_dict: unknown
+  pin_prefix: string
+  pin_len: number
+  serial_prefix: string
+  serial_start: number
+  count: number
 }

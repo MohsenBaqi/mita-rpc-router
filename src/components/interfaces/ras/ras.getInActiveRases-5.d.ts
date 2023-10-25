@@ -6,6 +6,6 @@
  */
 
 export interface RasGetInActiveRases {
-  method: "ras.getInActiveRases";
-  auth_type: "ADMIN";
+  method: 'ras.getInActiveRases'
+  auth_type: 'ADMIN'
 }

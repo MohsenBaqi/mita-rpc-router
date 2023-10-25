@@ -6,12 +6,12 @@
  */
 
 export interface BwAddNode {
-  method: "bw.addNode";
-  auth_type: "ADMIN";
-  hostname: string;
-  interface_name: string;
-  parent_id: number;
-  rate_kbits: number;
-  ceil_kbits: number;
-  priority: number;
+  method: 'bw.addNode'
+  auth_type: 'ADMIN'
+  hostname: string
+  interface_name: string
+  parent_id: number
+  rate_kbits: number
+  ceil_kbits: number
+  priority: number
 }

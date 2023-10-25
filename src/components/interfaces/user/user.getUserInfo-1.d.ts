@@ -6,6 +6,6 @@
  */
 
 export interface UserGetUserInfo {
-  method: "user.getUserInfo";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
+  method: 'user.getUserInfo'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
 }

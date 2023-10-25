@@ -6,6 +6,6 @@
  */
 
 export interface VoipProviderListRoutingProfiles {
-  method: "voip_provider.listRoutingProfiles";
-  auth_type: "ADMIN";
+  method: 'voip_provider.listRoutingProfiles'
+  auth_type: 'ADMIN'
 }

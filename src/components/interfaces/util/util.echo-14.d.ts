@@ -6,7 +6,7 @@
  */
 
 export interface UtilEcho {
-  method: "util.echo";
-  auth_type: "ADMIN";
-  echo: string;
+  method: 'util.echo'
+  auth_type: 'ADMIN'
+  echo: string
 }

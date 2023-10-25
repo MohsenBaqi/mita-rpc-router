@@ -6,7 +6,7 @@
  */
 
 export interface McDialerDeleteMessage {
-  method: "mc.dialerDeleteMessage";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  message_id: number;
+  method: 'mc.dialerDeleteMessage'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  message_id: number
 }

@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetErrorForFailedUser {
-  method: "util.getErrorForFailedUser";
-  auth_type: "ANONYMOUS";
+  method: 'util.getErrorForFailedUser'
+  auth_type: 'ANONYMOUS'
 }

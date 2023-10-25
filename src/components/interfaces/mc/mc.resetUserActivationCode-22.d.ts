@@ -6,6 +6,6 @@
  */
 
 export interface McResetUserActivationCode {
-  method: "mc.resetUserActivationCode";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
+  method: 'mc.resetUserActivationCode'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
 }

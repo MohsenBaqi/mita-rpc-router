@@ -1,5 +1,5 @@
-import { LogConsoleGetConsoleBuffer } from "./log_console.getConsoleBuffer-0";
+import { LogConsoleGetConsoleBuffer } from './log_console.getConsoleBuffer-0'
 
-type log_console = LogConsoleGetConsoleBuffer;
+type log_console = LogConsoleGetConsoleBuffer
 
-export default log_console;
+export default log_console

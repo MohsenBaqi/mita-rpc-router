@@ -6,19 +6,19 @@
  */
 
 export interface ReportGetConnections {
-  method: "report.getConnections";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
+  method: 'report.getConnections'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
   sort_by:
-    | "user_id"
-    | "credit_used"
-    | "login_time"
-    | "logout_time"
-    | "successful"
-    | "service"
-    | "ras_id"
-    | "connection_log_id";
-  desc: boolean;
+    | 'user_id'
+    | 'credit_used'
+    | 'login_time'
+    | 'logout_time'
+    | 'successful'
+    | 'service'
+    | 'ras_id'
+    | 'connection_log_id'
+  desc: boolean
 }

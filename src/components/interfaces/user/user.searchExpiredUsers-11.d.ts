@@ -6,11 +6,11 @@
  */
 
 export interface UserSearchExpiredUsers {
-  method: "user.searchExpiredUsers";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "user_id" | "isp_id" | "group_id" | "creation_date" | "credit" | "Deposit";
-  desc: boolean;
+  method: 'user.searchExpiredUsers'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'user_id' | 'isp_id' | 'group_id' | 'creation_date' | 'credit' | 'Deposit'
+  desc: boolean
 }

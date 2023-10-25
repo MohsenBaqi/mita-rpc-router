@@ -6,7 +6,7 @@
  */
 
 export interface UserUpdateUserComments {
-  method: "user.updateUserComments";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  update_dic: unknown;
+  method: 'user.updateUserComments'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  update_dic: unknown
 }

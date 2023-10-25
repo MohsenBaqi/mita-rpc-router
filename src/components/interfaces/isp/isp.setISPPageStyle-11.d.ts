@@ -6,16 +6,16 @@
  */
 
 export interface IspSetISPPageStyle {
-  method: "isp.setISPPageStyle";
-  auth_type: "ADMIN";
-  isp_id: number;
-  header_logo_ext: string;
-  header_logo_contents: string;
-  header_bg_color: string;
-  header_text_color: string;
-  footer_logo_ext: string;
-  footer_logo_contents: string;
-  footer_bg_color: string;
-  footer_text_color: string;
-  footer_msg: string;
+  method: 'isp.setISPPageStyle'
+  auth_type: 'ADMIN'
+  isp_id: number
+  header_logo_ext: string
+  header_logo_contents: string
+  header_bg_color: string
+  header_text_color: string
+  footer_logo_ext: string
+  footer_logo_contents: string
+  footer_bg_color: string
+  footer_text_color: string
+  footer_msg: string
 }

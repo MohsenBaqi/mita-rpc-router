@@ -6,11 +6,11 @@
  */
 
 export interface UtilDeleteSavedReport {
-  method: "util.deleteSavedReport";
-  auth_type: "ADMIN";
-  report_auth: string;
-  report_type: string;
-  report_date: string;
-  report_status: "started" | "finished";
-  report_format: "csv" | "pdf";
+  method: 'util.deleteSavedReport'
+  auth_type: 'ADMIN'
+  report_auth: string
+  report_type: string
+  report_date: string
+  report_status: 'started' | 'finished'
+  report_format: 'csv' | 'pdf'
 }

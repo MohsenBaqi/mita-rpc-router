@@ -6,8 +6,8 @@
  */
 
 export interface TelephonySupportChangeInternetPassword {
-  method: "telephony_support.changeInternetPassword";
-  auth_type: "ADMIN";
-  user_id: number;
-  new_internet_password: string;
+  method: 'telephony_support.changeInternetPassword'
+  auth_type: 'ADMIN'
+  user_id: number
+  new_internet_password: string
 }

@@ -6,7 +6,7 @@
  */
 
 export interface UtilAfeGetUserInfo {
-  method: "util.afeGetUserInfo";
-  auth_type: "ADMIN";
-  username: string;
+  method: 'util.afeGetUserInfo'
+  auth_type: 'ADMIN'
+  username: string
 }

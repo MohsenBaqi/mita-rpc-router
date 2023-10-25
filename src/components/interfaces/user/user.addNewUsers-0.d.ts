@@ -6,12 +6,12 @@
  */
 
 export interface UserAddNewUsers {
-  method: "user.addNewUsers";
-  auth_type: "ADMIN";
-  count: number;
-  credit: number;
-  isp_name: string;
-  group_name: string;
-  credit_comment: string;
-  custom_fields?: unknown;
+  method: 'user.addNewUsers'
+  auth_type: 'ADMIN'
+  count: number
+  credit: number
+  isp_name: string
+  group_name: string
+  credit_comment: string
+  custom_fields?: unknown
 }

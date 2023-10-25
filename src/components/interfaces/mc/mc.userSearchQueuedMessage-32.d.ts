@@ -6,11 +6,11 @@
  */
 
 export interface McUserSearchQueuedMessage {
-  method: "mc.userSearchQueuedMessage";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "message_id" | "msg_type" | "transfer_date";
-  desc: boolean;
+  method: 'mc.userSearchQueuedMessage'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'message_id' | 'msg_type' | 'transfer_date'
+  desc: boolean
 }

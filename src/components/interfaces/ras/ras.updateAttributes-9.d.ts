@@ -6,8 +6,8 @@
  */
 
 export interface RasUpdateAttributes {
-  method: "ras.updateAttributes";
-  auth_type: "ADMIN";
-  ras_ip: string;
-  attrs: unknown;
+  method: 'ras.updateAttributes'
+  auth_type: 'ADMIN'
+  ras_ip: string
+  attrs: unknown
 }

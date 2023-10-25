@@ -6,7 +6,7 @@
  */
 
 export interface UserCancelBulkAction {
-  method: "user.cancelBulkAction";
-  auth_type: "ADMIN";
-  action_id: string;
+  method: 'user.cancelBulkAction'
+  auth_type: 'ADMIN'
+  action_id: string
 }

@@ -6,8 +6,8 @@
  */
 
 export interface SnapshotGetOnlinesSnapShot {
-  method: "snapshot.getOnlinesSnapShot";
-  auth_type: "ADMIN";
-  conds: unknown;
-  type: "internet" | "voip";
+  method: 'snapshot.getOnlinesSnapShot'
+  auth_type: 'ADMIN'
+  conds: unknown
+  type: 'internet' | 'voip'
 }

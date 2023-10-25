@@ -6,8 +6,8 @@
  */
 
 export interface TelephonySupportCheckInternetPassword {
-  method: "telephony_support.checkInternetPassword";
-  auth_type: "ADMIN";
-  user_id: number;
-  internet_password: string;
+  method: 'telephony_support.checkInternetPassword'
+  auth_type: 'ADMIN'
+  user_id: number
+  internet_password: string
 }

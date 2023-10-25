@@ -6,11 +6,11 @@
  */
 
 export interface ReportGetPrefixNameUsage {
-  method: "report.getPrefixNameUsage";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "prefix_name" | "prefix_code" | "duration_sum" | "count" | "credit";
-  desc: boolean;
+  method: 'report.getPrefixNameUsage'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'prefix_name' | 'prefix_code' | 'duration_sum' | 'count' | 'credit'
+  desc: boolean
 }

@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetDRBDStatus {
-  method: "util.getDRBDStatus";
-  auth_type: "ADMIN";
+  method: 'util.getDRBDStatus'
+  auth_type: 'ADMIN'
 }

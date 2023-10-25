@@ -6,9 +6,9 @@
  */
 
 export interface ReportDelReports {
-  method: "report.delReports";
-  auth_type: "ADMIN";
-  table: string;
-  date: string;
-  date_unit: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+  method: 'report.delReports'
+  auth_type: 'ADMIN'
+  table: string
+  date: string
+  date_unit: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
 }

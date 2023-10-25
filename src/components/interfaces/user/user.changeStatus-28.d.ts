@@ -6,8 +6,8 @@
  */
 
 export interface UserChangeStatus {
-  method: "user.changeStatus";
-  auth_type: "ADMIN";
-  user_id: string;
-  status: "Package" | "Recharged" | "Temporary Extended";
+  method: 'user.changeStatus'
+  auth_type: 'ADMIN'
+  user_id: string
+  status: 'Package' | 'Recharged' | 'Temporary Extended'
 }

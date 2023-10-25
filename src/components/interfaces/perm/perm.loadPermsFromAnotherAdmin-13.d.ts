@@ -6,8 +6,8 @@
  */
 
 export interface PermLoadPermsFromAnotherAdmin {
-  method: "perm.loadPermsFromAnotherAdmin";
-  auth_type: "ADMIN";
-  admin_username: string;
-  load_from_admin_username: string;
+  method: 'perm.loadPermsFromAnotherAdmin'
+  auth_type: 'ADMIN'
+  admin_username: string
+  load_from_admin_username: string
 }

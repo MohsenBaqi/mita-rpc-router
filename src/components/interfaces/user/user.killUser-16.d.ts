@@ -6,10 +6,10 @@
  */
 
 export interface UserKillUser {
-  method: "user.killUser";
-  auth_type: "ADMIN";
-  user_id: string;
-  ras_ip: string;
-  unique_id_val: string;
-  kill?: boolean;
+  method: 'user.killUser'
+  auth_type: 'ADMIN'
+  user_id: string
+  ras_ip: string
+  unique_id_val: string
+  kill?: boolean
 }

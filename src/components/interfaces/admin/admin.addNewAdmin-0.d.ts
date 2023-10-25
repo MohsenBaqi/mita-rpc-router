@@ -6,14 +6,14 @@
  */
 
 export interface AdminAddNewAdmin {
-  method: "admin.addNewAdmin";
-  auth_type: "ADMIN";
-  admin_username: string;
-  admin_password: string;
-  admin_isp_name: string;
-  name: string;
-  email: string;
-  comment: string;
-  admin_has_otp: boolean;
-  admin_request_limit: number;
+  method: 'admin.addNewAdmin'
+  auth_type: 'ADMIN'
+  admin_username: string
+  admin_password: string
+  admin_isp_name: string
+  name: string
+  email: string
+  comment: string
+  admin_has_otp: boolean
+  admin_request_limit: number
 }

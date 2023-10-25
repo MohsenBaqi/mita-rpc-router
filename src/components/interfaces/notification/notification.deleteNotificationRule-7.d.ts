@@ -6,8 +6,8 @@
  */
 
 export interface NotificationDeleteNotificationRule {
-  method: "notification.deleteNotificationRule";
-  auth_type: "ADMIN";
-  notification_profile_id: number;
-  notification_rule_id: number;
+  method: 'notification.deleteNotificationRule'
+  auth_type: 'ADMIN'
+  notification_profile_id: number
+  notification_rule_id: number
 }

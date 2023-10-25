@@ -6,7 +6,7 @@
  */
 
 export interface SessionGetAuthData {
-  method: "session.getAuthData";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  auth_session: string;
+  method: 'session.getAuthData'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  auth_session: string
 }

@@ -6,8 +6,8 @@
  */
 
 export interface IspGetISPInfo {
-  method: "isp.getISPInfo";
-  auth_type: "ADMIN";
-  isp_name?: string;
-  isp_id?: number;
+  method: 'isp.getISPInfo'
+  auth_type: 'ADMIN'
+  isp_name?: string
+  isp_id?: number
 }

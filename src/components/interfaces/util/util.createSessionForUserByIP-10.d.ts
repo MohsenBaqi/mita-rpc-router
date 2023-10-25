@@ -6,6 +6,6 @@
  */
 
 export interface UtilCreateSessionForUserByIP {
-  method: "util.createSessionForUserByIP";
-  auth_type: "ANONYMOUS";
+  method: 'util.createSessionForUserByIP'
+  auth_type: 'ANONYMOUS'
 }

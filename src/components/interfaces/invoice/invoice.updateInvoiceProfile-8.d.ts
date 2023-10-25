@@ -6,11 +6,11 @@
  */
 
 export interface InvoiceUpdateInvoiceProfile {
-  method: "invoice.updateInvoiceProfile";
-  auth_type: "ADMIN";
-  profile_id: number;
-  profile_name: string;
-  isp_name: string;
-  comment: string;
-  rules: unknown[];
+  method: 'invoice.updateInvoiceProfile'
+  auth_type: 'ADMIN'
+  profile_id: number
+  profile_name: string
+  isp_name: string
+  comment: string
+  rules: unknown[]
 }

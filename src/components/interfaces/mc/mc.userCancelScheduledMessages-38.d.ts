@@ -6,7 +6,7 @@
  */
 
 export interface McUserCancelScheduledMessages {
-  method: "mc.userCancelScheduledMessages";
-  auth_type: "NORMAL_USER" | "VOIP_USER";
-  message_ids: number;
+  method: 'mc.userCancelScheduledMessages'
+  auth_type: 'NORMAL_USER' | 'VOIP_USER'
+  message_ids: number
 }

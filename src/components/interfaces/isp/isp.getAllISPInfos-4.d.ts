@@ -6,6 +6,6 @@
  */
 
 export interface IspGetAllISPInfos {
-  method: "isp.getAllISPInfos";
-  auth_type: "ADMIN";
+  method: 'isp.getAllISPInfos'
+  auth_type: 'ADMIN'
 }

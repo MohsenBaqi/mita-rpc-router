@@ -6,10 +6,10 @@
  */
 
 export interface ReportSavePrefixNameUsage {
-  method: "report.savePrefixNameUsage";
-  auth_type: "ADMIN";
-  conds: unknown;
-  order_by: "prefix_name" | "prefix_code" | "duration_sum" | "count" | "credit";
-  desc: boolean;
-  output_type: "csv" | "pdf";
+  method: 'report.savePrefixNameUsage'
+  auth_type: 'ADMIN'
+  conds: unknown
+  order_by: 'prefix_name' | 'prefix_code' | 'duration_sum' | 'count' | 'credit'
+  desc: boolean
+  output_type: 'csv' | 'pdf'
 }

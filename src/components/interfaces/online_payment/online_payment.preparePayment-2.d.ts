@@ -6,19 +6,19 @@
  */
 
 export interface OnlinePaymentPreparePayment {
-  method: "online_payment.preparePayment";
-  auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'online_payment.preparePayment'
+  auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
   gateway_type:
-    | "Melli-shahparak"
-    | "Eghtesad_Novin"
-    | "Mellat-Shaparak"
-    | "Parsian"
-    | "Pasargad"
-    | "Saman"
-    | "Tejarat"
-    | "ZarinPal";
-  amount: number;
-  unique_id: string;
-  callback_url: string;
-  attributes: unknown;
+    | 'Melli-shahparak'
+    | 'Eghtesad_Novin'
+    | 'Mellat-Shaparak'
+    | 'Parsian'
+    | 'Pasargad'
+    | 'Saman'
+    | 'Tejarat'
+    | 'ZarinPal'
+  amount: number
+  unique_id: string
+  callback_url: string
+  attributes: unknown
 }

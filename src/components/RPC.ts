@@ -1,48 +1,42 @@
-import axios from "axios";
-import interfaces from "./interfaces";
+import axios from 'axios'
+import interfaces from './interfaces'
 
 export interface CommonParamsByCriteria {
-  auth_name: string;
-  auth_pass: string;
-  auth_remoteaddr: string;
-  date_type?: "gregorian" | "jalali" | "relative";
+  auth_name: string
+  auth_pass: string
+  auth_remoteaddr: string
+  date_type?: 'gregorian' | 'jalali' | 'relative'
 }
 export interface CommonParamsBySession {
-  auth_session: string;
-  auth_remoteaddr: string;
-  date_type?: "gregorian" | "jalali" | "relative";
+  auth_session: string
+  auth_remoteaddr: string
+  date_type?: 'gregorian' | 'jalali' | 'relative'
 }
-type CommonParams = CommonParamsByCriteria | CommonParamsBySession;
+type CommonParams = CommonParamsByCriteria | CommonParamsBySession
 
-type ConditionalProps = CommonParams & interfaces;
+type ConditionalProps = CommonParams & interfaces
 
-const RPC = async ({
-  baseUrl,
-  params,
-}: {
-  baseUrl: string;
-  params: ConditionalProps;
-}) => {
-  let { method: _, ...rest } = params;
+const RPC = async ({ baseUrl, params }: { baseUrl: string; params: ConditionalProps }) => {
+  const { method, ...rest } = params
   const result = await axios
     .post(baseUrl, {
-      jsonrpc: "2.0",
-      method: params?.method,
+      jsonrpc: '2.0',
+      method: method,
       id: 23432,
       params: rest,
     })
-    .then((res) => {
+    .then((res: any) => {
       if (res?.data?.error) {
-        throw res?.data?.error;
+        throw res?.data?.error
       } else {
-        return res?.data?.result;
+        return res?.data?.result
       }
     })
-    .catch((err) => {
-      throw err;
-    });
+    .catch((err: any) => {
+      throw err
+    })
 
-  return result;
-};
+  return result
+}
 
-export default RPC;
+export default RPC

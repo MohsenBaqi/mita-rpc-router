@@ -6,6 +6,6 @@
  */
 
 export interface StatGetStatistics {
-  method: "stat.getStatistics";
-  auth_type: "ADMIN";
+  method: 'stat.getStatistics'
+  auth_type: 'ADMIN'
 }

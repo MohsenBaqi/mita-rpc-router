@@ -6,6 +6,6 @@
  */
 
 export interface BwGetInterfaces {
-  method: "bw.getInterfaces";
-  auth_type: "ADMIN";
+  method: 'bw.getInterfaces'
+  auth_type: 'ADMIN'
 }

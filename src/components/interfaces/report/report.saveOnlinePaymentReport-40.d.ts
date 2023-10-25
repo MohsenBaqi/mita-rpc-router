@@ -6,18 +6,18 @@
  */
 
 export interface ReportSaveOnlinePaymentReport {
-  method: "report.saveOnlinePaymentReport";
-  auth_type: "ADMIN";
-  conds: unknown;
+  method: 'report.saveOnlinePaymentReport'
+  auth_type: 'ADMIN'
+  conds: unknown
   sort_by:
-    | "payment_id"
-    | "gateway_id"
-    | "unique_id"
-    | "amount"
-    | "payment_date"
-    | "requester_id"
-    | "requester_type"
-    | "succeed";
-  desc: boolean;
-  output_type: "csv" | "pdf";
+    | 'payment_id'
+    | 'gateway_id'
+    | 'unique_id'
+    | 'amount'
+    | 'payment_date'
+    | 'requester_id'
+    | 'requester_type'
+    | 'succeed'
+  desc: boolean
+  output_type: 'csv' | 'pdf'
 }

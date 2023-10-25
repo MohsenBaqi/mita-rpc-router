@@ -6,11 +6,11 @@
  */
 
 export interface InvoiceGetInvoiceProfileNames {
-  method: "invoice.getInvoiceProfileNames";
-  auth_type: "ADMIN";
-  conds: unknown;
-  _from: number;
-  to: number;
-  sort_by: "issue_date" | "user_id" | "total_amount";
-  desc: boolean;
+  method: 'invoice.getInvoiceProfileNames'
+  auth_type: 'ADMIN'
+  conds: unknown
+  _from: number
+  to: number
+  sort_by: 'issue_date' | 'user_id' | 'total_amount'
+  desc: boolean
 }

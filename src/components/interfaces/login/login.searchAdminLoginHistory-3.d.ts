@@ -6,11 +6,11 @@
  */
 
 export interface LoginSearchAdminLoginHistory {
-  method: "login.searchAdminLoginHistory";
-  auth_type: "ADMIN";
-  conds: unknown;
-  _from: number;
-  to: number;
-  sort_by: "admin_login_history_id" | "login_date";
-  desc: boolean;
+  method: 'login.searchAdminLoginHistory'
+  auth_type: 'ADMIN'
+  conds: unknown
+  _from: number
+  to: number
+  sort_by: 'admin_login_history_id' | 'login_date'
+  desc: boolean
 }

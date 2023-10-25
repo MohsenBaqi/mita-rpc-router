@@ -6,7 +6,7 @@
  */
 
 export interface BwGetNodeInfo {
-  method: "bw.getNodeInfo";
-  auth_type: "ADMIN";
-  node_id: number;
+  method: 'bw.getNodeInfo'
+  auth_type: 'ADMIN'
+  node_id: number
 }

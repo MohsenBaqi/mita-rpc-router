@@ -6,8 +6,8 @@
  */
 
 export interface TelephonySupportAuthenticate {
-  method: "telephony_support.authenticate";
-  auth_type: "ADMIN";
-  auth_by: "user_id" | "serial" | "voip_username" | "internet_username" | "phone";
-  auth_id: string;
+  method: 'telephony_support.authenticate'
+  auth_type: 'ADMIN'
+  auth_by: 'user_id' | 'serial' | 'voip_username' | 'internet_username' | 'phone'
+  auth_id: string
 }

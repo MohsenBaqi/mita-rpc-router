@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetISPUsages {
-  method: "report.getISPUsages";
-  auth_type: "ADMIN";
-  conds: unknown;
+  method: 'report.getISPUsages'
+  auth_type: 'ADMIN'
+  conds: unknown
 }

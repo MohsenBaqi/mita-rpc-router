@@ -6,11 +6,11 @@
  */
 
 export interface McAdminSearchReceivedMessage {
-  method: "mc.adminSearchReceivedMessage";
-  auth_type: "ADMIN";
-  conds: unknown;
-  from: number;
-  to: number;
-  order_by: "message_id" | "msg_type" | "transfer_date";
-  desc: boolean;
+  method: 'mc.adminSearchReceivedMessage'
+  auth_type: 'ADMIN'
+  conds: unknown
+  from: number
+  to: number
+  order_by: 'message_id' | 'msg_type' | 'transfer_date'
+  desc: boolean
 }

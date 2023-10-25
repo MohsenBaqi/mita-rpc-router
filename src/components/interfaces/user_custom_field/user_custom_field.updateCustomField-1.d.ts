@@ -6,14 +6,14 @@
  */
 
 export interface UserCustomFieldUpdateCustomField {
-  method: "user_custom_field.updateCustomField";
-  auth_type: "ADMIN";
-  custom_field_id: number;
-  name: string;
-  description: string;
-  comment: string;
-  value_type: "string" | "int" | "float";
-  interface_type: "text_field" | "single_select" | "radio_button" | "checkbox";
-  allowable_values: unknown[];
-  mandatory: boolean;
+  method: 'user_custom_field.updateCustomField'
+  auth_type: 'ADMIN'
+  custom_field_id: number
+  name: string
+  description: string
+  comment: string
+  value_type: 'string' | 'int' | 'float'
+  interface_type: 'text_field' | 'single_select' | 'radio_button' | 'checkbox'
+  allowable_values: unknown[]
+  mandatory: boolean
 }

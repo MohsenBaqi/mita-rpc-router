@@ -1,3 +1,4 @@
 import MyCounter from './components/MyCounter'
+import RPC from './components/RPC'
 
-export { MyCounter }
+export { MyCounter, RPC }

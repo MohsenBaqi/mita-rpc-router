@@ -53,5 +53,8 @@
     "react",
     "typescript",
     "rpc-router"
-  ]
+  ],
+  "dependencies": {
+    "tslib": "^2.6.2"
+  }
 }

@@ -6,7 +6,7 @@
  */
 
 export interface UtilKickIDLEUsersByIP {
-  method: "util.kickIDLEUsersByIP";
-  auth_type?: "ANONYMOUS";
-  idle_ip_list: unknown[];
+  method: 'util.kickIDLEUsersByIP'
+  auth_type?: 'ANONYMOUS'
+  idle_ip_list: unknown[]
 }

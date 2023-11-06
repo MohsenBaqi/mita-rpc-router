@@ -6,7 +6,7 @@
  */
 
 export interface McRemoveProvider {
-  method: "mc.removeProvider";
-  auth_type?: "ADMIN";
-  provider_name: string;
+  method: 'mc.removeProvider'
+  auth_type?: 'ADMIN'
+  provider_name: string
 }

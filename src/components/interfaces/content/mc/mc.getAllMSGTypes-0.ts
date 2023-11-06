@@ -6,6 +6,6 @@
  */
 
 export interface McGetAllMSGTypes {
-  method: "mc.getAllMSGTypes";
-  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'mc.getAllMSGTypes'
+  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
 }

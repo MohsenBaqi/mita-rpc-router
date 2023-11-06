@@ -6,10 +6,10 @@
  */
 
 export interface LdapDeleteLDAPIBSMapping {
-  method: "ldap.deleteLDAPIBSMapping";
-  auth_type?: "ADMIN";
-  domain: string;
-  ldap_attribute: string;
-  IBS_field: string;
-  sync: boolean;
+  method: 'ldap.deleteLDAPIBSMapping'
+  auth_type?: 'ADMIN'
+  domain: string
+  ldap_attribute: string
+  IBS_field: string
+  sync: boolean
 }

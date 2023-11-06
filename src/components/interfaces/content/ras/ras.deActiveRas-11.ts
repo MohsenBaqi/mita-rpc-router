@@ -6,7 +6,7 @@
  */
 
 export interface RasDeActiveRas {
-  method: "ras.deActiveRas";
-  auth_type?: "ADMIN";
-  ras_ip: string;
+  method: 'ras.deActiveRas'
+  auth_type?: 'ADMIN'
+  ras_ip: string
 }

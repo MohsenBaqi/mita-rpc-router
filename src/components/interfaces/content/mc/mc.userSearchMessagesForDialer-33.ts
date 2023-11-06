@@ -6,10 +6,10 @@
  */
 
 export interface McUserSearchMessagesForDialer {
-  method: "mc.userSearchMessagesForDialer";
-  auth_type?: "NORMAL_USER" | "VOIP_USER";
-  from: number;
-  to: number;
-  order_by: "message_id" | "msg_type" | "transfer_date";
-  desc: boolean;
+  method: 'mc.userSearchMessagesForDialer'
+  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  from: number
+  to: number
+  order_by: 'message_id' | 'msg_type' | 'transfer_date'
+  desc: boolean
 }

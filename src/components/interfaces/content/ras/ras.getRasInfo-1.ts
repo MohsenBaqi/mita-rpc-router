@@ -6,7 +6,7 @@
  */
 
 export interface RasGetRasInfo {
-  method: "ras.getRasInfo";
-  auth_type?: "ADMIN";
-  ras_ip: string;
+  method: 'ras.getRasInfo'
+  auth_type?: 'ADMIN'
+  ras_ip: string
 }

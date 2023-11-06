@@ -6,7 +6,7 @@
  */
 
 export interface LdapGetUserInfo {
-  method: "ldap.getUserInfo";
-  auth_type?: "ADMIN";
-  username: string;
+  method: 'ldap.getUserInfo'
+  auth_type?: 'ADMIN'
+  username: string
 }

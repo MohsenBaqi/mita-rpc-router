@@ -6,8 +6,8 @@
  */
 
 export interface McRemoveEPGroupFromProvider {
-  method: "mc.removeEPGroupFromProvider";
-  auth_type?: "ADMIN";
-  provider_id: number;
-  end_point_group_id: number;
+  method: 'mc.removeEPGroupFromProvider'
+  auth_type?: 'ADMIN'
+  provider_id: number
+  end_point_group_id: number
 }

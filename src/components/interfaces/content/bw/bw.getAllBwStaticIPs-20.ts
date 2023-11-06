@@ -6,6 +6,6 @@
  */
 
 export interface BwGetAllBwStaticIPs {
-  method: "bw.getAllBwStaticIPs";
-  auth_type?: "ADMIN";
+  method: 'bw.getAllBwStaticIPs'
+  auth_type?: 'ADMIN'
 }

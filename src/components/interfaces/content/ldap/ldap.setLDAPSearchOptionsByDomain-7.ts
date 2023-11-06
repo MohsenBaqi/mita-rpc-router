@@ -6,9 +6,9 @@
  */
 
 export interface LdapSetLDAPSearchOptionsByDomain {
-  method: "ldap.setLDAPSearchOptionsByDomain";
-  auth_type?: "ADMIN";
-  domain: string;
-  search_filter: string;
-  search_base: string;
+  method: 'ldap.setLDAPSearchOptionsByDomain'
+  auth_type?: 'ADMIN'
+  domain: string
+  search_filter: string
+  search_base: string
 }

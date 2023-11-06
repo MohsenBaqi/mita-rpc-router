@@ -6,7 +6,7 @@
  */
 
 export interface VoucherGetVoucherByID {
-  method: "voucher.getVoucherByID";
-  auth_type?: "ADMIN";
-  voucher_id: number;
+  method: 'voucher.getVoucherByID'
+  auth_type?: 'ADMIN'
+  voucher_id: number
 }

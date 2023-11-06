@@ -6,7 +6,7 @@
  */
 
 export interface LdapGetUsernames {
-  method: "ldap.getUsernames";
-  auth_type?: "ADMIN";
-  starts_with: string;
+  method: 'ldap.getUsernames'
+  auth_type?: 'ADMIN'
+  starts_with: string
 }

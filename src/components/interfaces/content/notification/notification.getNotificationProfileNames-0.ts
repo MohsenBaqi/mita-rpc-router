@@ -6,6 +6,6 @@
  */
 
 export interface NotificationGetNotificationProfileNames {
-  method: "notification.getNotificationProfileNames";
-  auth_type?: "ADMIN";
+  method: 'notification.getNotificationProfileNames'
+  auth_type?: 'ADMIN'
 }

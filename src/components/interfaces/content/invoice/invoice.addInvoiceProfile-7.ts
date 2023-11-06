@@ -6,9 +6,9 @@
  */
 
 export interface InvoiceAddInvoiceProfile {
-  method: "invoice.addInvoiceProfile";
-  auth_type?: "ADMIN";
-  profile_name: string;
-  isp_name?: string;
-  comment: string;
+  method: 'invoice.addInvoiceProfile'
+  auth_type?: 'ADMIN'
+  profile_name: string
+  isp_name?: string
+  comment: string
 }

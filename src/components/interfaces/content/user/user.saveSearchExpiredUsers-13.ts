@@ -6,14 +6,14 @@
  */
 
 export interface UserSaveSearchExpiredUsers {
-  method: "user.saveSearchExpiredUsers";
-  auth_type?: "ADMIN";
-  output_type: "csv" | "pdf";
+  method: 'user.saveSearchExpiredUsers'
+  auth_type?: 'ADMIN'
+  output_type: 'csv' | 'pdf'
   conds: {
-    [k: string]: unknown;
-  };
-  order_by: "user_id" | "isp_id" | "group_id" | "creation_date" | "credit" | "Deposit";
-  desc: boolean;
-  basic: unknown[];
-  attrs: unknown[];
+    [k: string]: unknown
+  }
+  order_by: 'user_id' | 'isp_id' | 'group_id' | 'creation_date' | 'credit' | 'Deposit'
+  desc: boolean
+  basic: unknown[]
+  attrs: unknown[]
 }

@@ -6,10 +6,10 @@
  */
 
 export interface ChargeUpdateCharge {
-  method: "charge.updateCharge";
-  auth_type?: "ADMIN";
-  charge_id: number;
-  charge_name: string;
-  comment: string;
-  isp_name: string;
+  method: 'charge.updateCharge'
+  auth_type?: 'ADMIN'
+  charge_id: number
+  charge_name: string
+  comment: string
+  isp_name: string
 }

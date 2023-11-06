@@ -6,11 +6,11 @@
  */
 
 export interface McEnqueueSend {
-  method: "mc.enqueueSend";
-  auth_type?: "NORMAL_USER" | "VOIP_USER";
-  body: string;
-  destinations: string;
-  msg_type: "SMS" | "E-Mail" | "Message To Admin" | "Message To User";
-  schedule_date: string | number;
-  schedule_date_unit: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+  method: 'mc.enqueueSend'
+  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  body: string
+  destinations: string
+  msg_type: 'SMS' | 'E-Mail' | 'Message To Admin' | 'Message To User'
+  schedule_date: string | number
+  schedule_date_unit: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
 }

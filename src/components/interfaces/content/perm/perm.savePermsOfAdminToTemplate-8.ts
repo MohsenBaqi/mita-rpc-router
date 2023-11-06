@@ -6,8 +6,8 @@
  */
 
 export interface PermSavePermsOfAdminToTemplate {
-  method: "perm.savePermsOfAdminToTemplate";
-  auth_type?: "ADMIN";
-  admin_username: string;
-  perm_template_name: string;
+  method: 'perm.savePermsOfAdminToTemplate'
+  auth_type?: 'ADMIN'
+  admin_username: string
+  perm_template_name: string
 }

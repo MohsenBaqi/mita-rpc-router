@@ -6,14 +6,14 @@
  */
 
 export interface ReportGetINConnections {
-  method: "report.getINConnections";
-  auth_type?: "ADMIN";
+  method: 'report.getINConnections'
+  auth_type?: 'ADMIN'
   conds: {
-    caller_id?: string;
-    [k: string]: unknown;
-  };
-  from: number;
-  to: number;
-  sort_by: "credit_used" | "login_time" | "logout_time" | "successful" | "service" | "ras_id" | "connection_log_id";
-  desc: boolean;
+    caller_id?: string
+    [k: string]: unknown
+  }
+  from: number
+  to: number
+  sort_by: 'credit_used' | 'login_time' | 'logout_time' | 'successful' | 'service' | 'ras_id' | 'connection_log_id'
+  desc: boolean
 }

@@ -6,9 +6,9 @@
  */
 
 export interface ChargeAddNewCharge {
-  method: "charge.addNewCharge";
-  auth_type?: "ADMIN";
-  charge_name: string;
-  comment: string;
-  isp_name: string;
+  method: 'charge.addNewCharge'
+  auth_type?: 'ADMIN'
+  charge_name: string
+  comment: string
+  isp_name: string
 }

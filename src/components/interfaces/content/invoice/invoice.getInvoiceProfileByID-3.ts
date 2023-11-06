@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceGetInvoiceProfileByID {
-  method: "invoice.getInvoiceProfileByID";
-  auth_type?: "ADMIN";
-  profile_id: number;
+  method: 'invoice.getInvoiceProfileByID'
+  auth_type?: 'ADMIN'
+  profile_id: number
 }

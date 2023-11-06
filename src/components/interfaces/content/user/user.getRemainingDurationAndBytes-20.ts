@@ -6,7 +6,7 @@
  */
 
 export interface UserGetRemainingDurationAndBytes {
-  method: "user.getRemainingDurationAndBytes";
-  auth_type?: "ADMIN";
-  user_id: number;
+  method: 'user.getRemainingDurationAndBytes'
+  auth_type?: 'ADMIN'
+  user_id: number
 }

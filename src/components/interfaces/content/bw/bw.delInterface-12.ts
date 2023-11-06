@@ -6,8 +6,8 @@
  */
 
 export interface BwDelInterface {
-  method: "bw.delInterface";
-  auth_type?: "ADMIN";
-  hostname: string;
-  interface_name: string;
+  method: 'bw.delInterface'
+  auth_type?: 'ADMIN'
+  hostname: string
+  interface_name: string
 }

@@ -6,6 +6,6 @@
  */
 
 export interface McGetUserActivationNumber {
-  method: "mc.getUserActivationNumber";
-  auth_type?: "NORMAL_USER" | "VOIP_USER";
+  method: 'mc.getUserActivationNumber'
+  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
 }

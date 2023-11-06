@@ -6,9 +6,9 @@
  */
 
 export interface ChargeCopyCharge {
-  method: "charge.copyCharge";
-  auth_type?: "ADMIN";
-  charge_name: string;
-  comment: string;
-  copy_count: number;
+  method: 'charge.copyCharge'
+  auth_type?: 'ADMIN'
+  charge_name: string
+  comment: string
+  copy_count: number
 }

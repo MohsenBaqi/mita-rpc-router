@@ -5,25 +5,25 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type ListOfGroupNames = string;
-export type StartDateAndTimeFormatYMDHM = string;
-export type StartDateAndTimeFormatYMDHM1 = string;
-export type DateUnit = "gregorian" | "jalali" | "years" | "months" | "days" | "hours" | "minutes" | "seconds";
-export type DateUnit1 = "gregorian" | "jalali" | "years" | "months" | "days" | "hours" | "minutes" | "seconds";
-export type OperationForStartDate = "<" | ">" | "<=" | ">=";
-export type OperationForEndDate = "<" | ">" | "<=" | ">=";
+export type ListOfGroupNames = string
+export type StartDateAndTimeFormatYMDHM = string
+export type StartDateAndTimeFormatYMDHM1 = string
+export type DateUnit = 'gregorian' | 'jalali' | 'years' | 'months' | 'days' | 'hours' | 'minutes' | 'seconds'
+export type DateUnit1 = 'gregorian' | 'jalali' | 'years' | 'months' | 'days' | 'hours' | 'minutes' | 'seconds'
+export type OperationForStartDate = '<' | '>' | '<=' | '>='
+export type OperationForEndDate = '<' | '>' | '<=' | '>='
 
 export interface SnapshotGetGroupBWSnapShot {
-  method: "snapshot.getGroupBWSnapShot";
-  auth_type?: "ADMIN";
+  method: 'snapshot.getGroupBWSnapShot'
+  auth_type?: 'ADMIN'
   conds: {
-    group_names?: ListOfGroupNames;
-    date_from?: StartDateAndTimeFormatYMDHM;
-    date_to?: StartDateAndTimeFormatYMDHM1;
-    date_from_unit?: DateUnit;
-    date_to_unit?: DateUnit1;
-    date_from_op?: OperationForStartDate;
-    date_to_op?: OperationForEndDate;
-    [k: string]: unknown;
-  };
+    group_names?: ListOfGroupNames
+    date_from?: StartDateAndTimeFormatYMDHM
+    date_to?: StartDateAndTimeFormatYMDHM1
+    date_from_unit?: DateUnit
+    date_to_unit?: DateUnit1
+    date_from_op?: OperationForStartDate
+    date_to_op?: OperationForEndDate
+    [k: string]: unknown
+  }
 }

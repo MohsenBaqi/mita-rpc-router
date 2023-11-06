@@ -5,25 +5,26 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type TrueIfExistsIfYouPutThisInAttributesWeWonTPerformAnyActionCreditDepositInvoiceAfterVerifyingPayment = boolean;
+export type TrueIfExistsIfYouPutThisInAttributesWeWonTPerformAnyActionCreditDepositInvoiceAfterVerifyingPayment =
+  boolean
 
 export interface OnlinePaymentPreparePayment {
-  method: "online_payment.preparePayment";
-  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'online_payment.preparePayment'
+  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
   gateway_type:
-    | "Melli-shahparak"
-    | "Eghtesad_Novin"
-    | "Mellat-Shaparak"
-    | "Parsian"
-    | "Pasargad"
-    | "Saman"
-    | "Tejarat"
-    | "ZarinPal";
-  amount: number;
-  unique_id: string;
-  callback_url: string;
+    | 'Melli-shahparak'
+    | 'Eghtesad_Novin'
+    | 'Mellat-Shaparak'
+    | 'Parsian'
+    | 'Pasargad'
+    | 'Saman'
+    | 'Tejarat'
+    | 'ZarinPal'
+  amount: number
+  unique_id: string
+  callback_url: string
   attributes: {
-    no_action?: TrueIfExistsIfYouPutThisInAttributesWeWonTPerformAnyActionCreditDepositInvoiceAfterVerifyingPayment;
-    [k: string]: unknown;
-  };
+    no_action?: TrueIfExistsIfYouPutThisInAttributesWeWonTPerformAnyActionCreditDepositInvoiceAfterVerifyingPayment
+    [k: string]: unknown
+  }
 }

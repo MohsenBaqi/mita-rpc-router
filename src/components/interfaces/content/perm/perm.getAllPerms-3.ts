@@ -6,6 +6,6 @@
  */
 
 export interface PermGetAllPerms {
-  method: "perm.getAllPerms";
-  auth_type?: "ADMIN";
+  method: 'perm.getAllPerms'
+  auth_type?: 'ADMIN'
 }

@@ -6,6 +6,6 @@
  */
 
 export interface RasGetRasDescriptions {
-  method: "ras.getRasDescriptions";
-  auth_type?: "ADMIN";
+  method: 'ras.getRasDescriptions'
+  auth_type?: 'ADMIN'
 }

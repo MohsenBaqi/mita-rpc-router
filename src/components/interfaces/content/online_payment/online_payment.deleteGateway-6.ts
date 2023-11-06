@@ -6,7 +6,7 @@
  */
 
 export interface OnlinePaymentDeleteGateway {
-  method: "online_payment.deleteGateway";
-  auth_type?: "ADMIN";
-  gateway_name: string;
+  method: 'online_payment.deleteGateway'
+  auth_type?: 'ADMIN'
+  gateway_name: string
 }

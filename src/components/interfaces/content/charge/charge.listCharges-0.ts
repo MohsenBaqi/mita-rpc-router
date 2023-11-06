@@ -6,7 +6,7 @@
  */
 
 export interface ChargeListCharges {
-  method: "charge.listCharges";
-  auth_type?: "ADMIN";
-  isp_id: string;
+  method: 'charge.listCharges'
+  auth_type?: 'ADMIN'
+  isp_id: string
 }

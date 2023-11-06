@@ -6,7 +6,7 @@
  */
 
 export interface UserViewBulkActionStatus {
-  method: "user.viewBulkActionStatus";
-  auth_type?: "ADMIN";
-  action_id: string;
+  method: 'user.viewBulkActionStatus'
+  auth_type?: 'ADMIN'
+  action_id: string
 }

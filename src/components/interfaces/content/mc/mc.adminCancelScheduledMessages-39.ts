@@ -6,7 +6,7 @@
  */
 
 export interface McAdminCancelScheduledMessages {
-  method: "mc.adminCancelScheduledMessages";
-  auth_type?: "ADMIN";
-  message_ids: number;
+  method: 'mc.adminCancelScheduledMessages'
+  auth_type?: 'ADMIN'
+  message_ids: number
 }

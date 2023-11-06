@@ -6,6 +6,6 @@
  */
 
 export interface GroupGetGroupUsersCount {
-  method: "group.getGroupUsersCount";
-  auth_type?: "ADMIN";
+  method: 'group.getGroupUsersCount'
+  auth_type?: 'ADMIN'
 }

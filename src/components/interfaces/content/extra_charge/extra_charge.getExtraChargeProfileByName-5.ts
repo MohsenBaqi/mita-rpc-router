@@ -6,7 +6,7 @@
  */
 
 export interface ExtraChargeGetExtraChargeProfileByName {
-  method: "extra_charge.getExtraChargeProfileByName";
-  auth_type?: "ADMIN";
-  profile_name: string;
+  method: 'extra_charge.getExtraChargeProfileByName'
+  auth_type?: 'ADMIN'
+  profile_name: string
 }

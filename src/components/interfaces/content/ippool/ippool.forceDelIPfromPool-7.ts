@@ -6,8 +6,8 @@
  */
 
 export interface IppoolForceDelIPfromPool {
-  method: "ippool.forceDelIPfromPool";
-  auth_type?: "ADMIN";
-  ippool_name: string;
-  ip: string;
+  method: 'ippool.forceDelIPfromPool'
+  auth_type?: 'ADMIN'
+  ippool_name: string
+  ip: string
 }

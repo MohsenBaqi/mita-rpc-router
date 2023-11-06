@@ -6,8 +6,8 @@
  */
 
 export interface UserRechargeUsers {
-  method: "user.rechargeUsers";
-  auth_type?: "ADMIN";
-  user_id: string;
-  comment: string;
+  method: 'user.rechargeUsers'
+  auth_type?: 'ADMIN'
+  user_id: string
+  comment: string
 }

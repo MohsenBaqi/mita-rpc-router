@@ -6,8 +6,8 @@
  */
 
 export interface UserRenewUsers {
-  method: "user.renewUsers";
-  auth_type?: "ADMIN";
-  user_id: string;
-  comment: string;
+  method: 'user.renewUsers'
+  auth_type?: 'ADMIN'
+  user_id: string
+  comment: string
 }

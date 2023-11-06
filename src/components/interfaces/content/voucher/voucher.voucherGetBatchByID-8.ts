@@ -6,7 +6,7 @@
  */
 
 export interface VoucherVoucherGetBatchByID {
-  method: "voucher.voucherGetBatchByID";
-  auth_type?: "ADMIN";
-  batch_id: number;
+  method: 'voucher.voucherGetBatchByID'
+  auth_type?: 'ADMIN'
+  batch_id: number
 }

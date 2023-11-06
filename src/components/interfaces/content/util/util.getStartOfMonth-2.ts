@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetStartOfMonth {
-  method: "util.getStartOfMonth";
-  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'util.getStartOfMonth'
+  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
 }

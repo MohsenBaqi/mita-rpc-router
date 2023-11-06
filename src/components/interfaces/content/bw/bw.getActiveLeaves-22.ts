@@ -6,8 +6,8 @@
  */
 
 export interface BwGetActiveLeaves {
-  method: "bw.getActiveLeaves";
-  auth_type?: "ADMIN";
-  order_by: string;
-  desc: boolean;
+  method: 'bw.getActiveLeaves'
+  auth_type?: 'ADMIN'
+  order_by: string
+  desc: boolean
 }

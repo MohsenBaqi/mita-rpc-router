@@ -6,10 +6,10 @@
  */
 
 export interface ExtraChargeAddExtraChargeProfile {
-  method: "extra_charge.addExtraChargeProfile";
-  auth_type?: "ADMIN";
-  profile_name: string;
-  comment: string;
-  effective_hour: string;
-  rules: unknown[];
+  method: 'extra_charge.addExtraChargeProfile'
+  auth_type?: 'ADMIN'
+  profile_name: string
+  comment: string
+  effective_hour: string
+  rules: unknown[]
 }

@@ -6,14 +6,14 @@
  */
 
 export interface BwUpdateLeafService {
-  method: "bw.updateLeafService";
-  auth_type?: "ADMIN";
-  leaf_name: string;
-  leaf_service_id: number;
-  dst_ip: string;
-  protocol: "tcp" | "udp" | "icmp" | "ip";
-  filter: string;
-  rate_kbits: number;
-  ceil_kbits: number;
-  priority: number;
+  method: 'bw.updateLeafService'
+  auth_type?: 'ADMIN'
+  leaf_name: string
+  leaf_service_id: number
+  dst_ip: string
+  protocol: 'tcp' | 'udp' | 'icmp' | 'ip'
+  filter: string
+  rate_kbits: number
+  ceil_kbits: number
+  priority: number
 }

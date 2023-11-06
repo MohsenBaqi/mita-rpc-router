@@ -6,6 +6,6 @@
  */
 
 export interface StatGetUserQueueStats {
-  method: "stat.getUserQueueStats";
-  auth_type?: "ADMIN";
+  method: 'stat.getUserQueueStats'
+  auth_type?: 'ADMIN'
 }

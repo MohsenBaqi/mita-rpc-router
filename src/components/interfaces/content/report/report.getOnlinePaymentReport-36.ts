@@ -5,46 +5,46 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type CommaSeperatedStringOfUserIDsOrAdminIDs = string;
-export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1;
-export type DatetimeOrNumber = string;
-export type DatetimeOrNumber1 = number;
-export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4;
-export type DatetimeOrNumber3 = string;
-export type DatetimeOrNumber4 = number;
+export type CommaSeperatedStringOfUserIDsOrAdminIDs = string
+export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1
+export type DatetimeOrNumber = string
+export type DatetimeOrNumber1 = number
+export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4
+export type DatetimeOrNumber3 = string
+export type DatetimeOrNumber4 = number
 export type ListOfGatewayNamesOrStringOfOneGatewayName2 =
   | ListOfGatewayNamesOrStringOfOneGatewayName
-  | ListOfGatewayNamesOrStringOfOneGatewayName1;
-export type ListOfGatewayNamesOrStringOfOneGatewayName = unknown[];
-export type ListOfGatewayNamesOrStringOfOneGatewayName1 = string;
+  | ListOfGatewayNamesOrStringOfOneGatewayName1
+export type ListOfGatewayNamesOrStringOfOneGatewayName = unknown[]
+export type ListOfGatewayNamesOrStringOfOneGatewayName1 = string
 
 export interface ReportGetOnlinePaymentReport {
-  method: "report.getOnlinePaymentReport";
-  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  method: 'report.getOnlinePaymentReport'
+  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
   conds: {
-    requester_ids?: CommaSeperatedStringOfUserIDsOrAdminIDs;
-    requester_type?: "USER" | "ADMIN";
-    reference_id?: string;
-    amount?: number;
-    amount_op?: "=" | ">" | "<" | ">=" | "<=";
-    payment_date_from?: DatetimeOrNumber2;
-    payment_date_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    payment_date_to?: DatetimeOrNumber5;
-    payment_date_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    succeed?: "yes" | "no";
-    gateway_name?: ListOfGatewayNamesOrStringOfOneGatewayName2;
-    [k: string]: unknown;
-  };
-  from: number;
-  to: number;
+    requester_ids?: CommaSeperatedStringOfUserIDsOrAdminIDs
+    requester_type?: 'USER' | 'ADMIN'
+    reference_id?: string
+    amount?: number
+    amount_op?: '=' | '>' | '<' | '>=' | '<='
+    payment_date_from?: DatetimeOrNumber2
+    payment_date_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    payment_date_to?: DatetimeOrNumber5
+    payment_date_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    succeed?: 'yes' | 'no'
+    gateway_name?: ListOfGatewayNamesOrStringOfOneGatewayName2
+    [k: string]: unknown
+  }
+  from: number
+  to: number
   sort_by:
-    | "payment_id"
-    | "gateway_id"
-    | "unique_id"
-    | "amount"
-    | "payment_date"
-    | "requester_id"
-    | "requester_type"
-    | "succeed";
-  desc: boolean;
+    | 'payment_id'
+    | 'gateway_id'
+    | 'unique_id'
+    | 'amount'
+    | 'payment_date'
+    | 'requester_id'
+    | 'requester_type'
+    | 'succeed'
+  desc: boolean
 }

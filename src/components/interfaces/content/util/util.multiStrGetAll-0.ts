@@ -6,8 +6,8 @@
  */
 
 export interface UtilMultiStrGetAll {
-  method: "util.multiStrGetAll";
-  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  str: string;
-  left_pad: boolean;
+  method: 'util.multiStrGetAll'
+  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  str: string
+  left_pad: boolean
 }

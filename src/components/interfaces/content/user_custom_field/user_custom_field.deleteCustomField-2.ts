@@ -6,7 +6,7 @@
  */
 
 export interface UserCustomFieldDeleteCustomField {
-  method: "user_custom_field.deleteCustomField";
-  auth_type?: "ADMIN";
-  name: string;
+  method: 'user_custom_field.deleteCustomField'
+  auth_type?: 'ADMIN'
+  name: string
 }

@@ -6,8 +6,8 @@
  */
 
 export interface UserKillMe {
-  method: "user.killMe";
-  auth_type?: "NORMAL_USER" | "VOIP_USER";
-  unique_id_val: string;
-  ras_ip: string;
+  method: 'user.killMe'
+  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  unique_id_val: string
+  ras_ip: string
 }

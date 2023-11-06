@@ -6,9 +6,9 @@
  */
 
 export interface UserTemporaryExtendUsers {
-  method: "user.temporaryExtendUsers";
-  auth_type?: "ADMIN";
-  user_id: string;
-  temporary_extend_hours: number;
-  temporary_extend_credit: number;
+  method: 'user.temporaryExtendUsers'
+  auth_type?: 'ADMIN'
+  user_id: string
+  temporary_extend_hours: number
+  temporary_extend_credit: number
 }

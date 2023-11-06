@@ -6,10 +6,10 @@
  */
 
 export interface BwAddInterface {
-  method: "bw.addInterface";
-  auth_type?: "ADMIN";
-  hostname: string;
-  interface_name: string;
-  comment: string;
-  host_type: "Linux" | "Mikrotik";
+  method: 'bw.addInterface'
+  auth_type?: 'ADMIN'
+  hostname: string
+  interface_name: string
+  comment: string
+  host_type: 'Linux' | 'Mikrotik'
 }

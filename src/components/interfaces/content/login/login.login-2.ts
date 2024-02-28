@@ -6,9 +6,9 @@
  */
 
 export interface LoginLogin {
-  method: 'login.login'
-  auth_type?: 'ANONYMOUS'
-  login_auth_type: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
-  login_auth_name: string
-  login_auth_pass: string
+  method: "login.login";
+  auth_type?: "ANONYMOUS";
+  login_auth_type: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  login_auth_name: string;
+  login_auth_pass: string;
 }

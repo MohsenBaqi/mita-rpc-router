@@ -6,12 +6,12 @@
  */
 
 export interface UserBulkChangeUserCredit {
-  method: 'user.bulkChangeUserCredit'
-  auth_type?: 'ADMIN'
+  method: "user.bulkChangeUserCredit";
+  auth_type?: "ADMIN";
   conds: {
-    [k: string]: unknown
-  }
-  credit: number
-  change_type: 'ADD' | 'SET' | 'MULTIPLY'
-  credit_comment: string
+    [k: string]: unknown;
+  };
+  credit: number;
+  change_type: "ADD" | "SET" | "MULTIPLY";
+  credit_comment: string;
 }

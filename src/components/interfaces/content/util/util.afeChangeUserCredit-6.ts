@@ -6,9 +6,9 @@
  */
 
 export interface UtilAfeChangeUserCredit {
-  method: 'util.afeChangeUserCredit'
-  auth_type?: 'ADMIN'
-  username: string
-  amount: number
-  comment: string
+  method: "util.afeChangeUserCredit";
+  auth_type?: "ADMIN";
+  username: string;
+  amount: number;
+  comment: string;
 }

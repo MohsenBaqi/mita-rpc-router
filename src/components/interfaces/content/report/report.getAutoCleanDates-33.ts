@@ -6,6 +6,6 @@
  */
 
 export interface ReportGetAutoCleanDates {
-  method: 'report.getAutoCleanDates'
-  auth_type?: 'ADMIN'
+  method: "report.getAutoCleanDates";
+  auth_type?: "ADMIN";
 }

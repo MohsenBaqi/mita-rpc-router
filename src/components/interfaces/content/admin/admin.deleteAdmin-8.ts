@@ -6,7 +6,7 @@
  */
 
 export interface AdminDeleteAdmin {
-  method: 'admin.deleteAdmin'
-  auth_type?: 'ADMIN'
-  admin_username: string
+  method: "admin.deleteAdmin";
+  auth_type?: "ADMIN";
+  admin_username: string;
 }

@@ -6,7 +6,7 @@
  */
 
 export interface BwGetLeafInfo {
-  method: 'bw.getLeafInfo'
-  auth_type?: 'ADMIN'
-  leaf_name: string
+  method: "bw.getLeafInfo";
+  auth_type?: "ADMIN";
+  leaf_name: string;
 }

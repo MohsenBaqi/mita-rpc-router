@@ -7,38 +7,38 @@
 
 export type ListOfIspNamesOrStringOfOneIspName2 =
   | ListOfIspNamesOrStringOfOneIspName
-  | ListOfIspNamesOrStringOfOneIspName1
-export type ListOfIspNamesOrStringOfOneIspName = unknown[]
-export type ListOfIspNamesOrStringOfOneIspName1 = string
-export type AdminUsername = string
-export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1
-export type DatetimeOrNumber = string
-export type DatetimeOrNumber1 = number
-export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4
-export type DatetimeOrNumber3 = string
-export type DatetimeOrNumber4 = number
+  | ListOfIspNamesOrStringOfOneIspName1;
+export type ListOfIspNamesOrStringOfOneIspName = unknown[];
+export type ListOfIspNamesOrStringOfOneIspName1 = string;
+export type AdminUsername = string;
+export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1;
+export type DatetimeOrNumber = string;
+export type DatetimeOrNumber1 = number;
+export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4;
+export type DatetimeOrNumber3 = string;
+export type DatetimeOrNumber4 = number;
 
 export interface ReportGetSystemAuditLogs {
-  method: 'report.getSystemAuditLogs'
-  auth_type?: 'ADMIN'
+  method: "report.getSystemAuditLogs";
+  auth_type?: "ADMIN";
   conds: {
     categories?: {
-      [k: string]: unknown
-    }[]
+      [k: string]: unknown;
+    }[];
     events?: {
-      [k: string]: unknown
-    }[]
-    isp_names?: ListOfIspNamesOrStringOfOneIspName2
-    admin?: AdminUsername
-    change_time_from?: DatetimeOrNumber2
-    change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
-    change_time_to?: DatetimeOrNumber5
-    change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
-    object_id?: number
-    [k: string]: unknown
-  }
-  from: number
-  to: number
-  sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
-  desc: boolean
+      [k: string]: unknown;
+    }[];
+    isp_names?: ListOfIspNamesOrStringOfOneIspName2;
+    admin?: AdminUsername;
+    change_time_from?: DatetimeOrNumber2;
+    change_time_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+    change_time_to?: DatetimeOrNumber5;
+    change_time_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+    object_id?: number;
+    [k: string]: unknown;
+  };
+  from: number;
+  to: number;
+  sort_by: "change_time" | "object_id" | "admin_id" | "event" | "category" | "isp_id";
+  desc: boolean;
 }

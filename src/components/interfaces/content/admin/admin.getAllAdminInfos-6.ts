@@ -6,7 +6,7 @@
  */
 
 export interface AdminGetAllAdminInfos {
-  method: 'admin.getAllAdminInfos'
-  auth_type?: 'ADMIN'
-  isp_name: string
+  method: "admin.getAllAdminInfos";
+  auth_type?: "ADMIN";
+  isp_name: string;
 }

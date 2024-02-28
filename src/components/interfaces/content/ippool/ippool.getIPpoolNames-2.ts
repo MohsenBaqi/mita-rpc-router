@@ -6,6 +6,6 @@
  */
 
 export interface IppoolGetIPpoolNames {
-  method: 'ippool.getIPpoolNames'
-  auth_type?: 'ADMIN'
+  method: "ippool.getIPpoolNames";
+  auth_type?: "ADMIN";
 }

@@ -6,6 +6,6 @@
  */
 
 export interface ReportGetOnlineUsersCountPerISP {
-  method: 'report.getOnlineUsersCountPerISP'
-  auth_type?: 'ADMIN'
+  method: "report.getOnlineUsersCountPerISP";
+  auth_type?: "ADMIN";
 }

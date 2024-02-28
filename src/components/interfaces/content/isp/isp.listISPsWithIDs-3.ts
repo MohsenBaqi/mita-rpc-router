@@ -6,6 +6,6 @@
  */
 
 export interface IspListISPsWithIDs {
-  method: 'isp.listISPsWithIDs'
-  auth_type?: 'ADMIN'
+  method: "isp.listISPsWithIDs";
+  auth_type?: "ADMIN";
 }

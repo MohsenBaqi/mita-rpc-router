@@ -6,9 +6,9 @@
  */
 
 export interface IppoolUpdateIPpool {
-  method: 'ippool.updateIPpool'
-  auth_type?: 'ADMIN'
-  ippool_id: number
-  ippool_name: string
-  comment: string
+  method: "ippool.updateIPpool";
+  auth_type?: "ADMIN";
+  ippool_id: number;
+  ippool_name: string;
+  comment: string;
 }

@@ -6,7 +6,7 @@
  */
 
 export interface RasReActiveRas {
-  method: 'ras.reActiveRas'
-  auth_type?: 'ADMIN'
-  ras_ip: string
+  method: "ras.reActiveRas";
+  auth_type?: "ADMIN";
+  ras_ip: string;
 }

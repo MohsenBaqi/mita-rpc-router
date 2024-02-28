@@ -6,7 +6,7 @@
  */
 
 export interface ReportGetRequestTopStats {
-  method: 'report.getRequestTopStats'
-  auth_type?: 'ADMIN'
-  order_by: 'count' | 'average_duration' | 'total_duration'
+  method: "report.getRequestTopStats";
+  auth_type?: "ADMIN";
+  order_by: "count" | "average_duration" | "total_duration";
 }

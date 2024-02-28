@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceGetInvoiceWithRuleByInvoiceID {
-  method: 'invoice.getInvoiceWithRuleByInvoiceID'
-  auth_type?: 'ADMIN'
-  invoice_id: number
+  method: "invoice.getInvoiceWithRuleByInvoiceID";
+  auth_type?: "ADMIN";
+  invoice_id: number;
 }

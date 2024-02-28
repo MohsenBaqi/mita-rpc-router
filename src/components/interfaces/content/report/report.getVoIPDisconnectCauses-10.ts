@@ -6,9 +6,9 @@
  */
 
 export interface ReportGetVoIPDisconnectCauses {
-  method: 'report.getVoIPDisconnectCauses'
-  auth_type?: 'ADMIN'
+  method: "report.getVoIPDisconnectCauses";
+  auth_type?: "ADMIN";
   conds: {
-    [k: string]: unknown
-  }
+    [k: string]: unknown;
+  };
 }

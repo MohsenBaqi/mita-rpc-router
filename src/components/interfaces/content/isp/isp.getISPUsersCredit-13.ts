@@ -6,6 +6,6 @@
  */
 
 export interface IspGetISPUsersCredit {
-  method: 'isp.getISPUsersCredit'
-  auth_type?: 'ADMIN'
+  method: "isp.getISPUsersCredit";
+  auth_type?: "ADMIN";
 }

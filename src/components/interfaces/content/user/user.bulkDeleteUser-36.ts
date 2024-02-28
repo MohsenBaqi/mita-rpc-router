@@ -6,12 +6,12 @@
  */
 
 export interface UserBulkDeleteUser {
-  method: 'user.bulkDeleteUser'
-  auth_type?: 'ADMIN'
+  method: "user.bulkDeleteUser";
+  auth_type?: "ADMIN";
   conds: {
-    [k: string]: unknown
-  }
-  delete_comment: string
-  del_connection_logs: boolean
-  del_audit_logs: boolean
+    [k: string]: unknown;
+  };
+  delete_comment: string;
+  del_connection_logs: boolean;
+  del_audit_logs: boolean;
 }

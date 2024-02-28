@@ -6,8 +6,8 @@
  */
 
 export interface McGetEPGroupUsageInfo {
-  method: 'mc.getEPGroupUsageInfo'
-  auth_type?: 'ADMIN'
-  end_point_group_id: number
-  provider_id: number
+  method: "mc.getEPGroupUsageInfo";
+  auth_type?: "ADMIN";
+  end_point_group_id: number;
+  provider_id: number;
 }

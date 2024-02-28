@@ -6,8 +6,8 @@
  */
 
 export interface IppoolAddNewIPpool {
-  method: 'ippool.addNewIPpool'
-  auth_type?: 'ADMIN'
-  ippool_name: string
-  comment: string
+  method: "ippool.addNewIPpool";
+  auth_type?: "ADMIN";
+  ippool_name: string;
+  comment: string;
 }

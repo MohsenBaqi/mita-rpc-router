@@ -6,7 +6,7 @@
  */
 
 export interface VoucherGetBatchVoucherAttrs {
-  method: 'voucher.getBatchVoucherAttrs'
-  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
-  voucher_pin: string
+  method: "voucher.getBatchVoucherAttrs";
+  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
+  voucher_pin: string;
 }

@@ -6,8 +6,8 @@
  */
 
 export interface RasAddIPpoolToRas {
-  method: 'ras.addIPpoolToRas'
-  auth_type?: 'ADMIN'
-  ras_ip: string
-  ippool_name: string
+  method: "ras.addIPpoolToRas";
+  auth_type?: "ADMIN";
+  ras_ip: string;
+  ippool_name: string;
 }

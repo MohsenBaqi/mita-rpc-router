@@ -6,14 +6,14 @@
  */
 
 export interface OnlinePaymentUpdateGateway {
-  method: 'online_payment.updateGateway'
-  auth_type?: 'ADMIN'
-  gateway_id: number
-  gateway_name: string
-  owner_isp_name: string
-  priority: number
-  comment: string
+  method: "online_payment.updateGateway";
+  auth_type?: "ADMIN";
+  gateway_id: number;
+  gateway_name: string;
+  owner_isp_name: string;
+  priority: number;
+  comment: string;
   attributes: {
-    [k: string]: unknown
-  }
+    [k: string]: unknown;
+  };
 }

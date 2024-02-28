@@ -6,7 +6,7 @@
  */
 
 export interface UserDoesUserExists {
-  method: 'user.doesUserExists'
-  auth_type?: 'ADMIN'
-  normal_username: string
+  method: "user.doesUserExists";
+  auth_type?: "ADMIN";
+  normal_username: string;
 }

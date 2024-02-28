@@ -6,12 +6,12 @@
  */
 
 export interface IppoolAddNewLoadBalancingIPpool {
-  method: 'ippool.addNewLoadBalancingIPpool'
-  auth_type?: 'ADMIN'
-  ippool_name: string
-  ippool_comment: string
-  balancing_strategy: 'distributive' | 'fill_first'
+  method: "ippool.addNewLoadBalancingIPpool";
+  auth_type?: "ADMIN";
+  ippool_name: string;
+  ippool_comment: string;
+  balancing_strategy: "distributive" | "fill_first";
   children_ippool_percentages: {
-    [k: string]: unknown
-  }
+    [k: string]: unknown;
+  };
 }

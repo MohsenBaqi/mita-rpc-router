@@ -6,6 +6,6 @@
  */
 
 export interface IspGetAllISPMappedUserIDs {
-  method: 'isp.getAllISPMappedUserIDs'
-  auth_type?: 'ADMIN'
+  method: "isp.getAllISPMappedUserIDs";
+  auth_type?: "ADMIN";
 }

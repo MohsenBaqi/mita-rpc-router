@@ -5,26 +5,26 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type TrueMeansVoucherIsUsed = boolean
+export type TrueMeansVoucherIsUsed = boolean;
 export type ListOfIspNamesOrStringOfOneIspName2 =
   | ListOfIspNamesOrStringOfOneIspName
-  | ListOfIspNamesOrStringOfOneIspName1
-export type ListOfIspNamesOrStringOfOneIspName = unknown[]
-export type ListOfIspNamesOrStringOfOneIspName1 = string
+  | ListOfIspNamesOrStringOfOneIspName1;
+export type ListOfIspNamesOrStringOfOneIspName = unknown[];
+export type ListOfIspNamesOrStringOfOneIspName1 = string;
 
 export interface VoucherSearchVoucher {
-  method: 'voucher.searchVoucher'
-  auth_type?: 'ADMIN'
+  method: "voucher.searchVoucher";
+  auth_type?: "ADMIN";
   conds: {
-    voucher_ids?: string
-    batch_ids?: string
-    pins?: string
-    is_used?: TrueMeansVoucherIsUsed
-    isp_names?: ListOfIspNamesOrStringOfOneIspName2
-    [k: string]: unknown
-  }
-  from: number
-  to: number
-  sort_by: 'pin' | 'voucher_id'
-  desc: boolean
+    voucher_ids?: string;
+    batch_ids?: string;
+    pins?: string;
+    is_used?: TrueMeansVoucherIsUsed;
+    isp_names?: ListOfIspNamesOrStringOfOneIspName2;
+    [k: string]: unknown;
+  };
+  from: number;
+  to: number;
+  sort_by: "pin" | "voucher_id";
+  desc: boolean;
 }

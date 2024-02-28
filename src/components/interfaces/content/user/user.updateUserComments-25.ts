@@ -5,23 +5,23 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type CommentNameUserSRealName = string
-export type CommentPhone = string
-export type CommentCellPhoneNumber = string
-export type CommentEmail = string
-export type CommentAddress = string
-export type CommentDateOfBirth = string
+export type CommentNameUserSRealName = string;
+export type CommentPhone = string;
+export type CommentCellPhoneNumber = string;
+export type CommentEmail = string;
+export type CommentAddress = string;
+export type CommentDateOfBirth = string;
 
 export interface UserUpdateUserComments {
-  method: 'user.updateUserComments'
-  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  method: "user.updateUserComments";
+  auth_type?: "NORMAL_USER" | "VOIP_USER";
   update_dic: {
-    name?: CommentNameUserSRealName
-    phone?: CommentPhone
-    cell_phone?: CommentCellPhoneNumber
-    email?: CommentEmail
-    address?: CommentAddress
-    birthdate?: CommentDateOfBirth
-    [k: string]: unknown
-  }
+    name?: CommentNameUserSRealName;
+    phone?: CommentPhone;
+    cell_phone?: CommentCellPhoneNumber;
+    email?: CommentEmail;
+    address?: CommentAddress;
+    birthdate?: CommentDateOfBirth;
+    [k: string]: unknown;
+  };
 }

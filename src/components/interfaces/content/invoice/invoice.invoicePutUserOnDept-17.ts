@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceInvoicePutUserOnDept {
-  method: 'invoice.invoicePutUserOnDept'
-  auth_type?: 'ADMIN'
-  pi_id_list: unknown[]
+  method: "invoice.invoicePutUserOnDept";
+  auth_type?: "ADMIN";
+  pi_id_list: unknown[];
 }

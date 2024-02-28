@@ -6,7 +6,7 @@
  */
 
 export interface UserGetUsersWithCellPhone {
-  method: 'user.getUsersWithCellPhone'
-  auth_type?: 'ADMIN'
-  cell_phone: string
+  method: "user.getUsersWithCellPhone";
+  auth_type?: "ADMIN";
+  cell_phone: string;
 }

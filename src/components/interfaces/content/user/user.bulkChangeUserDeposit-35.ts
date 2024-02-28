@@ -6,12 +6,12 @@
  */
 
 export interface UserBulkChangeUserDeposit {
-  method: 'user.bulkChangeUserDeposit'
-  auth_type?: 'ADMIN'
+  method: "user.bulkChangeUserDeposit";
+  auth_type?: "ADMIN";
   conds: {
-    [k: string]: unknown
-  }
-  deposit: number
-  change_type: 'ADD' | 'SET' | 'MULTIPLY'
-  deposit_comment: string
+    [k: string]: unknown;
+  };
+  deposit: number;
+  change_type: "ADD" | "SET" | "MULTIPLY";
+  deposit_comment: string;
 }

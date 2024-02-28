@@ -6,13 +6,13 @@
  */
 
 export interface UserBulkUpdateUserAttrs {
-  method: 'user.bulkUpdateUserAttrs'
-  auth_type?: 'ADMIN'
+  method: "user.bulkUpdateUserAttrs";
+  auth_type?: "ADMIN";
   conds: {
-    [k: string]: unknown
-  }
+    [k: string]: unknown;
+  };
   attrs_to_update: {
-    [k: string]: unknown
-  }
-  attrs_to_del: unknown[]
+    [k: string]: unknown;
+  };
+  attrs_to_del: unknown[];
 }

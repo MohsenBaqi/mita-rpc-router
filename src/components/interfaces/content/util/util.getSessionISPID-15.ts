@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetSessionISPID {
-  method: 'util.getSessionISPID'
-  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  method: "util.getSessionISPID";
+  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
 }

@@ -6,9 +6,9 @@
  */
 
 export interface AdminGenerateOTP {
-  method: 'admin.generateOTP'
-  auth_type?: 'ADMIN'
-  pass_len: number
-  pass_count: number
-  admin_username: string
+  method: "admin.generateOTP";
+  auth_type?: "ADMIN";
+  pass_len: number;
+  pass_count: number;
+  admin_username: string;
 }

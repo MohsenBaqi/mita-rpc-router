@@ -6,7 +6,7 @@
  */
 
 export interface McCheckActivationCode {
-  method: 'mc.checkActivationCode'
-  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
-  activation_code: string
+  method: "mc.checkActivationCode";
+  auth_type?: "NORMAL_USER" | "VOIP_USER";
+  activation_code: string;
 }

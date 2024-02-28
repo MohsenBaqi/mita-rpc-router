@@ -6,7 +6,7 @@
  */
 
 export interface BwDelLeaf {
-  method: 'bw.delLeaf'
-  auth_type?: 'ADMIN'
-  leaf_name: string
+  method: "bw.delLeaf";
+  auth_type?: "ADMIN";
+  leaf_name: string;
 }

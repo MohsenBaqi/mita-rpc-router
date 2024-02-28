@@ -6,9 +6,9 @@
  */
 
 export interface BwAddBwStaticIP {
-  method: 'bw.addBwStaticIP'
-  auth_type?: 'ADMIN'
-  ip_addr: string
-  tx_leaf_name: string
-  rx_leaf_name: string
+  method: "bw.addBwStaticIP";
+  auth_type?: "ADMIN";
+  ip_addr: string;
+  tx_leaf_name: string;
+  rx_leaf_name: string;
 }

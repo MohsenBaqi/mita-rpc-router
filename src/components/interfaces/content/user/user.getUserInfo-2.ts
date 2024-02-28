@@ -6,12 +6,12 @@
  */
 
 export interface UserGetUserInfo {
-  method: 'user.getUserInfo'
-  auth_type?: 'ADMIN'
-  user_id?: string
-  normal_username?: string
-  voip_username?: string
-  serial?: string
-  phone?: string
-  rempte_ip?: string
+  method: "user.getUserInfo";
+  auth_type?: "ADMIN";
+  user_id?: string;
+  normal_username?: string;
+  voip_username?: string;
+  serial?: string;
+  phone?: string;
+  rempte_ip?: string;
 }

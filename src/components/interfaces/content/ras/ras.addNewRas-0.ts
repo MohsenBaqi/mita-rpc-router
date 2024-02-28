@@ -6,11 +6,11 @@
  */
 
 export interface RasAddNewRas {
-  method: 'ras.addNewRas'
-  auth_type?: 'ADMIN'
-  ras_ip: string
-  ras_type: 'ACS2' | 'Cisco-IN' | 'CiscoVPDN' | 'Generic' | 'Huawei' | 'Mikrotik' | 'Ruckus' | 'ZTE'
-  radius_secret: string
-  ras_description: string
-  comment: string
+  method: "ras.addNewRas";
+  auth_type?: "ADMIN";
+  ras_ip: string;
+  ras_type: "ACS2" | "Cisco-IN" | "CiscoVPDN" | "Generic" | "Huawei" | "Mikrotik" | "Ruckus" | "ZTE";
+  radius_secret: string;
+  ras_description: string;
+  comment: string;
 }

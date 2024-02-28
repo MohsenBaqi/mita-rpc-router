@@ -6,6 +6,6 @@
  */
 
 export interface OnlinePaymentGetAvailableGatewayTypes {
-  method: 'online_payment.getAvailableGatewayTypes'
-  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  method: "online_payment.getAvailableGatewayTypes";
+  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
 }

@@ -6,9 +6,9 @@
  */
 
 export interface InvoiceProformaInvoicePaid {
-  method: 'invoice.proformaInvoicePaid'
-  auth_type?: 'ADMIN'
-  pi_id_list: unknown[]
-  paid_amount_list: unknown[]
-  payment_comment_list: unknown[]
+  method: "invoice.proformaInvoicePaid";
+  auth_type?: "ADMIN";
+  pi_id_list: unknown[];
+  paid_amount_list: unknown[];
+  payment_comment_list: unknown[];
 }

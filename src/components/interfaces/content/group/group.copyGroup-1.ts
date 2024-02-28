@@ -6,10 +6,10 @@
  */
 
 export interface GroupCopyGroup {
-  method: 'group.copyGroup'
-  auth_type?: 'ADMIN'
-  group_name: string
-  comment: string
-  isp_name: string
-  copy_count: number
+  method: "group.copyGroup";
+  auth_type?: "ADMIN";
+  group_name: string;
+  comment: string;
+  isp_name: string;
+  copy_count: number;
 }

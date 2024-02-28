@@ -6,8 +6,8 @@
  */
 
 export interface McUnAssingAllFromGroup {
-  method: 'mc.unAssingAllFromGroup'
-  auth_type?: 'ADMIN'
-  provider_name: string
-  end_point_group_id: number
+  method: "mc.unAssingAllFromGroup";
+  auth_type?: "ADMIN";
+  provider_name: string;
+  end_point_group_id: number;
 }

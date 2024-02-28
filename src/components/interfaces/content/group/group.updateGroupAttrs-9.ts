@@ -6,11 +6,11 @@
  */
 
 export interface GroupUpdateGroupAttrs {
-  method: 'group.updateGroupAttrs'
-  auth_type?: 'ADMIN'
-  group_name: string
+  method: "group.updateGroupAttrs";
+  auth_type?: "ADMIN";
+  group_name: string;
   attrs: {
-    [k: string]: unknown
-  }
-  to_del_attrs: unknown[]
+    [k: string]: unknown;
+  };
+  to_del_attrs: unknown[];
 }

@@ -6,6 +6,6 @@
  */
 
 export interface UtilVersion {
-  method: 'util.version'
-  auth_type?: 'ADMIN'
+  method: "util.version";
+  auth_type?: "ADMIN";
 }

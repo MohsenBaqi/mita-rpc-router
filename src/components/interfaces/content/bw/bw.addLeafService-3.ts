@@ -6,13 +6,13 @@
  */
 
 export interface BwAddLeafService {
-  method: 'bw.addLeafService'
-  auth_type?: 'ADMIN'
-  leaf_name: string
-  dst_ip: string
-  protocol: 'tcp' | 'udp' | 'icmp' | 'ip'
-  filter: string
-  rate_kbits: number
-  ceil_kbits: number
-  priority: number
+  method: "bw.addLeafService";
+  auth_type?: "ADMIN";
+  leaf_name: string;
+  dst_ip: string;
+  protocol: "tcp" | "udp" | "icmp" | "ip";
+  filter: string;
+  rate_kbits: number;
+  ceil_kbits: number;
+  priority: number;
 }

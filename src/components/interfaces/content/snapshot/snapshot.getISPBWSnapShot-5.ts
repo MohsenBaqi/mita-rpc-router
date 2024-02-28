@@ -5,25 +5,25 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type ListOfIspNames = string
-export type StartDateAndTimeFormatYMDHM = string
-export type StartDateAndTimeFormatYMDHM1 = string
-export type DateUnit = 'gregorian' | 'jalali' | 'years' | 'months' | 'days' | 'hours' | 'minutes' | 'seconds'
-export type DateUnit1 = 'gregorian' | 'jalali' | 'years' | 'months' | 'days' | 'hours' | 'minutes' | 'seconds'
-export type OperationForStartDate = '<' | '>' | '<=' | '>='
-export type OperationForEndDate = '<' | '>' | '<=' | '>='
+export type ListOfIspNames = string;
+export type StartDateAndTimeFormatYMDHM = string;
+export type StartDateAndTimeFormatYMDHM1 = string;
+export type DateUnit = "gregorian" | "jalali" | "years" | "months" | "days" | "hours" | "minutes" | "seconds";
+export type DateUnit1 = "gregorian" | "jalali" | "years" | "months" | "days" | "hours" | "minutes" | "seconds";
+export type OperationForStartDate = "<" | ">" | "<=" | ">=";
+export type OperationForEndDate = "<" | ">" | "<=" | ">=";
 
 export interface SnapshotGetISPBWSnapShot {
-  method: 'snapshot.getISPBWSnapShot'
-  auth_type?: 'ADMIN'
+  method: "snapshot.getISPBWSnapShot";
+  auth_type?: "ADMIN";
   conds: {
-    isp_names?: ListOfIspNames
-    date_from?: StartDateAndTimeFormatYMDHM
-    date_to?: StartDateAndTimeFormatYMDHM1
-    date_from_unit?: DateUnit
-    date_to_unit?: DateUnit1
-    date_from_op?: OperationForStartDate
-    date_to_op?: OperationForEndDate
-    [k: string]: unknown
-  }
+    isp_names?: ListOfIspNames;
+    date_from?: StartDateAndTimeFormatYMDHM;
+    date_to?: StartDateAndTimeFormatYMDHM1;
+    date_from_unit?: DateUnit;
+    date_to_unit?: DateUnit1;
+    date_from_op?: OperationForStartDate;
+    date_to_op?: OperationForEndDate;
+    [k: string]: unknown;
+  };
 }

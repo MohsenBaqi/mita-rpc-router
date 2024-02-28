@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetNow {
-  method: 'util.getNow'
-  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  method: "util.getNow";
+  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
 }

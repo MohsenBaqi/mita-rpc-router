@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetSavedReportList {
-  method: 'util.getSavedReportList'
-  auth_type?: 'ADMIN'
+  method: "util.getSavedReportList";
+  auth_type?: "ADMIN";
 }

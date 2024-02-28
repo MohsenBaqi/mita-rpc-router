@@ -6,10 +6,10 @@
  */
 
 export interface RasUpdateAttributes {
-  method: 'ras.updateAttributes'
-  auth_type?: 'ADMIN'
-  ras_ip: string
+  method: "ras.updateAttributes";
+  auth_type?: "ADMIN";
+  ras_ip: string;
   attrs: {
-    [k: string]: unknown
-  }
+    [k: string]: unknown;
+  };
 }

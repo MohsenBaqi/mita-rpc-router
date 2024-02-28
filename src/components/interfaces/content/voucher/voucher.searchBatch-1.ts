@@ -7,29 +7,29 @@
 
 export type ListOfIspNamesOrStringOfOneIspName2 =
   | ListOfIspNamesOrStringOfOneIspName
-  | ListOfIspNamesOrStringOfOneIspName1
-export type ListOfIspNamesOrStringOfOneIspName = unknown[]
-export type ListOfIspNamesOrStringOfOneIspName1 = string
-export type TrueMeansBatchIsLocked = boolean
-export type TrueMeansBatchCanBeUsedToRechargeUser = boolean
-export type TrueMeansBatchCanBeUsedToCreateUser = boolean
+  | ListOfIspNamesOrStringOfOneIspName1;
+export type ListOfIspNamesOrStringOfOneIspName = unknown[];
+export type ListOfIspNamesOrStringOfOneIspName1 = string;
+export type TrueMeansBatchIsLocked = boolean;
+export type TrueMeansBatchCanBeUsedToRechargeUser = boolean;
+export type TrueMeansBatchCanBeUsedToCreateUser = boolean;
 
 export interface VoucherSearchBatch {
-  method: 'voucher.searchBatch'
-  auth_type?: 'ADMIN'
+  method: "voucher.searchBatch";
+  auth_type?: "ADMIN";
   conds: {
-    isp_names?: ListOfIspNamesOrStringOfOneIspName2
-    batch_ids?: string
-    batch_names?: string
-    is_locked?: TrueMeansBatchIsLocked
-    can_recharge_user?: TrueMeansBatchCanBeUsedToRechargeUser
-    can_create_user?: TrueMeansBatchCanBeUsedToCreateUser
-    credit_from?: number
-    credit_to?: number
-    [k: string]: unknown
-  }
-  from: number
-  to: number
-  sort_by: 'batch_id' | 'batch_name' | 'batch_credit'
-  desc: boolean
+    isp_names?: ListOfIspNamesOrStringOfOneIspName2;
+    batch_ids?: string;
+    batch_names?: string;
+    is_locked?: TrueMeansBatchIsLocked;
+    can_recharge_user?: TrueMeansBatchCanBeUsedToRechargeUser;
+    can_create_user?: TrueMeansBatchCanBeUsedToCreateUser;
+    credit_from?: number;
+    credit_to?: number;
+    [k: string]: unknown;
+  };
+  from: number;
+  to: number;
+  sort_by: "batch_id" | "batch_name" | "batch_credit";
+  desc: boolean;
 }

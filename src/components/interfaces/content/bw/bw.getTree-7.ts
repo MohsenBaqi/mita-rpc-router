@@ -6,8 +6,8 @@
  */
 
 export interface BwGetTree {
-  method: 'bw.getTree'
-  auth_type?: 'ADMIN'
-  hostname: string
-  interface_name: string
+  method: "bw.getTree";
+  auth_type?: "ADMIN";
+  hostname: string;
+  interface_name: string;
 }

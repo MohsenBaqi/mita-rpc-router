@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceDeleteInvoiceTemplate {
-  method: 'invoice.deleteInvoiceTemplate'
-  auth_type?: 'ADMIN'
-  template_name: string
+  method: "invoice.deleteInvoiceTemplate";
+  auth_type?: "ADMIN";
+  template_name: string;
 }

@@ -6,7 +6,7 @@
  */
 
 export interface TelephonySupportGetRemainingByteDuration {
-  method: 'telephony_support.getRemainingByteDuration'
-  auth_type?: 'ADMIN'
-  user_id: number
+  method: "telephony_support.getRemainingByteDuration";
+  auth_type?: "ADMIN";
+  user_id: number;
 }

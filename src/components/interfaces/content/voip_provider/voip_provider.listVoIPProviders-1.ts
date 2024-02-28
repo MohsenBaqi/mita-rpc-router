@@ -6,6 +6,6 @@
  */
 
 export interface VoipProviderListVoIPProviders {
-  method: 'voip_provider.listVoIPProviders'
-  auth_type?: 'ADMIN'
+  method: "voip_provider.listVoIPProviders";
+  auth_type?: "ADMIN";
 }

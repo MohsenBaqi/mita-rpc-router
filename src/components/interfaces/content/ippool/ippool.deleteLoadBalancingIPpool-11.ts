@@ -6,7 +6,7 @@
  */
 
 export interface IppoolDeleteLoadBalancingIPpool {
-  method: 'ippool.deleteLoadBalancingIPpool'
-  auth_type?: 'ADMIN'
-  ippool_name: string
+  method: "ippool.deleteLoadBalancingIPpool";
+  auth_type?: "ADMIN";
+  ippool_name: string;
 }

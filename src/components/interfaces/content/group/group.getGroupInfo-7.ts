@@ -6,8 +6,8 @@
  */
 
 export interface GroupGetGroupInfo {
-  method: 'group.getGroupInfo'
-  auth_type?: 'ADMIN'
-  group_name?: string
-  group_id?: number
+  method: "group.getGroupInfo";
+  auth_type?: "ADMIN";
+  group_name?: string;
+  group_id?: number;
 }

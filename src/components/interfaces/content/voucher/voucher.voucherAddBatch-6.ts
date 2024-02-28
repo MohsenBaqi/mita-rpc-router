@@ -6,22 +6,22 @@
  */
 
 export interface VoucherVoucherAddBatch {
-  method: 'voucher.voucherAddBatch'
-  auth_type?: 'ADMIN'
+  method: "voucher.voucherAddBatch";
+  auth_type?: "ADMIN";
   batch_dict: {
-    batch_name?: string
-    is_locked?: boolean
-    credit?: number
-    can_recharge_user?: boolean
-    can_create_user?: boolean
-    change_target?: 'credit' | 'deposit' | 'deposit_recharge'
-    allow_use_by_children_isp?: boolean
-    comment?: string
-    [k: string]: unknown
-  }
-  pin_prefix: string
-  pin_len: number
-  serial_prefix: string
-  serial_start: number
-  count: number
+    batch_name?: string;
+    is_locked?: boolean;
+    credit?: number;
+    can_recharge_user?: boolean;
+    can_create_user?: boolean;
+    change_target?: "credit" | "deposit" | "deposit_recharge";
+    allow_use_by_children_isp?: boolean;
+    comment?: string;
+    [k: string]: unknown;
+  };
+  pin_prefix: string;
+  pin_len: number;
+  serial_prefix: string;
+  serial_start: number;
+  count: number;
 }

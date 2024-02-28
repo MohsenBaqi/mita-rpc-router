@@ -6,6 +6,6 @@
  */
 
 export interface RasGetActiveRasIPs {
-  method: 'ras.getActiveRasIPs'
-  auth_type?: 'ADMIN'
+  method: "ras.getActiveRasIPs";
+  auth_type?: "ADMIN";
 }

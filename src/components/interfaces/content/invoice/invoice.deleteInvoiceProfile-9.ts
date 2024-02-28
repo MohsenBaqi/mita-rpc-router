@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceDeleteInvoiceProfile {
-  method: 'invoice.deleteInvoiceProfile'
-  auth_type?: 'ADMIN'
-  profile_id: number
+  method: "invoice.deleteInvoiceProfile";
+  auth_type?: "ADMIN";
+  profile_id: number;
 }

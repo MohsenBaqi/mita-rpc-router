@@ -5,21 +5,21 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type AdminUsernameMustHaveAccess = string
+export type AdminUsernameMustHaveAccess = string;
 
 export interface LoginSearchAdminLoginHistory {
-  method: 'login.searchAdminLoginHistory'
-  auth_type?: 'ADMIN'
+  method: "login.searchAdminLoginHistory";
+  auth_type?: "ADMIN";
   conds: {
-    admin?: AdminUsernameMustHaveAccess
-    login_date_from?: string
-    login_date_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
-    login_date_to?: string
-    login_date_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
-    [k: string]: unknown
-  }
-  _from: number
-  to: number
-  sort_by: 'admin_login_history_id' | 'login_date'
-  desc: boolean
+    admin?: AdminUsernameMustHaveAccess;
+    login_date_from?: string;
+    login_date_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+    login_date_to?: string;
+    login_date_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+    [k: string]: unknown;
+  };
+  _from: number;
+  to: number;
+  sort_by: "admin_login_history_id" | "login_date";
+  desc: boolean;
 }

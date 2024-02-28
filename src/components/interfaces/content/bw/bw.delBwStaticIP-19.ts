@@ -6,7 +6,7 @@
  */
 
 export interface BwDelBwStaticIP {
-  method: 'bw.delBwStaticIP'
-  auth_type?: 'ADMIN'
-  ip_addr: string
+  method: "bw.delBwStaticIP";
+  auth_type?: "ADMIN";
+  ip_addr: string;
 }

@@ -6,9 +6,9 @@
  */
 
 export interface VoucherVoucherAddNewUser {
-  method: 'voucher.voucherAddNewUser'
-  auth_type?: 'ADMIN'
-  voucher_pin: string
-  isp_name: string
-  group_name: string
+  method: "voucher.voucherAddNewUser";
+  auth_type?: "ADMIN";
+  voucher_pin: string;
+  isp_name: string;
+  group_name: string;
 }

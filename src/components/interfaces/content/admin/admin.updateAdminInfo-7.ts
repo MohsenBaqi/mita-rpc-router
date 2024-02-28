@@ -6,15 +6,15 @@
  */
 
 export interface AdminUpdateAdminInfo {
-  method: 'admin.updateAdminInfo'
-  auth_type?: 'ADMIN'
-  admin_id: number
-  admin_username: string
-  admin_isp_name: string
-  admin_locked: boolean
-  name: string
-  email: string
-  comment: string
-  admin_has_otp: boolean
-  admin_request_limit: number
+  method: "admin.updateAdminInfo";
+  auth_type?: "ADMIN";
+  admin_id: number;
+  admin_username: string;
+  admin_isp_name: string;
+  admin_locked: boolean;
+  name: string;
+  email: string;
+  comment: string;
+  admin_has_otp: boolean;
+  admin_request_limit: number;
 }

@@ -6,8 +6,8 @@
  */
 
 export interface VoucherVoucherChangeBatchLockStatus {
-  method: 'voucher.voucherChangeBatchLockStatus'
-  auth_type?: 'ADMIN'
-  batch_id: number
-  lock: boolean
+  method: "voucher.voucherChangeBatchLockStatus";
+  auth_type?: "ADMIN";
+  batch_id: number;
+  lock: boolean;
 }

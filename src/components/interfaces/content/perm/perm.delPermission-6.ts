@@ -6,8 +6,8 @@
  */
 
 export interface PermDelPermission {
-  method: 'perm.delPermission'
-  auth_type?: 'ADMIN'
-  admin_username: string
-  perm_name: string
+  method: "perm.delPermission";
+  auth_type?: "ADMIN";
+  admin_username: string;
+  perm_name: string;
 }

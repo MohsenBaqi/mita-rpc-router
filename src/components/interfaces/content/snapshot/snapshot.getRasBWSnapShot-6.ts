@@ -6,6 +6,6 @@
  */
 
 export interface SnapshotGetRasBWSnapShot {
-  method: 'snapshot.getRasBWSnapShot'
-  auth_type?: 'ADMIN'
+  method: "snapshot.getRasBWSnapShot";
+  auth_type?: "ADMIN";
 }

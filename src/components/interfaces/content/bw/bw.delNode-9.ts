@@ -6,7 +6,7 @@
  */
 
 export interface BwDelNode {
-  method: 'bw.delNode'
-  auth_type?: 'ADMIN'
-  node_id: number
+  method: "bw.delNode";
+  auth_type?: "ADMIN";
+  node_id: number;
 }

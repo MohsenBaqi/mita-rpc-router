@@ -6,8 +6,8 @@
  */
 
 export interface SystemNotificationChangeNotificationStatus {
-  method: 'SystemNotification.changeNotificationStatus'
-  auth_type?: 'ADMIN'
-  notification_id: number
-  read: boolean
+  method: "SystemNotification.changeNotificationStatus";
+  auth_type?: "ADMIN";
+  notification_id: number;
+  read: boolean;
 }

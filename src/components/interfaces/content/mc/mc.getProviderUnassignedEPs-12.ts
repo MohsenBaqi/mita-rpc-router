@@ -6,9 +6,9 @@
  */
 
 export interface McGetProviderUnassignedEPs {
-  method: 'mc.getProviderUnassignedEPs'
-  auth_type?: 'ADMIN'
-  provider_name: string
-  count: number
-  starts_with: string
+  method: "mc.getProviderUnassignedEPs";
+  auth_type?: "ADMIN";
+  provider_name: string;
+  count: number;
+  starts_with: string;
 }

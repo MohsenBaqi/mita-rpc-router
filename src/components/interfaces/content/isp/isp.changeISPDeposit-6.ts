@@ -6,9 +6,9 @@
  */
 
 export interface IspChangeISPDeposit {
-  method: 'isp.changeISPDeposit'
-  auth_type?: 'ADMIN'
-  isp_name: string
-  deposit_amount: number
-  comment: string
+  method: "isp.changeISPDeposit";
+  auth_type?: "ADMIN";
+  isp_name: string;
+  deposit_amount: number;
+  comment: string;
 }

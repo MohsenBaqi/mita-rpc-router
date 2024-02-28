@@ -6,7 +6,7 @@
  */
 
 export interface McGetAllEPGroupsOfProvider {
-  method: 'mc.getAllEPGroupsOfProvider'
-  auth_type?: 'ADMIN'
-  provider_name: string
+  method: "mc.getAllEPGroupsOfProvider";
+  auth_type?: "ADMIN";
+  provider_name: string;
 }

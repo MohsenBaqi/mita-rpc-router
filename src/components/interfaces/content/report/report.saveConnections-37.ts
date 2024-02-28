@@ -6,21 +6,21 @@
  */
 
 export interface ReportSaveConnections {
-  method: 'report.saveConnections'
-  auth_type?: 'ADMIN'
+  method: "report.saveConnections";
+  auth_type?: "ADMIN";
   conds: {
-    [k: string]: unknown
-  }
-  from: number
-  to: number
+    [k: string]: unknown;
+  };
+  from: number;
+  to: number;
   sort_by:
-    | 'user_id'
-    | 'credit_used'
-    | 'login_time'
-    | 'logout_time'
-    | 'successful'
-    | 'service'
-    | 'ras_id'
-    | 'connection_log_id'
-  desc: boolean
+    | "user_id"
+    | "credit_used"
+    | "login_time"
+    | "logout_time"
+    | "successful"
+    | "service"
+    | "ras_id"
+    | "connection_log_id";
+  desc: boolean;
 }

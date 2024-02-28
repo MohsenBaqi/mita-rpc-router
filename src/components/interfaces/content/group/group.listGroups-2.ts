@@ -6,8 +6,8 @@
  */
 
 export interface GroupListGroups {
-  method: 'group.listGroups'
-  auth_type?: 'ADMIN'
-  active_only?: boolean
-  isp_id: string
+  method: "group.listGroups";
+  auth_type?: "ADMIN";
+  active_only?: boolean;
+  isp_id: string;
 }

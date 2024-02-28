@@ -6,8 +6,8 @@
  */
 
 export interface VoucherVoucherRechargeUser {
-  method: 'voucher.voucherRechargeUser'
-  auth_type?: 'ADMIN'
-  voucher_pin: string
-  user_id: number
+  method: "voucher.voucherRechargeUser";
+  auth_type?: "ADMIN";
+  voucher_pin: string;
+  user_id: number;
 }

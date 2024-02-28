@@ -6,7 +6,7 @@
  */
 
 export interface UtilRunDebugCode {
-  method: 'util.runDebugCode'
-  auth_type?: 'ADMIN'
-  command: string
+  method: "util.runDebugCode";
+  auth_type?: "ADMIN";
+  command: string;
 }

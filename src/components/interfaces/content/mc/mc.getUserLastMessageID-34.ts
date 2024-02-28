@@ -6,6 +6,6 @@
  */
 
 export interface McGetUserLastMessageID {
-  method: 'mc.getUserLastMessageID'
-  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  method: "mc.getUserLastMessageID";
+  auth_type?: "NORMAL_USER" | "VOIP_USER";
 }

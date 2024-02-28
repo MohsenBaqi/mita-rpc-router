@@ -6,11 +6,11 @@
  */
 
 export interface UserSetOneChargeRuleUsage {
-  method: 'user.setOneChargeRuleUsage'
-  auth_type?: 'ADMIN'
-  user_id: number
-  charge_rule_id: number
-  credit_usage: number
-  time_usage: number
-  traffic_usage: number
+  method: "user.setOneChargeRuleUsage";
+  auth_type?: "ADMIN";
+  user_id: number;
+  charge_rule_id: number;
+  credit_usage: number;
+  time_usage: number;
+  traffic_usage: number;
 }

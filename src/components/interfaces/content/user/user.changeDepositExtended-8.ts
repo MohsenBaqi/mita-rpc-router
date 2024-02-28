@@ -6,10 +6,10 @@
  */
 
 export interface UserChangeDepositExtended {
-  method: 'user.changeDepositExtended'
-  auth_type?: 'ADMIN'
-  user_id: string
-  deposit: number
-  change_type: 'ADD' | 'SET' | 'MULTIPLY'
-  deposit_comment: string
+  method: "user.changeDepositExtended";
+  auth_type?: "ADMIN";
+  user_id: string;
+  deposit: number;
+  change_type: "ADD" | "SET" | "MULTIPLY";
+  deposit_comment: string;
 }

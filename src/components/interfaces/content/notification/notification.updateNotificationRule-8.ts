@@ -6,20 +6,20 @@
  */
 
 export interface NotificationUpdateNotificationRule {
-  method: 'notification.updateNotificationRule'
-  auth_type?: 'ADMIN'
-  notification_rule_id: number
-  notification_profile_id: number
+  method: "notification.updateNotificationRule";
+  auth_type?: "ADMIN";
+  notification_rule_id: number;
+  notification_profile_id: number;
   notification_type:
-    | 'expiration_date'
-    | 'credit'
-    | 'renew'
-    | 'birth_day'
-    | 'online_payment'
-    | 'first_login'
-    | 'credit_change'
-    | 'deposit_change'
-  notification_threshold: number
-  message_type: 'sms' | 'email' | 'email_to_isp' | 'ibsng_message' | 'url' | 'user_event'
-  message_template: string
+    | "expiration_date"
+    | "credit"
+    | "renew"
+    | "birth_day"
+    | "online_payment"
+    | "first_login"
+    | "credit_change"
+    | "deposit_change";
+  notification_threshold: number;
+  message_type: "sms" | "email" | "email_to_isp" | "ibsng_message" | "url" | "user_event";
+  message_template: string;
 }

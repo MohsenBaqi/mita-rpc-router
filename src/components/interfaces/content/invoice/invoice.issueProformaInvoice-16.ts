@@ -6,8 +6,8 @@
  */
 
 export interface InvoiceIssueProformaInvoice {
-  method: 'invoice.issueProformaInvoice'
-  auth_type?: 'ADMIN'
-  attrs_list: unknown[]
-  arbitrary_amount: number
+  method: "invoice.issueProformaInvoice";
+  auth_type?: "ADMIN";
+  attrs_list: unknown[];
+  arbitrary_amount: number;
 }

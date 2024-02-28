@@ -6,6 +6,6 @@
  */
 
 export interface UserGetBulkActionsForAdmin {
-  method: 'user.getBulkActionsForAdmin'
-  auth_type?: 'ADMIN'
+  method: "user.getBulkActionsForAdmin";
+  auth_type?: "ADMIN";
 }

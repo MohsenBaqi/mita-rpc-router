@@ -6,8 +6,8 @@
  */
 
 export interface BwGetRealHostInterfaces {
-  method: 'bw.getRealHostInterfaces'
-  auth_type?: 'ADMIN'
-  hostname: string
-  host_type: 'Linux' | 'Mikrotik'
+  method: "bw.getRealHostInterfaces";
+  auth_type?: "ADMIN";
+  hostname: string;
+  host_type: "Linux" | "Mikrotik";
 }

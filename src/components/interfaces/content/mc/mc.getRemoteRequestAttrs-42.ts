@@ -6,7 +6,7 @@
  */
 
 export interface McGetRemoteRequestAttrs {
-  method: 'mc.getRemoteRequestAttrs'
-  auth_type?: 'ADMIN'
-  type: 'ADMIN' | 'USER'
+  method: "mc.getRemoteRequestAttrs";
+  auth_type?: "ADMIN";
+  type: "ADMIN" | "USER";
 }

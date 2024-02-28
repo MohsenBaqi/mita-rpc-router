@@ -6,10 +6,10 @@
  */
 
 export interface BwUpdateBwStaticIP {
-  method: 'bw.updateBwStaticIP'
-  auth_type?: 'ADMIN'
-  static_ip_id: number
-  ip_addr: string
-  tx_leaf_name: string
-  rx_leaf_name: string
+  method: "bw.updateBwStaticIP";
+  auth_type?: "ADMIN";
+  static_ip_id: number;
+  ip_addr: string;
+  tx_leaf_name: string;
+  rx_leaf_name: string;
 }

@@ -6,7 +6,7 @@
  */
 
 export interface GroupDelGroup {
-  method: 'group.delGroup'
-  auth_type?: 'ADMIN'
-  group_name: string
+  method: "group.delGroup";
+  auth_type?: "ADMIN";
+  group_name: string;
 }

@@ -5,39 +5,39 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1
-export type DatetimeOrNumber = string
-export type DatetimeOrNumber1 = number
-export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4
-export type DatetimeOrNumber3 = string
-export type DatetimeOrNumber4 = number
-export type InternetUsernameThatIsDeleted = string
-export type VoipUsernameThatIsDeleted = string
+export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1;
+export type DatetimeOrNumber = string;
+export type DatetimeOrNumber1 = number;
+export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4;
+export type DatetimeOrNumber3 = string;
+export type DatetimeOrNumber4 = number;
+export type InternetUsernameThatIsDeleted = string;
+export type VoipUsernameThatIsDeleted = string;
 
 export interface ReportGetCreditChanges {
-  method: 'report.getCreditChanges'
-  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  method: "report.getCreditChanges";
+  auth_type?: "NORMAL_USER" | "VOIP_USER";
   conds: {
     user_view?: {
-      [k: string]: unknown
-    }
+      [k: string]: unknown;
+    };
     action?: {
-      [k: string]: unknown
-    }[]
-    per_user_credit?: number
-    per_user_credit_op?: '=' | '>' | '<' | '>=' | '<='
-    change_time_from?: DatetimeOrNumber2
-    change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
-    change_time_to?: DatetimeOrNumber5
-    change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
-    remote_addr?: string
-    comment?: string
-    deleted_internet_username?: InternetUsernameThatIsDeleted
-    deleted_voip_username?: VoipUsernameThatIsDeleted
-    [k: string]: unknown
-  }
-  from: number
-  to: number
-  sort_by: 'change_time' | 'per_user_credit'
-  desc: boolean
+      [k: string]: unknown;
+    }[];
+    per_user_credit?: number;
+    per_user_credit_op?: "=" | ">" | "<" | ">=" | "<=";
+    change_time_from?: DatetimeOrNumber2;
+    change_time_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+    change_time_to?: DatetimeOrNumber5;
+    change_time_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
+    remote_addr?: string;
+    comment?: string;
+    deleted_internet_username?: InternetUsernameThatIsDeleted;
+    deleted_voip_username?: VoipUsernameThatIsDeleted;
+    [k: string]: unknown;
+  };
+  from: number;
+  to: number;
+  sort_by: "change_time" | "per_user_credit";
+  desc: boolean;
 }

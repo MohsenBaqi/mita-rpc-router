@@ -6,7 +6,7 @@
  */
 
 export interface TelephonySupportGetFailureReason {
-  method: 'telephony_support.getFailureReason'
-  auth_type?: 'ADMIN'
-  user_id: number
+  method: "telephony_support.getFailureReason";
+  auth_type?: "ADMIN";
+  user_id: number;
 }

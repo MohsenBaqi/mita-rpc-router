@@ -6,9 +6,9 @@
  */
 
 export interface McAdminEnqueueSend {
-  method: 'mc.adminEnqueueSend'
-  auth_type?: 'ADMIN'
-  body: string
-  destinations: string
-  msg_type: 'SMS' | 'E-Mail' | 'Message To Admin' | 'Message To User'
+  method: "mc.adminEnqueueSend";
+  auth_type?: "ADMIN";
+  body: string;
+  destinations: string;
+  msg_type: "SMS" | "E-Mail" | "Message To Admin" | "Message To User";
 }

@@ -6,7 +6,7 @@
  */
 
 export interface BwGetLeafCharges {
-  method: 'bw.getLeafCharges'
-  auth_type?: 'ADMIN'
-  leaf_name: string
+  method: "bw.getLeafCharges";
+  auth_type?: "ADMIN";
+  leaf_name: string;
 }

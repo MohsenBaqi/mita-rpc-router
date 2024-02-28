@@ -6,7 +6,7 @@
  */
 
 export interface PermGetPermsOfAdmin {
-  method: 'perm.getPermsOfAdmin'
-  auth_type?: 'ADMIN'
-  admin_username: string
+  method: "perm.getPermsOfAdmin";
+  auth_type?: "ADMIN";
+  admin_username: string;
 }

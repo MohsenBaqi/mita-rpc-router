@@ -6,8 +6,8 @@
  */
 
 export interface McAddNewEPGroupToProvider {
-  method: 'mc.addNewEPGroupToProvider'
-  auth_type?: 'ADMIN'
-  end_point_range: string
-  provider_name: string
+  method: "mc.addNewEPGroupToProvider";
+  auth_type?: "ADMIN";
+  end_point_range: string;
+  provider_name: string;
 }

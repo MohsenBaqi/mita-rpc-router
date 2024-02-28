@@ -6,7 +6,7 @@
  */
 
 export interface McGetProviderInfoByName {
-  method: 'mc.getProviderInfoByName'
-  auth_type?: 'ADMIN'
-  provider_name: string
+  method: "mc.getProviderInfoByName";
+  auth_type?: "ADMIN";
+  provider_name: string;
 }

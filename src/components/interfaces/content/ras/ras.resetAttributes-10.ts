@@ -6,7 +6,7 @@
  */
 
 export interface RasResetAttributes {
-  method: 'ras.resetAttributes'
-  auth_type?: 'ADMIN'
-  ras_ip: string
+  method: "ras.resetAttributes";
+  auth_type?: "ADMIN";
+  ras_ip: string;
 }

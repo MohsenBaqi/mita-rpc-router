@@ -5,17 +5,17 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type ListOfDestinations = unknown[]
-export type SourceSenderAddressPhoneNumberEmail = string
+export type ListOfDestinations = unknown[];
+export type SourceSenderAddressPhoneNumberEmail = string;
 
 export interface McReceive {
-  method: 'mc.receive'
-  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  method: "mc.receive";
+  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
   msg_info: {
-    dst?: ListOfDestinations
-    msg_type?: 'SMS' | 'E-Mail' | 'Message To Admin' | 'Message To User'
-    from?: SourceSenderAddressPhoneNumberEmail
-    body?: string
-    [k: string]: unknown
-  }
+    dst?: ListOfDestinations;
+    msg_type?: "SMS" | "E-Mail" | "Message To Admin" | "Message To User";
+    from?: SourceSenderAddressPhoneNumberEmail;
+    body?: string;
+    [k: string]: unknown;
+  };
 }

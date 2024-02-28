@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceGetPIWithRuleByPIID {
-  method: 'invoice.getPIWithRuleByPIID'
-  auth_type?: 'ADMIN'
-  pi_id: number
+  method: "invoice.getPIWithRuleByPIID";
+  auth_type?: "ADMIN";
+  pi_id: number;
 }

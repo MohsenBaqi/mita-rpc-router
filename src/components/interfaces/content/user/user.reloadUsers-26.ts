@@ -6,7 +6,7 @@
  */
 
 export interface UserReloadUsers {
-  method: 'user.reloadUsers'
-  auth_type?: 'ADMIN'
-  user_id: string
+  method: "user.reloadUsers";
+  auth_type?: "ADMIN";
+  user_id: string;
 }

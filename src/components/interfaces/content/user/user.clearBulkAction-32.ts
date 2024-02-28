@@ -6,7 +6,7 @@
  */
 
 export interface UserClearBulkAction {
-  method: 'user.clearBulkAction'
-  auth_type?: 'ADMIN'
-  action_id: string
+  method: "user.clearBulkAction";
+  auth_type?: "ADMIN";
+  action_id: string;
 }

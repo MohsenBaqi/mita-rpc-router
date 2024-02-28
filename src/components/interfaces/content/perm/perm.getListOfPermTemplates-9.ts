@@ -6,6 +6,6 @@
  */
 
 export interface PermGetListOfPermTemplates {
-  method: 'perm.getListOfPermTemplates'
-  auth_type?: 'ADMIN'
+  method: "perm.getListOfPermTemplates";
+  auth_type?: "ADMIN";
 }

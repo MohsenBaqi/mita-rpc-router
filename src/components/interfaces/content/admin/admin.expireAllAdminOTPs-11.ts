@@ -6,6 +6,6 @@
  */
 
 export interface AdminExpireAllAdminOTPs {
-  method: 'admin.expireAllAdminOTPs'
-  auth_type?: 'ADMIN'
+  method: "admin.expireAllAdminOTPs";
+  auth_type?: "ADMIN";
 }

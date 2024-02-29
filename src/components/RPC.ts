@@ -32,7 +32,7 @@ const RPC = (() => {
         jsonrpc: '2.0',
         method: privateMethod,
         id: new Date().getTime(),
-        params: { ...privateProps, privateAuthRemoteaddr },
+        params: { ...privateProps, auth_remoteaddr: privateAuthRemoteaddr },
       })
       .then((res) => {
         if (res?.data?.error) {

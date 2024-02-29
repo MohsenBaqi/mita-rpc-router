@@ -6,9 +6,9 @@
  */
 
 export interface McEnqueueSend {
-  method: "mc.enqueueSend";
-  auth_type?: "NORMAL_USER" | "VOIP_USER";
-  body: string;
-  destinations: string;
-  msg_type: "SMS" | "E-Mail" | "Message To Admin" | "Message To User";
+  method: 'mc.enqueueSend'
+  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  body: string
+  destinations: string
+  msg_type: 'SMS' | 'E-Mail' | 'Message To Admin' | 'Message To User'
 }

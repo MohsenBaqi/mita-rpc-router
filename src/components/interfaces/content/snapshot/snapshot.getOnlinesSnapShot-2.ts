@@ -6,12 +6,12 @@
  */
 
 export interface SnapshotGetOnlinesSnapShot {
-  method: "snapshot.getOnlinesSnapShot";
-  auth_type?: "ADMIN";
+  method: 'snapshot.getOnlinesSnapShot'
+  auth_type?: 'ADMIN'
   conds: {
-    ras_ips?: unknown[] | string;
-    isp_names?: unknown[] | string;
-    [k: string]: unknown;
-  };
-  type: "internet" | "voip";
+    ras_ips?: unknown[] | string
+    isp_names?: unknown[] | string
+    [k: string]: unknown
+  }
+  type: 'internet' | 'voip'
 }

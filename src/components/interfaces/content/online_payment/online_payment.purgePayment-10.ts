@@ -6,7 +6,7 @@
  */
 
 export interface OnlinePaymentPurgePayment {
-  method: "online_payment.purgePayment";
-  auth_type?: "ADMIN";
-  payment_id: number;
+  method: 'online_payment.purgePayment'
+  auth_type?: 'ADMIN'
+  payment_id: number
 }

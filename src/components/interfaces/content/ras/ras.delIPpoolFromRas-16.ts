@@ -6,8 +6,8 @@
  */
 
 export interface RasDelIPpoolFromRas {
-  method: "ras.delIPpoolFromRas";
-  auth_type?: "ADMIN";
-  ras_ip: string;
-  ippool_name: string;
+  method: 'ras.delIPpoolFromRas'
+  auth_type?: 'ADMIN'
+  ras_ip: string
+  ippool_name: string
 }

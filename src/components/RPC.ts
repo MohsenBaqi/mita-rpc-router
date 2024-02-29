@@ -21,11 +21,11 @@ type CommonParams = CommonParamsByCriteria | CommonParamsBySession | CommonParam
 type ConditionalProps = CommonParams & interfaces
 
 const RPC = (() => {
-  var privateBaseUrl = ''
-  var privateMethod = ''
-  var privateProps = {}
+  let privateBaseUrl = ''
+  let privateMethod = ''
+  let privateProps = {}
 
-  var privateCall = async () => {
+  const privateCall = async () => {
     const result = await axios
       .post(privateBaseUrl, {
         jsonrpc: '2.0',

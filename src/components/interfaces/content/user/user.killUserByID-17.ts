@@ -6,8 +6,8 @@
  */
 
 export interface UserKillUserByID {
-  method: "user.killUserByID";
-  auth_type?: "ADMIN";
-  user_id: number;
-  kill?: boolean;
+  method: 'user.killUserByID'
+  auth_type?: 'ADMIN'
+  user_id: number
+  kill?: boolean
 }

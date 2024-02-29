@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceAddInvoiceTemplate {
-  method: "invoice.addInvoiceTemplate";
-  auth_type?: "ADMIN";
-  template_name: string;
+  method: 'invoice.addInvoiceTemplate'
+  auth_type?: 'ADMIN'
+  template_name: string
 }

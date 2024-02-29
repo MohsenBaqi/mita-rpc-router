@@ -6,6 +6,6 @@
  */
 
 export interface UtilGetISPsPageStyleRevision {
-  method: "util.getISPsPageStyleRevision";
-  auth_type?: "ANONYMOUS";
+  method: 'util.getISPsPageStyleRevision'
+  auth_type?: 'ANONYMOUS'
 }

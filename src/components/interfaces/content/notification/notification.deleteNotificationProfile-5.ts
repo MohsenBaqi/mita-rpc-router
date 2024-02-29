@@ -6,7 +6,7 @@
  */
 
 export interface NotificationDeleteNotificationProfile {
-  method: "notification.deleteNotificationProfile";
-  auth_type?: "ADMIN";
-  notification_profile_name: string;
+  method: 'notification.deleteNotificationProfile'
+  auth_type?: 'ADMIN'
+  notification_profile_name: string
 }

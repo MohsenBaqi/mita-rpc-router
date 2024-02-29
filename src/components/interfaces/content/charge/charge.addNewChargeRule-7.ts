@@ -6,9 +6,9 @@
  */
 
 export interface ChargeAddNewChargeRule {
-  method: "charge.addNewChargeRule";
-  auth_type?: "ADMIN";
-  charge_rule_description: string;
-  charge_rule_priority: number;
-  charge_name: string;
+  method: 'charge.addNewChargeRule'
+  auth_type?: 'ADMIN'
+  charge_rule_description: string
+  charge_rule_priority: number
+  charge_name: string
 }

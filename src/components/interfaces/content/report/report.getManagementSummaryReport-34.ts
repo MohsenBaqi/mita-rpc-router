@@ -5,43 +5,43 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1;
-export type DatetimeOrNumber = string;
-export type DatetimeOrNumber1 = number;
-export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4;
-export type DatetimeOrNumber3 = string;
-export type DatetimeOrNumber4 = number;
-export type TrueIfExists = boolean;
+export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1
+export type DatetimeOrNumber = string
+export type DatetimeOrNumber1 = number
+export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4
+export type DatetimeOrNumber3 = string
+export type DatetimeOrNumber4 = number
+export type TrueIfExists = boolean
 export type ListOfIspNamesOrStringOfOneIspName2 =
   | ListOfIspNamesOrStringOfOneIspName
-  | ListOfIspNamesOrStringOfOneIspName1;
-export type ListOfIspNamesOrStringOfOneIspName = unknown[];
-export type ListOfIspNamesOrStringOfOneIspName1 = string;
+  | ListOfIspNamesOrStringOfOneIspName1
+export type ListOfIspNamesOrStringOfOneIspName = unknown[]
+export type ListOfIspNamesOrStringOfOneIspName1 = string
 
 export interface ReportGetManagementSummaryReport {
-  method: "report.getManagementSummaryReport";
-  auth_type?: "ADMIN";
+  method: 'report.getManagementSummaryReport'
+  auth_type?: 'ADMIN'
   conds: {
-    login_time_from?: DatetimeOrNumber2;
-    login_time_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    login_time_to?: DatetimeOrNumber5;
-    login_time_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    username?: string;
-    voip_username?: string;
-    user_ids?: string;
-    view_period?: "daily" | "weekly" | "monthly" | "yearly";
-    included_objects?: unknown[];
+    login_time_from?: DatetimeOrNumber2
+    login_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    login_time_to?: DatetimeOrNumber5
+    login_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    username?: string
+    voip_username?: string
+    user_ids?: string
+    view_period?: 'daily' | 'weekly' | 'monthly' | 'yearly'
+    included_objects?: unknown[]
     report_targets?: {
-      [k: string]: unknown;
-    }[];
-    called_number?: string;
-    called_number_op?: "like" | "ilike" | "starts_with" | "ends_with" | "equals";
-    prefix_name?: string;
-    prefix_name_op?: "like" | "ilike" | "starts_with" | "ends_with" | "equals";
-    called_ip?: string;
-    dnis?: string;
-    immediate_children_isps_only?: TrueIfExists;
-    isp_names?: ListOfIspNamesOrStringOfOneIspName2;
-    [k: string]: unknown;
-  };
+      [k: string]: unknown
+    }[]
+    called_number?: string
+    called_number_op?: 'like' | 'ilike' | 'starts_with' | 'ends_with' | 'equals'
+    prefix_name?: string
+    prefix_name_op?: 'like' | 'ilike' | 'starts_with' | 'ends_with' | 'equals'
+    called_ip?: string
+    dnis?: string
+    immediate_children_isps_only?: TrueIfExists
+    isp_names?: ListOfIspNamesOrStringOfOneIspName2
+    [k: string]: unknown
+  }
 }

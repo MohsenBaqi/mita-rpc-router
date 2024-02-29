@@ -6,10 +6,10 @@
  */
 
 export interface McUpdateProviderAttrs {
-  method: "mc.updateProviderAttrs";
-  auth_type?: "ADMIN";
-  provider_name: string;
+  method: 'mc.updateProviderAttrs'
+  auth_type?: 'ADMIN'
+  provider_name: string
   to_update_attrs: {
-    [k: string]: unknown;
-  };
+    [k: string]: unknown
+  }
 }

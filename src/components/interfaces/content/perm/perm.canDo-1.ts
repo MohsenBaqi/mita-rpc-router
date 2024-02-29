@@ -6,9 +6,9 @@
  */
 
 export interface PermCanDo {
-  method: "perm.canDo";
-  auth_type?: "ADMIN";
-  perm_name: string;
-  admin_username: string;
-  params: unknown[];
+  method: 'perm.canDo'
+  auth_type?: 'ADMIN'
+  perm_name: string
+  admin_username: string
+  params: unknown[]
 }

@@ -5,434 +5,436 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type IfMissingUsernameWillBeGeneratedRandomly = string;
-export type DefaultToEmptyString = string;
-export type DefaultTo8 = number;
-export type IfMissingPasswordWillBeGeneratedRandomly = string;
-export type DefaultTo81 = number;
-export type TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse = boolean;
-export type IfMissingUsernameWillBeGeneratedRandomly1 = string;
-export type DefaultToEmptyString1 = string;
-export type DefaultTo82 = number;
-export type IfMissingPasswordWillBeGeneratedRandomly1 = string;
-export type DefaultTo83 = number;
-export type TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse1 = boolean;
-export type AttributesToDelete = unknown[];
-export type EpochTime = number;
-export type TrueIfExistsUserInfoFlagsAutoRenew = boolean;
-export type TrueIfExistsUserInfoFlagsAutoRecharge = boolean;
-export type TrueIfExistsUserInfoFlagsAutoRenewOnCreditFinish = boolean;
-export type TrueIfExistsUserInfoFlagsAutoRenewNoNotResetCredit = boolean;
-export type ChargeName = string;
-export type GregorianDatetimeString = string;
-export type TrueIfExistsUserInfoFlagsAllowRechargeByVoucher = boolean;
-export type TrueIfExistsUserInfoFlagsAllowUserDisconnect = boolean;
-export type CommaSeperatedValues = string;
-export type CommaSeperatedValues1 = string;
-export type UserInfoVoIPCallerIDVoIPCallerID = string;
-export type TrueIfExistsUserInfoVoIPVoIPCallerIDBindOnNextLogin = boolean;
-export type UserInfoVoIPFastDial = unknown[];
-export type UserInfoVoIPAsteriskAsteriskExtension = string;
-export type UserInfoVoIPAsteriskAstersikRasIP = string;
-export type SemicolonSeperated = string;
-export type IncomingByDefault = string;
-export type AllByDefault = string;
-export type DynamicByDefault = string;
-export type FriendByDefault = string;
-export type SemicolonSeperated1 = string;
-export type Md5ByDefault = string;
-export type IncomingByDefault1 = string;
-export type AllByDefault1 = string;
-export type DynamicByDefault1 = string;
-export type FriendByDefault1 = string;
-export type UserInfoVoIPAsteriskDIDAsteriskDID = unknown[][];
-export type UserInfoVoIPAsteriskDIDAstersikDIDRasIP = string;
-export type UserInfoVoIPAsteriskDIDAstersikDIDRasIPRasId = string;
-export type CommentComment = string;
-export type CommentName = string;
-export type CommentEmail = string;
-export type CommentPhone = string;
-export type CommentCellPhoneNumber = string;
-export type CommentDateOfBirth = string;
-export type CommentAddress = string;
-export type CommentPostalCode = string;
-export type TrueIfExistsUserInfoFlagsDenyChangePassword = boolean;
-export type TrueIfExistsUserInfoFlagsEnableFailedLogin = boolean;
-export type FormatSendRateReceiveRate = string;
-export type UserInfoInternetInRasIPPoolIppoolName = string;
-export type UserInfoInternetIPpoolIppoolName = string;
-export type ValueIsCallerID = string;
-export type AllowUsersWithNoCallerID0No1Yes = string;
-export type TrueIfExists = boolean;
-export type ValueIsMACAddress = string;
-export type TrueIfExists1 = boolean;
-export type ValueIsPort = string;
-export type TrueIfExists2 = boolean;
-export type ValueIsListOfAllowedRASIPs = unknown[];
-export type TrueIfExists3 = boolean;
-export type ValueIsStationIP = string;
-export type TrueIfExists4 = boolean;
-export type NumberOfDays = string;
-export type UserIsLockedIfThisKeyInPresentValueShowsTheLockReason = string;
-export type MessageCenterEndPoint = string;
-export type MessageCenterMessageChargeFormatSendLatinSendUnicodeReceive = string;
-export type MessageCenterMessageChargeSendChargeLatin = string;
-export type MessageCenterMessageChargeSendChargeUnicode = string;
-export type MessageCenterMessageChargeReceiveCharge = string;
-export type MailBoxEmailAddress = string;
-export type MailBoxMailBoxQuota = string;
-export type MailBoxMailBoxUsage = string;
-export type MikrotikBWControlBurstFormatGuaranteeReceiveRateGuaranteeSendRateReceiveBurstSendBurstReceiveBurstThresholdSendBurstThresholdReceiveBurstTimeSendBurstTimePriorityMinReceiveRateMinSendRate = string;
-export type GuaranteeReceiveRate = string;
-export type GuaranteeSendRate = string;
-export type LimitationsMultiLoginValueIsMaximumNumberOfInstances = string;
-export type NotificationProfileName = string;
-export type MonthlyTimeMonthlyResetType = "gregorian" | "jalali";
-export type MonthlyTimeMonthlyTimeLimit = string;
-export type MonthlyTimeThisPeriodUsage = string;
-export type DatetimeMonthlyTimeNextReset = string;
-export type MonthlyTrafficMonthlyResetType = string;
-export type MonthlyTrafficMonthlyTrafficLimit = string;
-export type MonthlyTrafficThisPeriodUsage = string;
-export type DatetimeMonthlyTrafficNextReset = string;
-export type DailyTimeNumberOfDaysInPeriod = string;
-export type DailyTimeTimeLimit = string;
-export type DailyTimeThisPeriodUsage = string;
-export type DatetimeDailyTimeNextReset = string;
-export type DailyTrafficNumberOfDaysInPeriod = string;
-export type DailyTrafficTimeLimit = string;
-export type DailyTrafficThisPeriodUsage = string;
-export type DatetimeDailyTrafficNextReset = string;
-export type DailyTimeNumberOfDaysInPeriod1 = string;
-export type DailyTimeTimeLimit1 = string;
-export type DailyTimeThisPeriodUsage1 = string;
-export type DatetimeDailyTimeNextReset1 = string;
-export type WeeklyyTrafficNumberOfDaysInPeriod = string;
-export type WeeklyTrafficTimeLimit = string;
-export type WeeklyTrafficThisPeriodUsage = string;
-export type DatetimeWeeklyTrafficNextReset = string;
-export type MonthlyCreditChangeMonthlyResetType = "gregorian" | "jalali";
-export type MonthlyCreditChangeMonthlyResetTypeDay = string;
-export type MonthlyCreditChangeCreditChangeType = "absolute" | "relative";
-export type MonthlyCreditChangeCreditChangeAmount = string;
-export type MonthlyCreditChangeEffectiveAfterFirstLogin = boolean;
-export type MonthlyCreditChangeNegateCredit = boolean;
-export type MonthlyCreditChangeDoOnFirstLogin = boolean;
-export type DatetimeMonthlyCreditChangeNextReset = string;
-export type MonthlyCreditChangeNumberOfDaysInPeriod = string;
-export type DailyCreditChangeCreditChangeType = "absolute" | "relative";
-export type DailyCreditChangeCreditChangeAmount = string;
-export type DailyCreditChangeEffectiveAfterFirstLogin = boolean;
-export type DailyCreditChangeNegateCredit = boolean;
-export type DailyCreditChangeDoOnFirstLogin = boolean;
-export type DatetimeDailyCreditChangeNextReset = string;
-export type TrueIfExistsUserInfoFlagsPreventWebLogin = boolean;
-export type UserInfoMiscRadiusAttributes = string;
-export type UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate = number;
+export type IfMissingUsernameWillBeGeneratedRandomly = string
+export type DefaultToEmptyString = string
+export type DefaultTo8 = number
+export type IfMissingPasswordWillBeGeneratedRandomly = string
+export type DefaultTo81 = number
+export type TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse = boolean
+export type IfMissingUsernameWillBeGeneratedRandomly1 = string
+export type DefaultToEmptyString1 = string
+export type DefaultTo82 = number
+export type IfMissingPasswordWillBeGeneratedRandomly1 = string
+export type DefaultTo83 = number
+export type TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse1 = boolean
+export type AttributesToDelete = unknown[]
+export type EpochTime = number
+export type TrueIfExistsUserInfoFlagsAutoRenew = boolean
+export type TrueIfExistsUserInfoFlagsAutoRecharge = boolean
+export type TrueIfExistsUserInfoFlagsAutoRenewOnCreditFinish = boolean
+export type TrueIfExistsUserInfoFlagsAutoRenewNoNotResetCredit = boolean
+export type ChargeName = string
+export type GregorianDatetimeString = string
+export type TrueIfExistsUserInfoFlagsAllowRechargeByVoucher = boolean
+export type TrueIfExistsUserInfoFlagsAllowUserDisconnect = boolean
+export type CommaSeperatedValues = string
+export type CommaSeperatedValues1 = string
+export type UserInfoVoIPCallerIDVoIPCallerID = string
+export type TrueIfExistsUserInfoVoIPVoIPCallerIDBindOnNextLogin = boolean
+export type UserInfoVoIPFastDial = unknown[]
+export type UserInfoVoIPAsteriskAsteriskExtension = string
+export type UserInfoVoIPAsteriskAstersikRasIP = string
+export type SemicolonSeperated = string
+export type IncomingByDefault = string
+export type AllByDefault = string
+export type DynamicByDefault = string
+export type FriendByDefault = string
+export type SemicolonSeperated1 = string
+export type Md5ByDefault = string
+export type IncomingByDefault1 = string
+export type AllByDefault1 = string
+export type DynamicByDefault1 = string
+export type FriendByDefault1 = string
+export type UserInfoVoIPAsteriskDIDAsteriskDID = unknown[][]
+export type UserInfoVoIPAsteriskDIDAstersikDIDRasIP = string
+export type UserInfoVoIPAsteriskDIDAstersikDIDRasIPRasId = string
+export type CommentComment = string
+export type CommentName = string
+export type CommentEmail = string
+export type CommentPhone = string
+export type CommentCellPhoneNumber = string
+export type CommentDateOfBirth = string
+export type CommentAddress = string
+export type CommentPostalCode = string
+export type TrueIfExistsUserInfoFlagsDenyChangePassword = boolean
+export type TrueIfExistsUserInfoFlagsEnableFailedLogin = boolean
+export type FormatSendRateReceiveRate = string
+export type UserInfoInternetInRasIPPoolIppoolName = string
+export type UserInfoInternetIPpoolIppoolName = string
+export type ValueIsCallerID = string
+export type AllowUsersWithNoCallerID0No1Yes = string
+export type TrueIfExists = boolean
+export type ValueIsMACAddress = string
+export type TrueIfExists1 = boolean
+export type ValueIsPort = string
+export type TrueIfExists2 = boolean
+export type ValueIsListOfAllowedRASIPs = unknown[]
+export type TrueIfExists3 = boolean
+export type ValueIsStationIP = string
+export type TrueIfExists4 = boolean
+export type NumberOfDays = string
+export type UserIsLockedIfThisKeyInPresentValueShowsTheLockReason = string
+export type MessageCenterEndPoint = string
+export type MessageCenterMessageChargeFormatSendLatinSendUnicodeReceive = string
+export type MessageCenterMessageChargeSendChargeLatin = string
+export type MessageCenterMessageChargeSendChargeUnicode = string
+export type MessageCenterMessageChargeReceiveCharge = string
+export type MailBoxEmailAddress = string
+export type MailBoxMailBoxQuota = string
+export type MailBoxMailBoxUsage = string
+export type MikrotikBWControlBurstFormatGuaranteeReceiveRateGuaranteeSendRateReceiveBurstSendBurstReceiveBurstThresholdSendBurstThresholdReceiveBurstTimeSendBurstTimePriorityMinReceiveRateMinSendRate =
+  string
+export type GuaranteeReceiveRate = string
+export type GuaranteeSendRate = string
+export type LimitationsMultiLoginValueIsMaximumNumberOfInstances = string
+export type NotificationProfileName = string
+export type MonthlyTimeMonthlyResetType = 'gregorian' | 'jalali'
+export type MonthlyTimeMonthlyTimeLimit = string
+export type MonthlyTimeThisPeriodUsage = string
+export type DatetimeMonthlyTimeNextReset = string
+export type MonthlyTrafficMonthlyResetType = string
+export type MonthlyTrafficMonthlyTrafficLimit = string
+export type MonthlyTrafficThisPeriodUsage = string
+export type DatetimeMonthlyTrafficNextReset = string
+export type DailyTimeNumberOfDaysInPeriod = string
+export type DailyTimeTimeLimit = string
+export type DailyTimeThisPeriodUsage = string
+export type DatetimeDailyTimeNextReset = string
+export type DailyTrafficNumberOfDaysInPeriod = string
+export type DailyTrafficTimeLimit = string
+export type DailyTrafficThisPeriodUsage = string
+export type DatetimeDailyTrafficNextReset = string
+export type DailyTimeNumberOfDaysInPeriod1 = string
+export type DailyTimeTimeLimit1 = string
+export type DailyTimeThisPeriodUsage1 = string
+export type DatetimeDailyTimeNextReset1 = string
+export type WeeklyyTrafficNumberOfDaysInPeriod = string
+export type WeeklyTrafficTimeLimit = string
+export type WeeklyTrafficThisPeriodUsage = string
+export type DatetimeWeeklyTrafficNextReset = string
+export type MonthlyCreditChangeMonthlyResetType = 'gregorian' | 'jalali'
+export type MonthlyCreditChangeMonthlyResetTypeDay = string
+export type MonthlyCreditChangeCreditChangeType = 'absolute' | 'relative'
+export type MonthlyCreditChangeCreditChangeAmount = string
+export type MonthlyCreditChangeEffectiveAfterFirstLogin = boolean
+export type MonthlyCreditChangeNegateCredit = boolean
+export type MonthlyCreditChangeDoOnFirstLogin = boolean
+export type DatetimeMonthlyCreditChangeNextReset = string
+export type MonthlyCreditChangeNumberOfDaysInPeriod = string
+export type DailyCreditChangeCreditChangeType = 'absolute' | 'relative'
+export type DailyCreditChangeCreditChangeAmount = string
+export type DailyCreditChangeEffectiveAfterFirstLogin = boolean
+export type DailyCreditChangeNegateCredit = boolean
+export type DailyCreditChangeDoOnFirstLogin = boolean
+export type DatetimeDailyCreditChangeNextReset = string
+export type TrueIfExistsUserInfoFlagsPreventWebLogin = boolean
+export type UserInfoMiscRadiusAttributes = string
+export type UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate = number
 export type UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate1 =
-  | "Minutes"
-  | "Hours"
-  | "Days"
-  | "Months"
-  | "Years";
-export type DatetimeUserInfoExpDatesNegativeCreditExpirationDateNegativeCreditStart = string;
-export type TrueIfExistsUserInfoFlagsRenewDoNotResetCredit = boolean;
-export type TrueIfExistsUserInfoFlagsResetNegativeCreditOnRenew = boolean;
-export type GroupName = string;
-export type TrueIfExistsUserInfoFlagsSaveBandwidthUsage = boolean;
-export type SecondInternetUsername = string;
-export type UserInfoUsernameSerialID = string;
-export type UserInfoLimitationsSessionTimeout = string;
-export type PreferredLanguageCodeForVoIPTelephonySupport = string;
-export type WhichIsDefinePeriodNumberItCouldBeNumberOfDaysOrMonths = string;
-export type WhichIsTheLastTheresholdOfFormulaNotificationThatIBSngSentIt = string;
-export type WhichIsTheLastThresholdOfBillCycleEndWhichIBSngSentIt = string;
-export type WhichIsTheLastThresholdOfExpirationDateWhichIBSngSentIt = string;
-export type WhichIsTheLastThresholdOfCreditWhichIBSngSentIt = string;
-export type DatetimeWhichIsUnpaidBillCycle = string;
-export type DatetimeWhichIsTheBillCycleStart = string;
-export type DatetimeWhichIsTheBillCycleStart1 = string;
-export type TheThresholdToWhichAnAnnouncementWillBePlayerForSubscriber = string;
-export type AreaCodeOfUser = string;
-export type CallBlocking = "ONEWAY" | "TWOWAY" | "BARRED";
-export type NameOfCallerIdWhichWillBeSentForUser = string;
+  | 'Minutes'
+  | 'Hours'
+  | 'Days'
+  | 'Months'
+  | 'Years'
+export type DatetimeUserInfoExpDatesNegativeCreditExpirationDateNegativeCreditStart = string
+export type TrueIfExistsUserInfoFlagsRenewDoNotResetCredit = boolean
+export type TrueIfExistsUserInfoFlagsResetNegativeCreditOnRenew = boolean
+export type GroupName = string
+export type TrueIfExistsUserInfoFlagsSaveBandwidthUsage = boolean
+export type SecondInternetUsername = string
+export type UserInfoUsernameSerialID = string
+export type UserInfoLimitationsSessionTimeout = string
+export type PreferredLanguageCodeForVoIPTelephonySupport = string
+export type WhichIsDefinePeriodNumberItCouldBeNumberOfDaysOrMonths = string
+export type WhichIsTheLastTheresholdOfFormulaNotificationThatIBSngSentIt = string
+export type WhichIsTheLastThresholdOfBillCycleEndWhichIBSngSentIt = string
+export type WhichIsTheLastThresholdOfExpirationDateWhichIBSngSentIt = string
+export type WhichIsTheLastThresholdOfCreditWhichIBSngSentIt = string
+export type DatetimeWhichIsUnpaidBillCycle = string
+export type DatetimeWhichIsTheBillCycleStart = string
+export type DatetimeWhichIsTheBillCycleStart1 = string
+export type TheThresholdToWhichAnAnnouncementWillBePlayerForSubscriber = string
+export type AreaCodeOfUser = string
+export type CallBlocking = 'ONEWAY' | 'TWOWAY' | 'BARRED'
+export type NameOfCallerIdWhichWillBeSentForUser = string
 export type AvailableCapabilitiesForUser = {
-  [k: string]: unknown;
-}[];
+  [k: string]: unknown
+}[]
 export type SetOfCodecsUserCanUse =
-  | "iLBC@30i"
-  | "speex@8000h@20i"
-  | "speex@16000h@20i"
-  | "speex@32000h@20i"
-  | "G7221@16000h"
-  | "G7221@32000h"
-  | "GSM@40i"
-  | "G722"
-  | "PCMU"
-  | "PCMA"
-  | "G726-16"
-  | "G726-24"
-  | "G726-32"
-  | "G726-40"
-  | "LPC"
-  | "G729"
-  | "G723"
-  | "AMR"
-  | "H261"
-  | "H263"
-  | "H263-1998"
-  | "H263-2000"
-  | "H264";
-export type PerformEarlyOrLateNegotiationOverridesSwitchDefaults = string;
-export type AllowDisallowTranscodingForUser = string;
-export type UnconditionalDivertNumber = string;
-export type BusyDivertNumber = string;
-export type NoAnswerDivertNumber = string;
-export type ListOfIPSUserAllowedToRegisterFromCommaSeparatedListOfIPS = string;
-export type LocationOfUserCurrentlyUnused = string;
-export type NameOfRingbackFileRingbacksShouldBeDefinedInASeparateSystemAndJustTheSelectedRingbackWillBeKeptInUserProfile = string;
-export type SIPPasswordThisIsDifferentFromVoipPasswordAndIsJustUsedForSipRegistration = string;
-export type VoiceMailPasswordDigitsOnly = string;
+  | 'iLBC@30i'
+  | 'speex@8000h@20i'
+  | 'speex@16000h@20i'
+  | 'speex@32000h@20i'
+  | 'G7221@16000h'
+  | 'G7221@32000h'
+  | 'GSM@40i'
+  | 'G722'
+  | 'PCMU'
+  | 'PCMA'
+  | 'G726-16'
+  | 'G726-24'
+  | 'G726-32'
+  | 'G726-40'
+  | 'LPC'
+  | 'G729'
+  | 'G723'
+  | 'AMR'
+  | 'H261'
+  | 'H263'
+  | 'H263-1998'
+  | 'H263-2000'
+  | 'H264'
+export type PerformEarlyOrLateNegotiationOverridesSwitchDefaults = string
+export type AllowDisallowTranscodingForUser = string
+export type UnconditionalDivertNumber = string
+export type BusyDivertNumber = string
+export type NoAnswerDivertNumber = string
+export type ListOfIPSUserAllowedToRegisterFromCommaSeparatedListOfIPS = string
+export type LocationOfUserCurrentlyUnused = string
+export type NameOfRingbackFileRingbacksShouldBeDefinedInASeparateSystemAndJustTheSelectedRingbackWillBeKeptInUserProfile =
+  string
+export type SIPPasswordThisIsDifferentFromVoipPasswordAndIsJustUsedForSipRegistration = string
+export type VoiceMailPasswordDigitsOnly = string
 
 export interface UserUpdateUserAttrs {
-  method: "user.updateUserAttrs";
-  auth_type?: "ADMIN";
-  user_id: string;
+  method: 'user.updateUserAttrs'
+  auth_type?: 'ADMIN'
+  user_id: string
   attrs: {
     normal_user_spec?: {
-      normal_username?: IfMissingUsernameWillBeGeneratedRandomly;
-      normal_username_random_prefix?: DefaultToEmptyString;
-      normal_username_random_length?: DefaultTo8;
-      normal_username_random_type?: number;
-      normal_password?: IfMissingPasswordWillBeGeneratedRandomly;
-      normal_password_random_length?: DefaultTo81;
-      normal_password_random_type?: number;
-      normal_save?: TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse;
-      [k: string]: unknown;
-    };
+      normal_username?: IfMissingUsernameWillBeGeneratedRandomly
+      normal_username_random_prefix?: DefaultToEmptyString
+      normal_username_random_length?: DefaultTo8
+      normal_username_random_type?: number
+      normal_password?: IfMissingPasswordWillBeGeneratedRandomly
+      normal_password_random_length?: DefaultTo81
+      normal_password_random_type?: number
+      normal_save?: TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse
+      [k: string]: unknown
+    }
     voip_user_spec?: {
-      voip_username?: IfMissingUsernameWillBeGeneratedRandomly1;
-      voip_username_random_prefix?: DefaultToEmptyString1;
-      voip_username_random_length?: DefaultTo82;
-      voip_username_random_type?: number;
-      voip_password?: IfMissingPasswordWillBeGeneratedRandomly1;
-      voip_password_random_length?: DefaultTo83;
-      voip_password_random_type?: number;
-      voip_save?: TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse1;
-      [k: string]: unknown;
-    };
-    custom_fields?: [] | [AttributesToUpdate] | [AttributesToUpdate, AttributesToDelete];
-    first_login?: EpochTime;
-    auto_renew?: TrueIfExistsUserInfoFlagsAutoRenew;
-    auto_recharge?: TrueIfExistsUserInfoFlagsAutoRecharge;
-    auto_renew_on_credit_finish?: TrueIfExistsUserInfoFlagsAutoRenewOnCreditFinish;
-    auto_renew_do_not_reset_credit?: TrueIfExistsUserInfoFlagsAutoRenewNoNotResetCredit;
-    charge?: ChargeName;
-    abs_exp_date?: GregorianDatetimeString;
-    abs_exp_date_unit?: "gregorian";
-    allow_recharge_by_voucher?: TrueIfExistsUserInfoFlagsAllowRechargeByVoucher;
-    allow_user_disconnect?: TrueIfExistsUserInfoFlagsAllowUserDisconnect;
-    assign_dns_1?: string;
-    assign_dns_2?: string;
-    assign_ip?: CommaSeperatedValues;
-    assign_netmask?: string;
-    assign_route_ip?: CommaSeperatedValues1;
-    caller_id?: UserInfoVoIPCallerIDVoIPCallerID;
-    caller_id_bind_on_login?: TrueIfExistsUserInfoVoIPVoIPCallerIDBindOnNextLogin;
-    fast_dial?: UserInfoVoIPFastDial;
-    forward_number?: string;
-    asterisk_extension?: UserInfoVoIPAsteriskAsteriskExtension;
-    asterisk_ras_ip?: UserInfoVoIPAsteriskAstersikRasIP;
-    asterisk_sip_details?: UserInfoVoIPAsteriskSIPDetails;
-    asterisk_iax_details?: UserInfoVoIPAsteriskIAXDetails;
-    asterisk_did?: UserInfoVoIPAsteriskDIDAsteriskDID;
-    asterisk_did_ras_ip?: UserInfoVoIPAsteriskDIDAstersikDIDRasIP;
-    asterisk_did_ras_id?: UserInfoVoIPAsteriskDIDAstersikDIDRasIPRasId;
-    comment?: CommentComment;
-    name?: CommentName;
-    email?: CommentEmail;
-    phone?: CommentPhone;
-    cell_phone?: CommentCellPhoneNumber;
-    birthdate?: CommentDateOfBirth;
-    address?: CommentAddress;
-    postal_code?: CommentPostalCode;
-    credit_limit?: FloatAsStringLimitationsCreditLimit;
-    deny_change_password?: TrueIfExistsUserInfoFlagsDenyChangePassword;
-    enable_failed_login?: TrueIfExistsUserInfoFlagsEnableFailedLogin;
-    exp_date_temp_extend?: string;
-    temp_extend_log_id?: string;
-    exp_from_creation_date?: string;
-    exp_from_first_login?: string;
-    exp_from_renew?: string;
-    exp_monthly?: string;
-    extra_charge_profile?: string;
-    idle_threshold_timespan?: string;
-    idle_bytes_threshold?: string;
-    ignore_idle_threshold_static_ip?: string;
-    ignore_idle_threshold?: string;
-    idle_timeout?: string;
-    bw_send_rate?: string;
-    bw_receive_rate?: string;
-    in_ras_bw?: FormatSendRateReceiveRate;
-    in_ras_ippool?: UserInfoInternetInRasIPPoolIppoolName;
-    ippool?: UserInfoInternetIPpoolIppoolName;
-    limit_caller_id?: ValueIsCallerID;
-    limit_caller_id_allow_not_defined?: AllowUsersWithNoCallerID0No1Yes;
-    limit_caller_id_bind_on_login?: TrueIfExists;
-    limit_mac?: ValueIsMACAddress;
-    limit_mac_bind_on_login?: TrueIfExists1;
-    limit_port?: ValueIsPort;
-    limit_port_bind_on_login?: TrueIfExists2;
-    limit_ras?: ValueIsListOfAllowedRASIPs;
-    limit_ras_bind_on_login?: TrueIfExists3;
-    limit_station_ip?: ValueIsStationIP;
-    limit_station_ip_bind_on_login?: TrueIfExists4;
-    limit_usage_days?: NumberOfDays;
-    lock?: UserIsLockedIfThisKeyInPresentValueShowsTheLockReason;
-    assigned_endpoint?: MessageCenterEndPoint;
-    mc_charge?: MessageCenterMessageChargeFormatSendLatinSendUnicodeReceive;
-    mc_charge_send_latin?: MessageCenterMessageChargeSendChargeLatin;
-    mc_charge_send_unicode?: MessageCenterMessageChargeSendChargeUnicode;
-    mc_charge_recv?: MessageCenterMessageChargeReceiveCharge;
-    mc_min_user_credit?: FloatAsStringMessageCenterMessageChargeMinimumUserCredit;
-    email_address?: MailBoxEmailAddress;
-    mail_quota?: MailBoxMailBoxQuota;
-    mail_usage?: MailBoxMailBoxUsage;
-    mikrotik_address_list?: string;
-    mikrotik_bw?: MikrotikBWControlBurstFormatGuaranteeReceiveRateGuaranteeSendRateReceiveBurstSendBurstReceiveBurstThresholdSendBurstThresholdReceiveBurstTimeSendBurstTimePriorityMinReceiveRateMinSendRate;
-    mikrotik_bw_recv_rate?: GuaranteeReceiveRate;
-    mikrotik_bw_send_rate?: GuaranteeSendRate;
-    mikrotik_bw_recv_burst?: string;
-    mikrotik_bw_send_burst?: string;
-    mikrotik_bw_recv_burst_threshold?: string;
-    mikrotik_bw_send_burst_threshold?: string;
-    mikrotik_bw_recv_burst_time?: string;
-    mikrotik_bw_send_burst_time?: string;
-    mikrotik_bw_priority?: string;
-    mikrotik_bw_min_recv_rate?: string;
-    mikrotik_bw_min_send_rate?: string;
-    multi_login?: LimitationsMultiLoginValueIsMaximumNumberOfInstances;
-    notification_profile?: NotificationProfileName;
-    time_periodic_accounting_monthly?: MonthlyTimeMonthlyResetType;
-    time_periodic_accounting_monthly_limit?: MonthlyTimeMonthlyTimeLimit;
-    time_periodic_accounting_monthly_usage?: MonthlyTimeThisPeriodUsage;
-    time_periodic_accounting_monthly_reset?: DatetimeMonthlyTimeNextReset;
-    traffic_periodic_accounting_monthly?: MonthlyTrafficMonthlyResetType;
-    traffic_periodic_accounting_monthly_limit?: MonthlyTrafficMonthlyTrafficLimit;
-    traffic_periodic_accounting_monthly_usage?: MonthlyTrafficThisPeriodUsage;
-    traffic_periodic_accounting_monthly_reset?: DatetimeMonthlyTrafficNextReset;
-    time_periodic_accounting_daily?: DailyTimeNumberOfDaysInPeriod;
-    time_periodic_accounting_daily_limit?: DailyTimeTimeLimit;
-    time_periodic_accounting_daily_usage?: DailyTimeThisPeriodUsage;
-    time_periodic_accounting_daily_reset?: DatetimeDailyTimeNextReset;
-    traffic_periodic_accounting_daily?: DailyTrafficNumberOfDaysInPeriod;
-    traffic_periodic_accounting_daily_limit?: DailyTrafficTimeLimit;
-    traffic_periodic_accounting_daily_usage?: DailyTrafficThisPeriodUsage;
-    traffic_periodic_accounting_daily_reset?: DatetimeDailyTrafficNextReset;
-    time_periodic_accounting_weekly?: DailyTimeNumberOfDaysInPeriod1;
-    time_periodic_accounting_weekly_limit?: DailyTimeTimeLimit1;
-    time_periodic_accounting_weekly_usage?: DailyTimeThisPeriodUsage1;
-    time_periodic_accounting_weekly_reset?: DatetimeDailyTimeNextReset1;
-    traffic_periodic_accounting_weekly?: WeeklyyTrafficNumberOfDaysInPeriod;
-    traffic_periodic_accounting_weekly_limit?: WeeklyTrafficTimeLimit;
-    traffic_periodic_accounting_weekly_usage?: WeeklyTrafficThisPeriodUsage;
-    traffic_periodic_accounting_weekly_reset?: DatetimeWeeklyTrafficNextReset;
-    monthly_periodic_credit_change?: MonthlyCreditChangeMonthlyResetType;
-    monthly_periodic_credit_change_day?: MonthlyCreditChangeMonthlyResetTypeDay;
-    monthly_periodic_credit_change_type?: MonthlyCreditChangeCreditChangeType;
-    monthly_periodic_credit_change_amount?: MonthlyCreditChangeCreditChangeAmount;
-    monthly_periodic_credit_change_after_first_login?: MonthlyCreditChangeEffectiveAfterFirstLogin;
-    monthly_periodic_credit_change_negate_credit?: MonthlyCreditChangeNegateCredit;
-    monthly_periodic_credit_change_do_on_first_login?: MonthlyCreditChangeDoOnFirstLogin;
-    monthly_periodic_credit_change_reset?: DatetimeMonthlyCreditChangeNextReset;
-    daily_periodic_credit_change?: MonthlyCreditChangeNumberOfDaysInPeriod;
-    daily_periodic_credit_change_type?: DailyCreditChangeCreditChangeType;
-    daily_periodic_credit_change_amount?: DailyCreditChangeCreditChangeAmount;
-    daily_periodic_credit_change_after_first_login?: DailyCreditChangeEffectiveAfterFirstLogin;
-    daily_periodic_credit_change_negate_credit?: DailyCreditChangeNegateCredit;
-    daily_periodic_credit_change_do_on_first_login?: DailyCreditChangeDoOnFirstLogin;
-    daily_periodic_credit_change_reset?: DatetimeDailyCreditChangeNextReset;
-    persistent_lan_ip?: unknown[];
-    persistent_lan_mac?: unknown[];
-    persistent_lan_ras_ip?: unknown[];
-    plan?: string;
-    prevent_web_login?: TrueIfExistsUserInfoFlagsPreventWebLogin;
-    radius_attrs?: UserInfoMiscRadiusAttributes;
-    rel_exp_date?: number;
-    rel_exp_date_unit?: "Minutes" | "Hours" | "Days" | "Months" | "Years";
-    rel_exp_date_negative_credit?: UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate;
-    rel_exp_date_negative_credit_unit?: UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate1;
-    negative_credit_start?: DatetimeUserInfoExpDatesNegativeCreditExpirationDateNegativeCreditStart;
-    renew_do_not_reset_credit?: TrueIfExistsUserInfoFlagsRenewDoNotResetCredit;
-    reset_negative_credit_on_renew?: TrueIfExistsUserInfoFlagsResetNegativeCreditOnRenew;
-    renew_next_group?: GroupName;
-    save_bw_usage?: TrueIfExistsUserInfoFlagsSaveBandwidthUsage;
-    second_normal_username?: SecondInternetUsername;
-    serial?: UserInfoUsernameSerialID;
-    session_timeout?: UserInfoLimitationsSessionTimeout;
-    voip_preferred_language?: PreferredLanguageCodeForVoIPTelephonySupport;
-    bill_period?: WhichIsDefinePeriodNumberItCouldBeNumberOfDaysOrMonths;
-    notification_last_formula_threshold?: WhichIsTheLastTheresholdOfFormulaNotificationThatIBSngSentIt;
-    notification_last_bill_cycle_threshold?: WhichIsTheLastThresholdOfBillCycleEndWhichIBSngSentIt;
-    notification_last_exp_threshold?: WhichIsTheLastThresholdOfExpirationDateWhichIBSngSentIt;
-    notification_last_credit1_threshold?: WhichIsTheLastThresholdOfCreditWhichIBSngSentIt;
-    unpaid_bill_cycle_end?: DatetimeWhichIsUnpaidBillCycle;
-    bill_cycle_start?: DatetimeWhichIsTheBillCycleStart;
-    bill_cycle_end?: DatetimeWhichIsTheBillCycleStart1;
-    announce_credit_threshold?: TheThresholdToWhichAnAnnouncementWillBePlayerForSubscriber;
-    chakavak_area_code?: AreaCodeOfUser;
-    chakavak_call_blocking_status?: CallBlocking;
-    chakavak_callerid_name?: NameOfCallerIdWhichWillBeSentForUser;
-    chakavak_capabilities?: AvailableCapabilitiesForUser;
-    chakavak_cc_code?: string;
-    chakavak_codec?: SetOfCodecsUserCanUse;
-    chakavak_codec_negotiation?: PerformEarlyOrLateNegotiationOverridesSwitchDefaults;
-    chakavak_codec_transcoding?: AllowDisallowTranscodingForUser;
-    divert_number_unconditional?: UnconditionalDivertNumber;
-    divert_number_busy?: BusyDivertNumber;
-    divert_number_noanswer?: NoAnswerDivertNumber;
-    chakavak_limit_client_ip?: ListOfIPSUserAllowedToRegisterFromCommaSeparatedListOfIPS;
-    chakavak_location?: LocationOfUserCurrentlyUnused;
-    chakavak_ringback?: NameOfRingbackFileRingbacksShouldBeDefinedInASeparateSystemAndJustTheSelectedRingbackWillBeKeptInUserProfile;
-    chakavak_sip_password?: SIPPasswordThisIsDifferentFromVoipPasswordAndIsJustUsedForSipRegistration;
-    chakavak_voicemail?: VoiceMailPasswordDigitsOnly;
-    [k: string]: unknown;
-  };
-  to_del_attrs: unknown[];
+      voip_username?: IfMissingUsernameWillBeGeneratedRandomly1
+      voip_username_random_prefix?: DefaultToEmptyString1
+      voip_username_random_length?: DefaultTo82
+      voip_username_random_type?: number
+      voip_password?: IfMissingPasswordWillBeGeneratedRandomly1
+      voip_password_random_length?: DefaultTo83
+      voip_password_random_type?: number
+      voip_save?: TrueIsYouWantTheUsernameAndPasswordToBeSavedInDatabaseDefaultsToFalse1
+      [k: string]: unknown
+    }
+    custom_fields?: [] | [AttributesToUpdate] | [AttributesToUpdate, AttributesToDelete]
+    first_login?: EpochTime
+    auto_renew?: TrueIfExistsUserInfoFlagsAutoRenew
+    auto_recharge?: TrueIfExistsUserInfoFlagsAutoRecharge
+    auto_renew_on_credit_finish?: TrueIfExistsUserInfoFlagsAutoRenewOnCreditFinish
+    auto_renew_do_not_reset_credit?: TrueIfExistsUserInfoFlagsAutoRenewNoNotResetCredit
+    charge?: ChargeName
+    abs_exp_date?: GregorianDatetimeString
+    abs_exp_date_unit?: 'gregorian'
+    allow_recharge_by_voucher?: TrueIfExistsUserInfoFlagsAllowRechargeByVoucher
+    allow_user_disconnect?: TrueIfExistsUserInfoFlagsAllowUserDisconnect
+    assign_dns_1?: string
+    assign_dns_2?: string
+    assign_ip?: CommaSeperatedValues
+    assign_netmask?: string
+    assign_route_ip?: CommaSeperatedValues1
+    caller_id?: UserInfoVoIPCallerIDVoIPCallerID
+    caller_id_bind_on_login?: TrueIfExistsUserInfoVoIPVoIPCallerIDBindOnNextLogin
+    fast_dial?: UserInfoVoIPFastDial
+    forward_number?: string
+    asterisk_extension?: UserInfoVoIPAsteriskAsteriskExtension
+    asterisk_ras_ip?: UserInfoVoIPAsteriskAstersikRasIP
+    asterisk_sip_details?: UserInfoVoIPAsteriskSIPDetails
+    asterisk_iax_details?: UserInfoVoIPAsteriskIAXDetails
+    asterisk_did?: UserInfoVoIPAsteriskDIDAsteriskDID
+    asterisk_did_ras_ip?: UserInfoVoIPAsteriskDIDAstersikDIDRasIP
+    asterisk_did_ras_id?: UserInfoVoIPAsteriskDIDAstersikDIDRasIPRasId
+    comment?: CommentComment
+    name?: CommentName
+    email?: CommentEmail
+    phone?: CommentPhone
+    cell_phone?: CommentCellPhoneNumber
+    birthdate?: CommentDateOfBirth
+    address?: CommentAddress
+    postal_code?: CommentPostalCode
+    credit_limit?: FloatAsStringLimitationsCreditLimit
+    deny_change_password?: TrueIfExistsUserInfoFlagsDenyChangePassword
+    enable_failed_login?: TrueIfExistsUserInfoFlagsEnableFailedLogin
+    exp_date_temp_extend?: string
+    temp_extend_log_id?: string
+    exp_from_creation_date?: string
+    exp_from_first_login?: string
+    exp_from_renew?: string
+    exp_monthly?: string
+    extra_charge_profile?: string
+    idle_threshold_timespan?: string
+    idle_bytes_threshold?: string
+    ignore_idle_threshold_static_ip?: string
+    ignore_idle_threshold?: string
+    idle_timeout?: string
+    bw_send_rate?: string
+    bw_receive_rate?: string
+    in_ras_bw?: FormatSendRateReceiveRate
+    in_ras_ippool?: UserInfoInternetInRasIPPoolIppoolName
+    ippool?: UserInfoInternetIPpoolIppoolName
+    limit_caller_id?: ValueIsCallerID
+    limit_caller_id_allow_not_defined?: AllowUsersWithNoCallerID0No1Yes
+    limit_caller_id_bind_on_login?: TrueIfExists
+    limit_mac?: ValueIsMACAddress
+    limit_mac_bind_on_login?: TrueIfExists1
+    limit_port?: ValueIsPort
+    limit_port_bind_on_login?: TrueIfExists2
+    limit_ras?: ValueIsListOfAllowedRASIPs
+    limit_ras_bind_on_login?: TrueIfExists3
+    limit_station_ip?: ValueIsStationIP
+    limit_station_ip_bind_on_login?: TrueIfExists4
+    limit_usage_days?: NumberOfDays
+    lock?: UserIsLockedIfThisKeyInPresentValueShowsTheLockReason
+    assigned_endpoint?: MessageCenterEndPoint
+    mc_charge?: MessageCenterMessageChargeFormatSendLatinSendUnicodeReceive
+    mc_charge_send_latin?: MessageCenterMessageChargeSendChargeLatin
+    mc_charge_send_unicode?: MessageCenterMessageChargeSendChargeUnicode
+    mc_charge_recv?: MessageCenterMessageChargeReceiveCharge
+    mc_min_user_credit?: FloatAsStringMessageCenterMessageChargeMinimumUserCredit
+    email_address?: MailBoxEmailAddress
+    mail_quota?: MailBoxMailBoxQuota
+    mail_usage?: MailBoxMailBoxUsage
+    mikrotik_address_list?: string
+    mikrotik_bw?: MikrotikBWControlBurstFormatGuaranteeReceiveRateGuaranteeSendRateReceiveBurstSendBurstReceiveBurstThresholdSendBurstThresholdReceiveBurstTimeSendBurstTimePriorityMinReceiveRateMinSendRate
+    mikrotik_bw_recv_rate?: GuaranteeReceiveRate
+    mikrotik_bw_send_rate?: GuaranteeSendRate
+    mikrotik_bw_recv_burst?: string
+    mikrotik_bw_send_burst?: string
+    mikrotik_bw_recv_burst_threshold?: string
+    mikrotik_bw_send_burst_threshold?: string
+    mikrotik_bw_recv_burst_time?: string
+    mikrotik_bw_send_burst_time?: string
+    mikrotik_bw_priority?: string
+    mikrotik_bw_min_recv_rate?: string
+    mikrotik_bw_min_send_rate?: string
+    multi_login?: LimitationsMultiLoginValueIsMaximumNumberOfInstances
+    notification_profile?: NotificationProfileName
+    time_periodic_accounting_monthly?: MonthlyTimeMonthlyResetType
+    time_periodic_accounting_monthly_limit?: MonthlyTimeMonthlyTimeLimit
+    time_periodic_accounting_monthly_usage?: MonthlyTimeThisPeriodUsage
+    time_periodic_accounting_monthly_reset?: DatetimeMonthlyTimeNextReset
+    traffic_periodic_accounting_monthly?: MonthlyTrafficMonthlyResetType
+    traffic_periodic_accounting_monthly_limit?: MonthlyTrafficMonthlyTrafficLimit
+    traffic_periodic_accounting_monthly_usage?: MonthlyTrafficThisPeriodUsage
+    traffic_periodic_accounting_monthly_reset?: DatetimeMonthlyTrafficNextReset
+    time_periodic_accounting_daily?: DailyTimeNumberOfDaysInPeriod
+    time_periodic_accounting_daily_limit?: DailyTimeTimeLimit
+    time_periodic_accounting_daily_usage?: DailyTimeThisPeriodUsage
+    time_periodic_accounting_daily_reset?: DatetimeDailyTimeNextReset
+    traffic_periodic_accounting_daily?: DailyTrafficNumberOfDaysInPeriod
+    traffic_periodic_accounting_daily_limit?: DailyTrafficTimeLimit
+    traffic_periodic_accounting_daily_usage?: DailyTrafficThisPeriodUsage
+    traffic_periodic_accounting_daily_reset?: DatetimeDailyTrafficNextReset
+    time_periodic_accounting_weekly?: DailyTimeNumberOfDaysInPeriod1
+    time_periodic_accounting_weekly_limit?: DailyTimeTimeLimit1
+    time_periodic_accounting_weekly_usage?: DailyTimeThisPeriodUsage1
+    time_periodic_accounting_weekly_reset?: DatetimeDailyTimeNextReset1
+    traffic_periodic_accounting_weekly?: WeeklyyTrafficNumberOfDaysInPeriod
+    traffic_periodic_accounting_weekly_limit?: WeeklyTrafficTimeLimit
+    traffic_periodic_accounting_weekly_usage?: WeeklyTrafficThisPeriodUsage
+    traffic_periodic_accounting_weekly_reset?: DatetimeWeeklyTrafficNextReset
+    monthly_periodic_credit_change?: MonthlyCreditChangeMonthlyResetType
+    monthly_periodic_credit_change_day?: MonthlyCreditChangeMonthlyResetTypeDay
+    monthly_periodic_credit_change_type?: MonthlyCreditChangeCreditChangeType
+    monthly_periodic_credit_change_amount?: MonthlyCreditChangeCreditChangeAmount
+    monthly_periodic_credit_change_after_first_login?: MonthlyCreditChangeEffectiveAfterFirstLogin
+    monthly_periodic_credit_change_negate_credit?: MonthlyCreditChangeNegateCredit
+    monthly_periodic_credit_change_do_on_first_login?: MonthlyCreditChangeDoOnFirstLogin
+    monthly_periodic_credit_change_reset?: DatetimeMonthlyCreditChangeNextReset
+    daily_periodic_credit_change?: MonthlyCreditChangeNumberOfDaysInPeriod
+    daily_periodic_credit_change_type?: DailyCreditChangeCreditChangeType
+    daily_periodic_credit_change_amount?: DailyCreditChangeCreditChangeAmount
+    daily_periodic_credit_change_after_first_login?: DailyCreditChangeEffectiveAfterFirstLogin
+    daily_periodic_credit_change_negate_credit?: DailyCreditChangeNegateCredit
+    daily_periodic_credit_change_do_on_first_login?: DailyCreditChangeDoOnFirstLogin
+    daily_periodic_credit_change_reset?: DatetimeDailyCreditChangeNextReset
+    persistent_lan_ip?: unknown[]
+    persistent_lan_mac?: unknown[]
+    persistent_lan_ras_ip?: unknown[]
+    plan?: string
+    prevent_web_login?: TrueIfExistsUserInfoFlagsPreventWebLogin
+    radius_attrs?: UserInfoMiscRadiusAttributes
+    rel_exp_date?: number
+    rel_exp_date_unit?: 'Minutes' | 'Hours' | 'Days' | 'Months' | 'Years'
+    rel_exp_date_negative_credit?: UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate
+    rel_exp_date_negative_credit_unit?: UserInfoExpDatesNegativeCreditExpirationDateNegativeCreditRelativeExpirationDate1
+    negative_credit_start?: DatetimeUserInfoExpDatesNegativeCreditExpirationDateNegativeCreditStart
+    renew_do_not_reset_credit?: TrueIfExistsUserInfoFlagsRenewDoNotResetCredit
+    reset_negative_credit_on_renew?: TrueIfExistsUserInfoFlagsResetNegativeCreditOnRenew
+    renew_next_group?: GroupName
+    save_bw_usage?: TrueIfExistsUserInfoFlagsSaveBandwidthUsage
+    second_normal_username?: SecondInternetUsername
+    serial?: UserInfoUsernameSerialID
+    session_timeout?: UserInfoLimitationsSessionTimeout
+    voip_preferred_language?: PreferredLanguageCodeForVoIPTelephonySupport
+    bill_period?: WhichIsDefinePeriodNumberItCouldBeNumberOfDaysOrMonths
+    notification_last_formula_threshold?: WhichIsTheLastTheresholdOfFormulaNotificationThatIBSngSentIt
+    notification_last_bill_cycle_threshold?: WhichIsTheLastThresholdOfBillCycleEndWhichIBSngSentIt
+    notification_last_exp_threshold?: WhichIsTheLastThresholdOfExpirationDateWhichIBSngSentIt
+    notification_last_credit1_threshold?: WhichIsTheLastThresholdOfCreditWhichIBSngSentIt
+    unpaid_bill_cycle_end?: DatetimeWhichIsUnpaidBillCycle
+    bill_cycle_start?: DatetimeWhichIsTheBillCycleStart
+    bill_cycle_end?: DatetimeWhichIsTheBillCycleStart1
+    announce_credit_threshold?: TheThresholdToWhichAnAnnouncementWillBePlayerForSubscriber
+    chakavak_area_code?: AreaCodeOfUser
+    chakavak_call_blocking_status?: CallBlocking
+    chakavak_callerid_name?: NameOfCallerIdWhichWillBeSentForUser
+    chakavak_capabilities?: AvailableCapabilitiesForUser
+    chakavak_cc_code?: string
+    chakavak_codec?: SetOfCodecsUserCanUse
+    chakavak_codec_negotiation?: PerformEarlyOrLateNegotiationOverridesSwitchDefaults
+    chakavak_codec_transcoding?: AllowDisallowTranscodingForUser
+    divert_number_unconditional?: UnconditionalDivertNumber
+    divert_number_busy?: BusyDivertNumber
+    divert_number_noanswer?: NoAnswerDivertNumber
+    chakavak_limit_client_ip?: ListOfIPSUserAllowedToRegisterFromCommaSeparatedListOfIPS
+    chakavak_location?: LocationOfUserCurrentlyUnused
+    chakavak_ringback?: NameOfRingbackFileRingbacksShouldBeDefinedInASeparateSystemAndJustTheSelectedRingbackWillBeKeptInUserProfile
+    chakavak_sip_password?: SIPPasswordThisIsDifferentFromVoipPasswordAndIsJustUsedForSipRegistration
+    chakavak_voicemail?: VoiceMailPasswordDigitsOnly
+    [k: string]: unknown
+  }
+  to_del_attrs: unknown[]
 }
 export interface AttributesToUpdate {
-  [k: string]: unknown;
+  [k: string]: unknown
 }
 export interface UserInfoVoIPAsteriskSIPDetails {
-  allow?: SemicolonSeperated;
-  cancallforward?: "yes" | "no";
-  canreinvite?: "yes" | "no";
-  context?: IncomingByDefault;
-  disallow?: AllByDefault;
-  host?: DynamicByDefault;
-  nat?: "yes" | "no";
-  port?: number;
-  qualify?: "yes" | "no";
-  regseconds?: number;
-  type?: FriendByDefault;
-  [k: string]: unknown;
+  allow?: SemicolonSeperated
+  cancallforward?: 'yes' | 'no'
+  canreinvite?: 'yes' | 'no'
+  context?: IncomingByDefault
+  disallow?: AllByDefault
+  host?: DynamicByDefault
+  nat?: 'yes' | 'no'
+  port?: number
+  qualify?: 'yes' | 'no'
+  regseconds?: number
+  type?: FriendByDefault
+  [k: string]: unknown
 }
 export interface UserInfoVoIPAsteriskIAXDetails {
-  allow?: SemicolonSeperated1;
-  auth?: Md5ByDefault;
-  context?: IncomingByDefault1;
-  disallow?: AllByDefault1;
-  host?: DynamicByDefault1;
-  notransfer?: "yes" | "no";
-  port?: number;
-  qualify?: "yes" | "no";
-  regseconds?: number;
-  type?: FriendByDefault1;
-  [k: string]: unknown;
+  allow?: SemicolonSeperated1
+  auth?: Md5ByDefault
+  context?: IncomingByDefault1
+  disallow?: AllByDefault1
+  host?: DynamicByDefault1
+  notransfer?: 'yes' | 'no'
+  port?: number
+  qualify?: 'yes' | 'no'
+  regseconds?: number
+  type?: FriendByDefault1
+  [k: string]: unknown
 }
 export interface FloatAsStringLimitationsCreditLimit {
-  [k: string]: unknown;
+  [k: string]: unknown
 }
 export interface FloatAsStringMessageCenterMessageChargeMinimumUserCredit {
-  [k: string]: unknown;
+  [k: string]: unknown
 }

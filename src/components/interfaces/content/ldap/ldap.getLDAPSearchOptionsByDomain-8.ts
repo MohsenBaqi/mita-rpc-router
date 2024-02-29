@@ -6,7 +6,7 @@
  */
 
 export interface LdapGetLDAPSearchOptionsByDomain {
-  method: "ldap.getLDAPSearchOptionsByDomain";
-  auth_type?: "ADMIN";
-  domain: string;
+  method: 'ldap.getLDAPSearchOptionsByDomain'
+  auth_type?: 'ADMIN'
+  domain: string
 }

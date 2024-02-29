@@ -6,7 +6,7 @@
  */
 
 export interface TelephonySupportGetNearestExpDate {
-  method: "telephony_support.getNearestExpDate";
-  auth_type?: "ADMIN";
-  user_id: number;
+  method: 'telephony_support.getNearestExpDate'
+  auth_type?: 'ADMIN'
+  user_id: number
 }

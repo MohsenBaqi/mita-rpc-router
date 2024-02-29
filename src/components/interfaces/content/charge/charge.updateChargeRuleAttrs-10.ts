@@ -6,14 +6,14 @@
  */
 
 export interface ChargeUpdateChargeRuleAttrs {
-  method: "charge.updateChargeRuleAttrs";
-  auth_type?: "ADMIN";
-  charge_rule_id: number;
-  charge_name: string;
+  method: 'charge.updateChargeRuleAttrs'
+  auth_type?: 'ADMIN'
+  charge_rule_id: number
+  charge_name: string
   update_attrs: {
     [k: string]: {
-      [k: string]: unknown;
-    };
-  };
-  delete_attrs: unknown[];
+      [k: string]: unknown
+    }
+  }
+  delete_attrs: unknown[]
 }

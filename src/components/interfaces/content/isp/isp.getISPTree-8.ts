@@ -6,7 +6,7 @@
  */
 
 export interface IspGetISPTree {
-  method: "isp.getISPTree";
-  auth_type?: "ADMIN";
-  isp_name?: string;
+  method: 'isp.getISPTree'
+  auth_type?: 'ADMIN'
+  isp_name?: string
 }

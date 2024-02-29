@@ -6,7 +6,7 @@
  */
 
 export interface IspResetISPPageStyle {
-  method: "isp.resetISPPageStyle";
-  auth_type?: "ADMIN";
-  isp_id: number;
+  method: 'isp.resetISPPageStyle'
+  auth_type?: 'ADMIN'
+  isp_id: number
 }

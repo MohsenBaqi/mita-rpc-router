@@ -6,7 +6,7 @@
  */
 
 export interface VoucherVoucherRechargeUser {
-  method: "voucher.voucherRechargeUser";
-  auth_type?: "NORMAL_USER" | "VOIP_USER";
-  voucher_pin: string;
+  method: 'voucher.voucherRechargeUser'
+  auth_type?: 'NORMAL_USER' | 'VOIP_USER'
+  voucher_pin: string
 }

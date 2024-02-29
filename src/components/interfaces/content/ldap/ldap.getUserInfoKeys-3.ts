@@ -6,7 +6,7 @@
  */
 
 export interface LdapGetUserInfoKeys {
-  method: "ldap.getUserInfoKeys";
-  auth_type?: "ADMIN";
-  domain: string;
+  method: 'ldap.getUserInfoKeys'
+  auth_type?: 'ADMIN'
+  domain: string
 }

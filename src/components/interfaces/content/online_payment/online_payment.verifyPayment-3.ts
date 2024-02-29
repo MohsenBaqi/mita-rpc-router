@@ -6,10 +6,10 @@
  */
 
 export interface OnlinePaymentVerifyPayment {
-  method: "online_payment.verifyPayment";
-  auth_type?: "ADMIN" | "NORMAL_USER" | "VOIP_USER";
-  unique_id: string;
+  method: 'online_payment.verifyPayment'
+  auth_type?: 'ADMIN' | 'NORMAL_USER' | 'VOIP_USER'
+  unique_id: string
   web_attributes: {
-    [k: string]: unknown;
-  };
+    [k: string]: unknown
+  }
 }

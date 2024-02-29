@@ -6,6 +6,6 @@
  */
 
 export interface UtilKickFailedUserByIP {
-  method: "util.kickFailedUserByIP";
-  auth_type?: "ANONYMOUS";
+  method: 'util.kickFailedUserByIP'
+  auth_type?: 'ANONYMOUS'
 }

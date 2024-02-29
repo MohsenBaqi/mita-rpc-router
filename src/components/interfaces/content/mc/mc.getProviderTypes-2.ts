@@ -6,6 +6,6 @@
  */
 
 export interface McGetProviderTypes {
-  method: "mc.getProviderTypes";
-  auth_type?: "ADMIN";
+  method: 'mc.getProviderTypes'
+  auth_type?: 'ADMIN'
 }

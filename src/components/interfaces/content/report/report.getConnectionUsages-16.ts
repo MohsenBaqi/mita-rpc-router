@@ -6,12 +6,12 @@
  */
 
 export interface ReportGetConnectionUsages {
-  method: "report.getConnectionUsages";
-  auth_type?: "ADMIN";
+  method: 'report.getConnectionUsages'
+  auth_type?: 'ADMIN'
   conds: {
-    [k: string]: unknown;
-  };
-  from: number;
-  to: number;
-  order_by: "total_credit" | "total_duration" | "total_in_bytes" | "total_out_bytes";
+    [k: string]: unknown
+  }
+  from: number
+  to: number
+  order_by: 'total_credit' | 'total_duration' | 'total_in_bytes' | 'total_out_bytes'
 }

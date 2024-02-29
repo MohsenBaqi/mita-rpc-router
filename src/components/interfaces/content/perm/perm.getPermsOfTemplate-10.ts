@@ -6,7 +6,7 @@
  */
 
 export interface PermGetPermsOfTemplate {
-  method: "perm.getPermsOfTemplate";
-  auth_type?: "ADMIN";
-  perm_template_name: string;
+  method: 'perm.getPermsOfTemplate'
+  auth_type?: 'ADMIN'
+  perm_template_name: string
 }

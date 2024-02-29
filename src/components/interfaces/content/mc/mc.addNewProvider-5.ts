@@ -6,20 +6,20 @@
  */
 
 export interface McAddNewProvider {
-  method: "mc.addNewProvider";
-  auth_type?: "ADMIN";
+  method: 'mc.addNewProvider'
+  auth_type?: 'ADMIN'
   provider_type:
-    | "Parspooyesh"
-    | "Pishgaman"
-    | "Rahyab"
-    | "I-Email"
-    | "ADP"
-    | "Generic-HTTP"
-    | "IBSngMessaging"
-    | "Magfa"
-    | "MihanSMSCenter"
-    | "AsreFaraErtebat"
-    | "AFE-WS";
-  provider_name: string;
-  msg_type: "SMS" | "E-Mail" | "Message To Admin" | "Message To User";
+    | 'Parspooyesh'
+    | 'Pishgaman'
+    | 'Rahyab'
+    | 'I-Email'
+    | 'ADP'
+    | 'Generic-HTTP'
+    | 'IBSngMessaging'
+    | 'Magfa'
+    | 'MihanSMSCenter'
+    | 'AsreFaraErtebat'
+    | 'AFE-WS'
+  provider_name: string
+  msg_type: 'SMS' | 'E-Mail' | 'Message To Admin' | 'Message To User'
 }

@@ -6,7 +6,7 @@
  */
 
 export interface UtilGetUsernameForIP {
-  method: "util.getUsernameForIP";
-  auth_type?: "ADMIN";
-  ip: string;
+  method: 'util.getUsernameForIP'
+  auth_type?: 'ADMIN'
+  ip: string
 }

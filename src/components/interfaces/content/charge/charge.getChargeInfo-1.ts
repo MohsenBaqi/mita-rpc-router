@@ -6,7 +6,7 @@
  */
 
 export interface ChargeGetChargeInfo {
-  method: "charge.getChargeInfo";
-  auth_type?: "ADMIN";
-  charge_name: string;
+  method: 'charge.getChargeInfo'
+  auth_type?: 'ADMIN'
+  charge_name: string
 }

@@ -6,6 +6,6 @@
  */
 
 export interface UserGetUsersExpDateFirstLogin {
-  method: "user.getUsersExpDateFirstLogin";
-  auth_type?: "ADMIN";
+  method: 'user.getUsersExpDateFirstLogin'
+  auth_type?: 'ADMIN'
 }

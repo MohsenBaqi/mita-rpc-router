@@ -6,9 +6,9 @@
  */
 
 export interface NotificationUpdateNotificationProfile {
-  method: "notification.updateNotificationProfile";
-  auth_type?: "ADMIN";
-  notification_profile_id: number;
-  notification_profile_name: string;
-  notification_profile_comment: string;
+  method: 'notification.updateNotificationProfile'
+  auth_type?: 'ADMIN'
+  notification_profile_id: number
+  notification_profile_name: string
+  notification_profile_comment: string
 }

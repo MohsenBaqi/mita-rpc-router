@@ -7,52 +7,52 @@
 
 export type ListOfAdminUsernamesOrStringOfOneAdminUsername2 =
   | ListOfAdminUsernamesOrStringOfOneAdminUsername
-  | ListOfAdminUsernamesOrStringOfOneAdminUsername1;
-export type ListOfAdminUsernamesOrStringOfOneAdminUsername = unknown[];
-export type ListOfAdminUsernamesOrStringOfOneAdminUsername1 = string;
-export type ComesWithDepositOpCond = number;
-export type ComesWithDepositCond = "=" | ">" | "<" | ">=" | "<=";
-export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1;
-export type DatetimeOrNumber = string;
-export type DatetimeOrNumber1 = number;
-export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4;
-export type DatetimeOrNumber3 = string;
-export type DatetimeOrNumber4 = number;
+  | ListOfAdminUsernamesOrStringOfOneAdminUsername1
+export type ListOfAdminUsernamesOrStringOfOneAdminUsername = unknown[]
+export type ListOfAdminUsernamesOrStringOfOneAdminUsername1 = string
+export type ComesWithDepositOpCond = number
+export type ComesWithDepositCond = '=' | '>' | '<' | '>=' | '<='
+export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1
+export type DatetimeOrNumber = string
+export type DatetimeOrNumber1 = number
+export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4
+export type DatetimeOrNumber3 = string
+export type DatetimeOrNumber4 = number
 export type ListOfGroupNamesOrStringOfOneGroupName2 =
   | ListOfGroupNamesOrStringOfOneGroupName
-  | ListOfGroupNamesOrStringOfOneGroupName1;
-export type ListOfGroupNamesOrStringOfOneGroupName = unknown[];
-export type ListOfGroupNamesOrStringOfOneGroupName1 = string;
-export type ListOfIspNamesOrStringOneIspName2 = ListOfIspNamesOrStringOneIspName | ListOfIspNamesOrStringOneIspName1;
-export type ListOfIspNamesOrStringOneIspName = unknown[];
-export type ListOfIspNamesOrStringOneIspName1 = string;
-export type ListOfIspNamesOrStringOneIspName5 = ListOfIspNamesOrStringOneIspName3 | ListOfIspNamesOrStringOneIspName4;
-export type ListOfIspNamesOrStringOneIspName3 = unknown[];
-export type ListOfIspNamesOrStringOneIspName4 = string;
+  | ListOfGroupNamesOrStringOfOneGroupName1
+export type ListOfGroupNamesOrStringOfOneGroupName = unknown[]
+export type ListOfGroupNamesOrStringOfOneGroupName1 = string
+export type ListOfIspNamesOrStringOneIspName2 = ListOfIspNamesOrStringOneIspName | ListOfIspNamesOrStringOneIspName1
+export type ListOfIspNamesOrStringOneIspName = unknown[]
+export type ListOfIspNamesOrStringOneIspName1 = string
+export type ListOfIspNamesOrStringOneIspName5 = ListOfIspNamesOrStringOneIspName3 | ListOfIspNamesOrStringOneIspName4
+export type ListOfIspNamesOrStringOneIspName3 = unknown[]
+export type ListOfIspNamesOrStringOneIspName4 = string
 
 export interface ReportGetUserDepositChanges {
-  method: "report.getUserDepositChanges";
-  auth_type?: "ADMIN";
+  method: 'report.getUserDepositChanges'
+  auth_type?: 'ADMIN'
   conds: {
-    user_ids?: string;
-    admin?: ListOfAdminUsernamesOrStringOfOneAdminUsername2;
+    user_ids?: string
+    admin?: ListOfAdminUsernamesOrStringOfOneAdminUsername2
     action?: {
-      [k: string]: unknown;
-    }[];
-    deposit?: ComesWithDepositOpCond;
-    deposit_op?: ComesWithDepositCond;
-    change_time_from?: DatetimeOrNumber2;
-    change_time_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    change_time_to?: DatetimeOrNumber5;
-    change_time_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    remote_addr?: string;
-    group_name?: ListOfGroupNamesOrStringOfOneGroupName2;
-    user_isp_names?: ListOfIspNamesOrStringOneIspName2;
-    isp_names?: ListOfIspNamesOrStringOneIspName5;
-    [k: string]: unknown;
-  };
-  from: number;
-  to: number;
-  sort_by: "change_time" | "user_id" | "deposit_change";
-  desc: boolean;
+      [k: string]: unknown
+    }[]
+    deposit?: ComesWithDepositOpCond
+    deposit_op?: ComesWithDepositCond
+    change_time_from?: DatetimeOrNumber2
+    change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    change_time_to?: DatetimeOrNumber5
+    change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    remote_addr?: string
+    group_name?: ListOfGroupNamesOrStringOfOneGroupName2
+    user_isp_names?: ListOfIspNamesOrStringOneIspName2
+    isp_names?: ListOfIspNamesOrStringOneIspName5
+    [k: string]: unknown
+  }
+  from: number
+  to: number
+  sort_by: 'change_time' | 'user_id' | 'deposit_change'
+  desc: boolean
 }

@@ -6,9 +6,9 @@
  */
 
 export interface ReportGetDayNightUsage {
-  method: "report.getDayNightUsage";
-  auth_type?: "ADMIN";
-  start_date: string;
-  end_date: string;
-  nightly_charge_rule_ids: unknown[];
+  method: 'report.getDayNightUsage'
+  auth_type?: 'ADMIN'
+  start_date: string
+  end_date: string
+  nightly_charge_rule_ids: unknown[]
 }

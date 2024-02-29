@@ -6,7 +6,7 @@
  */
 
 export interface GroupListGroupsWithIDs {
-  method: "group.listGroupsWithIDs";
-  auth_type?: "ADMIN";
-  active_only?: boolean;
+  method: 'group.listGroupsWithIDs'
+  auth_type?: 'ADMIN'
+  active_only?: boolean
 }

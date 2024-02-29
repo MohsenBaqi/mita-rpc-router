@@ -6,8 +6,8 @@
  */
 
 export interface TelephonySupportRecharge {
-  method: "telephony_support.recharge";
-  auth_type?: "ADMIN";
-  user_id: number;
-  pin: string;
+  method: 'telephony_support.recharge'
+  auth_type?: 'ADMIN'
+  user_id: number
+  pin: string
 }

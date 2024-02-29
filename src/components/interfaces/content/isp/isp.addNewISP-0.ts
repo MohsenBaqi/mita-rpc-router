@@ -6,17 +6,17 @@
  */
 
 export interface IspAddNewISP {
-  method: "isp.addNewISP";
-  auth_type?: "ADMIN";
-  isp_name: string;
-  parent_isp_name: string;
-  isp_has_deposit_limit: boolean;
-  isp_deposit: number;
-  isp_mapped_user_id: number;
-  isp_auth_domain: string;
-  isp_web_domain: string;
-  isp_email: string;
-  prevent_neg_deposit_login: boolean;
-  isp_comment: string;
-  isp_failed_user_id: number;
+  method: 'isp.addNewISP'
+  auth_type?: 'ADMIN'
+  isp_name: string
+  parent_isp_name: string
+  isp_has_deposit_limit: boolean
+  isp_deposit: number
+  isp_mapped_user_id: number
+  isp_auth_domain: string
+  isp_web_domain: string
+  isp_email: string
+  prevent_neg_deposit_login: boolean
+  isp_comment: string
+  isp_failed_user_id: number
 }

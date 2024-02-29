@@ -6,7 +6,7 @@
  */
 
 export interface InvoiceGetInvoiceRulesDescByProfileName {
-  method: "invoice.getInvoiceRulesDescByProfileName";
-  auth_type?: "ADMIN";
-  profile_name: string;
+  method: 'invoice.getInvoiceRulesDescByProfileName'
+  auth_type?: 'ADMIN'
+  profile_name: string
 }

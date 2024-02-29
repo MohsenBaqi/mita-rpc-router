@@ -6,7 +6,7 @@
  */
 
 export interface RasDeleteRas {
-  method: "ras.deleteRas";
-  auth_type?: "ADMIN";
-  ras_id: number;
+  method: 'ras.deleteRas'
+  auth_type?: 'ADMIN'
+  ras_id: number
 }

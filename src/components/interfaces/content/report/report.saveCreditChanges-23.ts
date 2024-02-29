@@ -6,13 +6,13 @@
  */
 
 export interface ReportSaveCreditChanges {
-  method: "report.saveCreditChanges";
-  auth_type?: "ADMIN";
+  method: 'report.saveCreditChanges'
+  auth_type?: 'ADMIN'
   conds: {
-    [k: string]: unknown;
-  };
-  cols: unknown[];
-  sort_by: "change_time" | "per_user_credit" | "isp_credit";
-  desc: boolean;
-  output_type: "csv" | "pdf";
+    [k: string]: unknown
+  }
+  cols: unknown[]
+  sort_by: 'change_time' | 'per_user_credit' | 'isp_credit'
+  desc: boolean
+  output_type: 'csv' | 'pdf'
 }

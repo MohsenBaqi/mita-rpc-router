@@ -6,8 +6,8 @@
  */
 
 export interface McAdminDeleteMessage {
-  method: "mc.adminDeleteMessage";
-  auth_type?: "ADMIN";
-  message_ids: number;
-  target_box: "USER_SEND" | "USER_RECEIVE" | "ISP_SEND" | "ISP_RECEIVE" | "QUEUE";
+  method: 'mc.adminDeleteMessage'
+  auth_type?: 'ADMIN'
+  message_ids: number
+  target_box: 'USER_SEND' | 'USER_RECEIVE' | 'ISP_SEND' | 'ISP_RECEIVE' | 'QUEUE'
 }

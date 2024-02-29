@@ -6,6 +6,6 @@
  */
 
 export interface UserSearchExpiredUsersExtended {
-  method: "user.searchExpiredUsersExtended";
-  auth_type?: "ADMIN";
+  method: 'user.searchExpiredUsersExtended'
+  auth_type?: 'ADMIN'
 }

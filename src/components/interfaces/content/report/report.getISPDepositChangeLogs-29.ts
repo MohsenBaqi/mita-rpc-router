@@ -7,43 +7,43 @@
 
 export type ListOfAdminUsernamesOrStringOfOneAdminUsername2 =
   | ListOfAdminUsernamesOrStringOfOneAdminUsername
-  | ListOfAdminUsernamesOrStringOfOneAdminUsername1;
-export type ListOfAdminUsernamesOrStringOfOneAdminUsername = unknown[];
-export type ListOfAdminUsernamesOrStringOfOneAdminUsername1 = string;
-export type IspNameOfAdminListOrStringOfOne2 = IspNameOfAdminListOrStringOfOne | IspNameOfAdminListOrStringOfOne1;
-export type IspNameOfAdminListOrStringOfOne = unknown[];
-export type IspNameOfAdminListOrStringOfOne1 = string;
+  | ListOfAdminUsernamesOrStringOfOneAdminUsername1
+export type ListOfAdminUsernamesOrStringOfOneAdminUsername = unknown[]
+export type ListOfAdminUsernamesOrStringOfOneAdminUsername1 = string
+export type IspNameOfAdminListOrStringOfOne2 = IspNameOfAdminListOrStringOfOne | IspNameOfAdminListOrStringOfOne1
+export type IspNameOfAdminListOrStringOfOne = unknown[]
+export type IspNameOfAdminListOrStringOfOne1 = string
 export type ListOfIspNamesOrStringOfOneIspName2 =
   | ListOfIspNamesOrStringOfOneIspName
-  | ListOfIspNamesOrStringOfOneIspName1;
-export type ListOfIspNamesOrStringOfOneIspName = unknown[];
-export type ListOfIspNamesOrStringOfOneIspName1 = string;
-export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1;
-export type DatetimeOrNumber = string;
-export type DatetimeOrNumber1 = number;
-export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4;
-export type DatetimeOrNumber3 = string;
-export type DatetimeOrNumber4 = number;
+  | ListOfIspNamesOrStringOfOneIspName1
+export type ListOfIspNamesOrStringOfOneIspName = unknown[]
+export type ListOfIspNamesOrStringOfOneIspName1 = string
+export type DatetimeOrNumber2 = DatetimeOrNumber | DatetimeOrNumber1
+export type DatetimeOrNumber = string
+export type DatetimeOrNumber1 = number
+export type DatetimeOrNumber5 = DatetimeOrNumber3 | DatetimeOrNumber4
+export type DatetimeOrNumber3 = string
+export type DatetimeOrNumber4 = number
 
 export interface ReportGetISPDepositChangeLogs {
-  method: "report.getISPDepositChangeLogs";
-  auth_type?: "ADMIN";
+  method: 'report.getISPDepositChangeLogs'
+  auth_type?: 'ADMIN'
   conds: {
-    admin?: ListOfAdminUsernamesOrStringOfOneAdminUsername2;
-    admin_isp_name?: IspNameOfAdminListOrStringOfOne2;
-    isp_names?: ListOfIspNamesOrStringOfOneIspName2;
-    change_time_from?: DatetimeOrNumber2;
-    change_time_from_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    change_time_to?: DatetimeOrNumber5;
-    change_time_to_unit?: "jalali" | "gregorian" | "years" | "months" | "days" | "hours" | "minutes";
-    [k: string]: unknown;
-  };
-  from: number;
-  to: number;
+    admin?: ListOfAdminUsernamesOrStringOfOneAdminUsername2
+    admin_isp_name?: IspNameOfAdminListOrStringOfOne2
+    isp_names?: ListOfIspNamesOrStringOfOneIspName2
+    change_time_from?: DatetimeOrNumber2
+    change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    change_time_to?: DatetimeOrNumber5
+    change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+    [k: string]: unknown
+  }
+  from: number
+  to: number
   sort_by:
-    | "isp_deposit_change_admin_id"
-    | "isp_deposit_change_isp_id"
-    | "isp_deposit_change_time"
-    | "isp_deposit_change_amount";
-  desc: boolean;
+    | 'isp_deposit_change_admin_id'
+    | 'isp_deposit_change_isp_id'
+    | 'isp_deposit_change_time'
+    | 'isp_deposit_change_amount'
+  desc: boolean
 }

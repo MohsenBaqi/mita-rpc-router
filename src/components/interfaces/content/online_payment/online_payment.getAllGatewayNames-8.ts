@@ -6,6 +6,6 @@
  */
 
 export interface OnlinePaymentGetAllGatewayNames {
-  method: "online_payment.getAllGatewayNames";
-  auth_type?: "ADMIN";
+  method: 'online_payment.getAllGatewayNames'
+  auth_type?: 'ADMIN'
 }

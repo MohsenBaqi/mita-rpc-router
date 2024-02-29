@@ -20,27 +20,44 @@ type CommonParams = CommonParamsByCriteria | CommonParamsBySession | CommonParam
 
 type ConditionalProps = CommonParams & interfaces
 
-const RPC = async ({ baseUrl, params }: { baseUrl: string; params: ConditionalProps }) => {
-  const { method, ...rest } = params
-  const result = await axios
-    .post(baseUrl, {
-      jsonrpc: '2.0',
-      method: method,
-      id: 23432,
-      params: rest,
-    })
-    .then((res: any) => {
-      if (res?.data?.error) {
-        throw res?.data?.error
-      } else {
-        return res?.data?.result
-      }
-    })
-    .catch((err: any) => {
-      throw err
-    })
+const RPC = (() => {
+  var privateBaseUrl = ''
+  var privateMethod = ''
+  var privateProps = {}
 
-  return result
-}
+  var privateCall = async () => {
+    const result = await axios
+      .post(privateBaseUrl, {
+        jsonrpc: '2.0',
+        method: privateMethod,
+        id: new Date().getTime(),
+        params: privateProps,
+      })
+      .then((res) => {
+        if (res?.data?.error) {
+          throw res?.data?.error
+        } else {
+          return res?.data?.result
+        }
+      })
+      .catch((err) => {
+        throw err
+      })
+
+    return result
+  }
+
+  return {
+    config: ({ baseUrl }: { baseUrl: string }) => {
+      privateBaseUrl = baseUrl
+    },
+    call: async ({ method, ...rest }: ConditionalProps) => {
+      privateMethod = method
+      privateProps = rest
+
+      return privateCall()
+    },
+  }
+})()
 
 export default RPC

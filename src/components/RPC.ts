@@ -74,6 +74,104 @@ const RPC = (() => {
 
       return privateCall()
     },
+
+    //   IPPool
+    adminGetIPpoolNames: async ({
+      loadBalancing = false,
+      authSession,
+    }: {
+      loadBalancing?: boolean
+      authSession: string
+    }) => {
+      privateMethod = 'ippool.getIPpoolNames'
+      privateProps = {
+        ippool_type: loadBalancing ? 'load_balancing' : '',
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
+    adminGetIPpoolInfo: async ({ name, authSession }: { name: string; authSession: string }) => {
+      privateMethod = 'ippool.getIPpoolInfo'
+      privateProps = {
+        ippool_name: name,
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
+    adminAddNewIPpool: async ({
+      name,
+      comment,
+      authSession,
+    }: {
+      name: string
+      comment: string
+      authSession: string
+    }) => {
+      privateMethod = 'ippool.addNewIPpool'
+      privateProps = {
+        ippool_name: name,
+        comment: comment,
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
+    adminAddIPtoPool: async ({ name, ip, authSession }: { name: string; ip: string; authSession: string }) => {
+      privateMethod = 'ippool.addIPtoPool'
+      privateProps = {
+        ippool_name: name,
+        ip: ip,
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
+    adminDelIPfromPool: async ({ name, ip, authSession }: { name: string; ip: string; authSession: string }) => {
+      privateMethod = 'ippool.delIPfromPool'
+      privateProps = {
+        ippool_name: name,
+        ip: ip,
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
+    adminForceDelIPfromPool: async ({ name, ip, authSession }: { name: string; ip: string; authSession: string }) => {
+      privateMethod = 'ippool.forceDelIPfromPool'
+      privateProps = {
+        ippool_name: name,
+        ip: ip,
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
+    adminAddNewLoadBalancingIPpool: async ({
+      name,
+      comment,
+      strategy,
+      childPercentages,
+      authSession,
+    }: {
+      name: string
+      comment: string
+      strategy: 'distributive' | 'fill_first'
+      childPercentages: { [k: string]: unknown }
+      authSession: string
+    }) => {
+      privateMethod = 'ippool.addNewLoadBalancingIPpool'
+      privateProps = {
+        ippool_name: name,
+        ippool_comment: comment,
+        balancing_strategy: strategy,
+        children_ippool_percentages: childPercentages,
+        auth_session: authSession,
+      }
+
+      return privateCall()
+    },
   }
 })()
 

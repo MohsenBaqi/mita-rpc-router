@@ -25,6 +25,7 @@ const storageHelper = (() => {
   return {
     setAuthSession: (session: string) => localStorage.setItem(authSessionKey, session),
     getAuthSession: () => localStorage.getItem(authSessionKey),
+    removeAuthSession: () => localStorage.removeItem(authSessionKey),
   }
 })()
 
@@ -97,6 +98,9 @@ const RPC = (() => {
         storageHelper.setAuthSession(res)
         return res
       })
+    },
+    adminLogout: () => {
+      storageHelper.removeAuthSession()
     },
 
     //   IPPool

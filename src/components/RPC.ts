@@ -20,19 +20,40 @@ type CommonParams = CommonParamsByCriteria | CommonParamsBySession | CommonParam
 
 type ConditionalProps = CommonParams & interfaces
 
+const storageHelper = (() => {
+  const authSessionKey = '5156cfa1e680247b5ccb3985e8715c10c4d8e1b2'
+  return {
+    setAuthSession: (session: string) => localStorage.setItem(authSessionKey, session),
+    getAuthSession: () => localStorage.getItem(authSessionKey),
+  }
+})()
+
+const getAuthSession = () => {
+  const token = storageHelper.getAuthSession()
+  return token ? token : ''
+}
+
 const RPC = (() => {
   let privateBaseUrl = ''
   let privateAuthRemoteaddr = ''
   let privateMethod = ''
   let privateProps = {}
 
-  const privateCall = async () => {
+  const privateCall = async (
+    { sessionRequired }: { sessionRequired: boolean } | undefined = {
+      sessionRequired: false,
+    },
+  ) => {
     const result = await axios
       .post(privateBaseUrl, {
         jsonrpc: '2.0',
         method: privateMethod,
         id: new Date().getTime(),
-        params: { ...privateProps, auth_remoteaddr: privateAuthRemoteaddr },
+        params: {
+          ...privateProps,
+          auth_remoteaddr: privateAuthRemoteaddr,
+          ...(sessionRequired && { auth_session: getAuthSession() }),
+        },
       })
       .then((res) => {
         if (res?.data?.error) {
@@ -72,94 +93,79 @@ const RPC = (() => {
         create_session: true,
       }
 
-      return privateCall()
+      return privateCall().then((res) => {
+        storageHelper.setAuthSession(res)
+        return res
+      })
     },
 
     //   IPPool
-    adminGetIPpoolNames: async ({
-      loadBalancing = false,
-      authSession,
-    }: {
-      loadBalancing?: boolean
-      authSession: string
-    }) => {
+    adminGetIPpoolNames: async (
+      { loadBalancing }: { loadBalancing: boolean } | undefined = {
+        loadBalancing: false,
+      },
+    ) => {
       privateMethod = 'ippool.getIPpoolNames'
       privateProps = {
         ippool_type: loadBalancing ? 'load_balancing' : '',
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
-    adminGetIPpoolInfo: async ({ name, authSession }: { name: string; authSession: string }) => {
+    adminGetIPpoolInfo: async ({ name }: { name: string }) => {
       privateMethod = 'ippool.getIPpoolInfo'
       privateProps = {
         ippool_name: name,
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
-    adminAddNewIPpool: async ({
-      name,
-      comment,
-      authSession,
-    }: {
-      name: string
-      comment: string
-      authSession: string
-    }) => {
+    adminAddNewIPpool: async ({ name, comment }: { name: string; comment: string }) => {
       privateMethod = 'ippool.addNewIPpool'
       privateProps = {
         ippool_name: name,
         comment: comment,
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
-    adminAddIPtoPool: async ({ name, ip, authSession }: { name: string; ip: string; authSession: string }) => {
+    adminAddIPtoPool: async ({ name, ip }: { name: string; ip: string }) => {
       privateMethod = 'ippool.addIPtoPool'
       privateProps = {
         ippool_name: name,
         ip: ip,
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
-    adminDelIPfromPool: async ({ name, ip, authSession }: { name: string; ip: string; authSession: string }) => {
+    adminDelIPfromPool: async ({ name, ip }: { name: string; ip: string }) => {
       privateMethod = 'ippool.delIPfromPool'
       privateProps = {
         ippool_name: name,
         ip: ip,
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
-    adminForceDelIPfromPool: async ({ name, ip, authSession }: { name: string; ip: string; authSession: string }) => {
+    adminForceDelIPfromPool: async ({ name, ip }: { name: string; ip: string }) => {
       privateMethod = 'ippool.forceDelIPfromPool'
       privateProps = {
         ippool_name: name,
         ip: ip,
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
     adminAddNewLoadBalancingIPpool: async ({
       name,
       comment,
       strategy,
       childPercentages,
-      authSession,
     }: {
       name: string
       comment: string
       strategy: 'distributive' | 'fill_first'
       childPercentages: { [k: string]: unknown }
-      authSession: string
     }) => {
       privateMethod = 'ippool.addNewLoadBalancingIPpool'
       privateProps = {
@@ -167,10 +173,9 @@ const RPC = (() => {
         ippool_comment: comment,
         balancing_strategy: strategy,
         children_ippool_percentages: childPercentages,
-        auth_session: authSession,
       }
 
-      return privateCall()
+      return privateCall({ sessionRequired: true })
     },
   }
 })()

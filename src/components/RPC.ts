@@ -295,7 +295,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminDeleteRasIPPool: async ({ rasIP, ippoolName }: { rasIP: string; ippoolName: string }) => {
-      privateMethod = 'ras.forceDelIPfromPool'
+      privateMethod = 'ras.delIPpoolFromRas'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,

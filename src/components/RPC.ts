@@ -191,7 +191,7 @@ const RPC = (() => {
 
     // RAS
     adminGetActiveRasIPs: async () => {
-      privateMethod = 'ippool.getActiveRasIPs'
+      privateMethod = 'ras.getActiveRasIPs'
       privateProps = {
         auth_type: 'ADMIN',
       }
@@ -199,7 +199,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminGetInactiveRasIPs: async () => {
-      privateMethod = 'ippool.getInActiveRases'
+      privateMethod = 'ras.getInActiveRases'
       privateProps = {
         auth_type: 'ADMIN',
       }
@@ -207,7 +207,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminGetRasInfo: async ({ rasIP }: { rasIP: string }) => {
-      privateMethod = 'ippool.getRasInfo'
+      privateMethod = 'ras.getRasInfo'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,
@@ -216,7 +216,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminDeactiveRas: async ({ rasIP }: { rasIP: string }) => {
-      privateMethod = 'ippool.deActiveRas'
+      privateMethod = 'ras.deActiveRas'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,
@@ -225,7 +225,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminEnableRas: async ({ rasIP }: { rasIP: string }) => {
-      privateMethod = 'ippool.reActiveRas'
+      privateMethod = 'ras.reActiveRas'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,
@@ -234,7 +234,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminDeleteRas: async ({ rasID }: { rasID: number }) => {
-      privateMethod = 'ippool.deleteRas'
+      privateMethod = 'ras.deleteRas'
       privateProps = {
         auth_type: 'ADMIN',
         ras_id: rasID,
@@ -255,7 +255,7 @@ const RPC = (() => {
       ras_description: string
       comment: string
     }) => {
-      privateMethod = 'ippool.addNewRas'
+      privateMethod = 'ras.addNewRas'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip,
@@ -268,7 +268,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminGetRasTypes: async () => {
-      privateMethod = 'ippool.getRasTypes'
+      privateMethod = 'ras.getRasTypes'
       privateProps = {
         auth_type: 'ADMIN',
       }
@@ -276,7 +276,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminGetRasIPPools: async ({ rasIP }: { rasIP: string }) => {
-      privateMethod = 'ippool.getRasIPpools'
+      privateMethod = 'ras.getRasIPpools'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,
@@ -285,7 +285,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminAddRasIPPool: async ({ rasIP, ippoolName }: { rasIP: string; ippoolName: string }) => {
-      privateMethod = 'ippool.addIPpoolToRas'
+      privateMethod = 'ras.addIPpoolToRas'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,
@@ -295,7 +295,7 @@ const RPC = (() => {
       return privateCall({ sessionRequired: true })
     },
     adminDeleteRasIPPool: async ({ rasIP, ippoolName }: { rasIP: string; ippoolName: string }) => {
-      privateMethod = 'ippool.forceDelIPfromPool'
+      privateMethod = 'ras.forceDelIPfromPool'
       privateProps = {
         auth_type: 'ADMIN',
         ras_ip: rasIP,

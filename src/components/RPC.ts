@@ -304,6 +304,90 @@ const RPC = (() => {
 
       return privateCall({ sessionRequired: true })
     },
+
+    // User Custom Field
+    adminGetCustomFields: async () => {
+      privateMethod = 'user_custom_field.getAllCustomFields'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminAddCustomField: async ({
+      name,
+      description,
+      comment,
+      value_type,
+      interface_type,
+      allowable_values,
+      mandatory,
+    }: {
+      name: string
+      description: string
+      comment: string
+      value_type: 'string' | 'int' | 'float'
+      interface_type: 'text_field' | 'single_select' | 'radio_button' | 'checkbox'
+      allowable_values: unknown[]
+      mandatory: boolean
+    }) => {
+      privateMethod = 'user_custom_field.addNewCustomField'
+      privateProps = {
+        auth_type: 'ADMIN',
+        name,
+        description,
+        comment,
+        value_type,
+        interface_type,
+        allowable_values,
+        mandatory,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminEditCustomField: async ({
+      custom_field_id,
+      name,
+      description,
+      comment,
+      value_type,
+      interface_type,
+      allowable_values,
+      mandatory,
+    }: {
+      custom_field_id: number
+      name: string
+      description: string
+      comment: string
+      value_type: 'string' | 'int' | 'float'
+      interface_type: 'text_field' | 'single_select' | 'radio_button' | 'checkbox'
+      allowable_values: unknown[]
+      mandatory: boolean
+    }) => {
+      privateMethod = 'user_custom_field.updateCustomField'
+      privateProps = {
+        auth_type: 'ADMIN',
+        custom_field_id,
+        name,
+        description,
+        comment,
+        value_type,
+        interface_type,
+        allowable_values,
+        mandatory,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminDeleteCustomField: async ({ name }: { name: string }) => {
+      privateMethod = 'user_custom_field.deleteCustomField'
+      privateProps = {
+        auth_type: 'ADMIN',
+        name,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
   }
 })()
 

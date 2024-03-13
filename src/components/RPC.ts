@@ -398,11 +398,11 @@ const RPC = (() => {
 
       return privateCall({ sessionRequired: true })
     },
-    adminSaveAdvancedConfig: async ({ params }: { params: any }) => {
+    adminSaveAdvancedConfig: async ({ defs }: { defs: any }) => {
       privateMethod = 'ibs_defs.saveDefs'
       privateProps = {
         auth_type: 'ADMIN',
-        params,
+        defs,
       }
 
       return privateCall({ sessionRequired: true })

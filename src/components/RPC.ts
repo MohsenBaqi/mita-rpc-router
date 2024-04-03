@@ -407,6 +407,93 @@ const RPC = (() => {
 
       return privateCall({ sessionRequired: true })
     },
+
+    // Online Payment
+    adminGetGatewayInfos: async () => {
+      privateMethod = 'online_payment.getAllGatewayInfos'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminGetAvailableGatewayTypes: async () => {
+      privateMethod = 'online_payment.getAvailableGatewayTypes'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminAddGateway: async ({
+      gatewayName,
+      gatewayType,
+      ownerIspName,
+      priority,
+      comment,
+    }: {
+      gatewayName: string
+      gatewayType: string
+      ownerIspName: string
+      priority: number
+      comment: string
+    }) => {
+      privateMethod = 'online_payment.addGateway'
+      privateProps = {
+        auth_type: 'ADMIN',
+        gateway_name: gatewayName,
+        gateway_type: gatewayType,
+        owner_isp_name: ownerIspName,
+        priority,
+        comment,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminEditGateway: async ({
+      gatewayID,
+      gatewayName,
+      ownerIspName,
+      priority,
+      comment,
+    }: {
+      gatewayID: number
+      gatewayName: string
+      ownerIspName: string
+      priority: number
+      comment: string
+    }) => {
+      privateMethod = 'online_payment.updateGateway'
+      privateProps = {
+        auth_type: 'ADMIN',
+        gateway_id: gatewayID,
+        gateway_name: gatewayName,
+        owner_isp_name: ownerIspName,
+        priority,
+        comment,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminDeleteGateway: async ({ gatewayName }: { gatewayName: string }) => {
+      privateMethod = 'online_payment.deleteGateway'
+      privateProps = {
+        auth_type: 'ADMIN',
+        gateway_name: gatewayName,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // ISP
+    adminGetAllISPNames: async () => {
+      privateMethod = 'isp.getAllISPNames'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
   }
 })()
 

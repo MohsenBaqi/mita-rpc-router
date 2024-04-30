@@ -304,6 +304,14 @@ const RPC = (() => {
 
       return privateCall({ sessionRequired: true })
     },
+    adminGetRasDescriptions: async () => {
+      privateMethod = 'ras.getRasDescriptions'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
 
     // User Custom Field
     adminGetCustomFields: async () => {
@@ -490,6 +498,360 @@ const RPC = (() => {
       privateMethod = 'isp.getAllISPNames'
       privateProps = {
         auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // Group
+    adminListGroups: async ({ activeOnly }: { activeOnly?: boolean }) => {
+      privateMethod = 'group.listGroups'
+      privateProps = {
+        auth_type: 'ADMIN',
+        ...(activeOnly && { activeOnly }),
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // Perm
+    adminHasPerm: async ({ permName, adminUsername }: { permName: string; adminUsername: string }) => {
+      privateMethod = 'perm.hasPerm'
+      privateProps = {
+        auth_type: 'ADMIN',
+        perm_name: permName,
+        admin_username: adminUsername,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // Service
+    adminListServiceNames: async () => {
+      privateMethod = 'service.listServiceNames'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminListChargingNames: async () => {
+      privateMethod = 'service.listChargingNames'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // VoIP Provider
+    adminListVoIPProviders: async () => {
+      privateMethod = 'voip_provider.listVoIPProviders'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // System Notification
+    adminGetNotifications: async () => {
+      privateMethod = 'SystemNotification.getNotifications'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // Admin
+    adminGetAllAdminUsernames: async ({ isp_name }: { isp_name?: string }) => {
+      privateMethod = 'admin.getAllAdminUsernames'
+      privateProps = {
+        auth_type: 'ADMIN',
+        ...(isp_name && { isp_name }),
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // Report
+    adminGetSystemAuditLogs: async ({
+      categories,
+      events,
+      isp_names,
+      admin,
+      change_time_from,
+      change_time_from_unit,
+      change_time_to,
+      change_time_to_unit,
+      object_id,
+      from,
+      to,
+      sort_by,
+      desc,
+    }: {
+      categories?: any
+      events?: any
+      isp_names?: any
+      admin?: string
+      change_time_from?: any
+      change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      change_time_to?: any
+      change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      object_id?: number
+      from: number
+      to: number
+      sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
+      desc: boolean
+    }) => {
+      privateMethod = 'admin.getSystemAuditLogs'
+      privateProps = {
+        auth_type: 'ADMIN',
+
+        conds: {
+          ...(categories && { categories }),
+          ...(events && { events }),
+          ...(isp_names && { isp_names }),
+          ...(admin && { admin }),
+          ...(change_time_from && { change_time_from }),
+          ...(change_time_from_unit && { change_time_from_unit }),
+          ...(change_time_to && { change_time_to }),
+          ...(change_time_to_unit && { change_time_to_unit }),
+          ...(object_id && { object_id }),
+        },
+        from,
+        to,
+        sort_by,
+        desc,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminGetUserAuditLogs: async ({
+      user_ids,
+      user_isp_names,
+      group_name,
+      attr_names,
+      change_time_from,
+      change_time_from_unit,
+      change_time_to,
+      change_time_to_unit,
+      is_user,
+      isp_names,
+      admin,
+      from,
+      to,
+      sort_by,
+      desc,
+    }: {
+      user_ids?: string
+      user_isp_names?: string
+      group_name?: string
+      attr_names?: string
+      change_time_from?: string
+      change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      change_time_to?: any
+      change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      is_user?: 'yes' | 'no'
+      isp_names?: any
+      admin?: string
+      [k: string]: unknown
+      from: number
+      to: number
+      sort_by: 'change_time' | 'object_id' | 'admin_id'
+      desc: boolean
+    }) => {
+      privateMethod = 'report.getUserAuditLogs'
+      privateProps = {
+        auth_type: 'ADMIN',
+        conds: {
+          ...(user_ids && { user_ids }),
+          ...(user_isp_names && { user_isp_names }),
+          ...(group_name && { group_name }),
+          ...(attr_names && { attr_names }),
+          ...(change_time_from && { change_time_from }),
+          ...(change_time_from_unit && { change_time_from_unit }),
+          ...(change_time_to && { change_time_to }),
+          ...(change_time_to_unit && { change_time_to_unit }),
+          ...(is_user && { is_user }),
+          ...(isp_names && { isp_names }),
+          ...(admin && { admin }),
+        },
+        from,
+        to,
+        sort_by,
+        desc,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminGetConnections: async ({
+      user_ids,
+      connection_username,
+      connection_voip_username,
+      not_username,
+      username,
+      voip_username,
+      serial,
+      sub_service_name,
+      sub_service_charging,
+      isp_names,
+      credit_used,
+      credit_used_op,
+      duration,
+      duration_op,
+      login_time_from,
+      login_time_from_unit,
+      login_time_to,
+      login_time_to_unit,
+      logout_time_from,
+      logout_time_from_unit,
+      logout_time_to,
+      logout_time_to_unit,
+      show_total_credit_used,
+      show_total_inouts,
+      successful,
+      service,
+      ras_ip,
+      ras_desc,
+      group_name,
+      exclude_isp_mapped_users,
+      caller_id,
+      caller_id_op,
+      mac,
+      port,
+      dnis,
+      assigned_ip,
+      station_ip,
+      cpm,
+      cpm_op,
+      called_number,
+      called_number_op,
+      prefix_name,
+      prefix_name_op,
+      called_ip,
+      voip_provider_names,
+      remote_ip,
+      from,
+      to,
+      sort_by,
+      desc,
+    }: {
+      user_ids?: string
+      connection_username?: string
+      connection_voip_username?: string
+      not_username?: string
+      username?: string
+      voip_username?: string
+      serial?: string
+      sub_service_name?: string
+      sub_service_charging?: string
+      isp_names?: string
+      credit_used?: number
+      credit_used_op?: '=' | '>' | '<' | '>=' | '<='
+      duration?: string | number
+      duration_op?: '=' | '>' | '<' | '>=' | '<='
+      login_time_from?: any
+      login_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      login_time_to?: any
+      login_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      logout_time_from?: any
+      logout_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      logout_time_to?: any
+      logout_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      show_total_credit_used?: any
+      show_total_inouts?: any
+      successful?: 'yes' | 'no'
+      service?: 'Internet' | 'VoIP'
+      ras_ip?: string
+      ras_desc?: string
+      group_name?: string
+      exclude_isp_mapped_users?: boolean
+      caller_id?: string
+      caller_id_op?: '=' | '>' | '<' | '>=' | '<='
+      mac?: string
+      port?: string
+      dnis?: string
+      assigned_ip?: string
+      station_ip?: string
+      cpm?: number
+      cpm_op?: any
+      called_number?: string
+      called_number_op?: '=' | '>' | '<' | '>=' | '<='
+      prefix_name?: string
+      prefix_name_op?: '=' | '>' | '<' | '>=' | '<='
+      called_ip?: string
+      voip_provider_names?: any
+      remote_ip?: string
+      from: number
+      to: number
+      sort_by:
+        | 'user_id'
+        | 'credit_used'
+        | 'login_time'
+        | 'logout_time'
+        | 'successful'
+        | 'service'
+        | 'ras_id'
+        | 'connection_log_id'
+      desc: boolean
+    }) => {
+      privateMethod = 'report.getConnections'
+      privateProps = {
+        auth_type: 'ADMIN',
+        conds: {
+          ...(user_ids && { user_ids }),
+          ...(connection_username && { connection_username }),
+          ...(connection_voip_username && { connection_voip_username }),
+          ...(not_username && { not_username }),
+          ...(username && { username }),
+          ...(voip_username && { voip_username }),
+          ...(serial && { serial }),
+          ...(sub_service_name && { sub_service_name }),
+          ...(sub_service_charging && { sub_service_charging }),
+          ...(isp_names && { isp_names }),
+          ...(credit_used && { credit_used }),
+          ...(credit_used_op && { credit_used_op }),
+          ...(duration && { duration }),
+          ...(duration_op && { duration_op }),
+          ...(login_time_from && login_time_from),
+          ...(login_time_from_unit && { login_time_from_unit }),
+          ...(login_time_to && { login_time_to }),
+          ...(login_time_to_unit && { login_time_to_unit }),
+          ...(logout_time_from && { logout_time_from }),
+          ...(logout_time_from_unit && { logout_time_from_unit }),
+          ...(logout_time_to && { logout_time_to }),
+          ...(logout_time_to_unit && { logout_time_to_unit }),
+          ...(show_total_credit_used && { show_total_credit_used }),
+          ...(show_total_inouts && { show_total_inouts }),
+          ...(successful && { successful }),
+          ...(service && { service }),
+          ...(ras_ip && { ras_ip }),
+          ...(ras_desc && { ras_desc }),
+          ...(group_name && { group_name }),
+          ...(exclude_isp_mapped_users && { exclude_isp_mapped_users }),
+          ...(caller_id && { caller_id }),
+          ...(caller_id_op && { caller_id_op }),
+          ...(mac && { mac }),
+          ...(port && { port }),
+          ...(dnis && { dnis }),
+          ...(assigned_ip && { assigned_ip }),
+          ...(station_ip && { station_ip }),
+          ...(cpm && { cpm }),
+          ...(cpm_op && { cpm_op }),
+          ...(called_number && { called_number }),
+          ...(called_number_op && { called_number_op }),
+          ...(prefix_name && { prefix_name }),
+          ...(prefix_name_op && { prefix_name_op }),
+          ...(called_ip && { called_ip }),
+          ...(voip_provider_names && { voip_provider_names }),
+          ...(remote_ip && { remote_ip }),
+        },
+        from,
+        to,
+        sort_by,
+        desc,
       }
 
       return privateCall({ sessionRequired: true })

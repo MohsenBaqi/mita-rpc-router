@@ -605,7 +605,7 @@ const RPC = (() => {
       sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
       desc: boolean
     }) => {
-      privateMethod = 'admin.getSystemAuditLogs'
+      privateMethod = 'report.getSystemAuditLogs'
       privateProps = {
         auth_type: 'ADMIN',
 

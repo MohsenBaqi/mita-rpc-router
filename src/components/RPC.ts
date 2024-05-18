@@ -1035,7 +1035,7 @@ const RPC = (() => {
       date_to_unit,
       from,
       to,
-      sort_by,
+      order_by,
       desc,
     }: {
       username?: string
@@ -1050,7 +1050,7 @@ const RPC = (() => {
       date_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
       from: number
       to: number
-      sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
+      order_by: 'frequency' | 'Bytes'
       desc: boolean
     }) => {
       privateMethod = 'traffic_analyzer.getMostVisitedDomains'
@@ -1071,7 +1071,7 @@ const RPC = (() => {
         },
         from,
         to,
-        sort_by,
+        order_by,
         desc,
       }
 

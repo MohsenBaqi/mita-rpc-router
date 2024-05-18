@@ -856,6 +856,227 @@ const RPC = (() => {
 
       return privateCall({ sessionRequired: true })
     },
+    adminGetCreditChanges: async ({
+      comment_op,
+      isp_names,
+      show_total_per_user_credit,
+      user_isp_names,
+      include_child_isp,
+      show_total_isp_credit,
+      user_view,
+      user_ids,
+      voip_username,
+      admin,
+      action,
+      per_user_credit,
+      per_user_credit_op,
+      isp_credit,
+      isp_credit_op,
+      change_time_from,
+      change_time_from_unit,
+      change_time_to,
+      change_time_to_unit,
+      comment,
+      deleted_internet_username,
+      deleted_voip_username,
+      from,
+      to,
+      sort_by,
+      desc,
+    }: {
+      comment_op?: string
+      isp_names?: any
+      show_total_per_user_credit?: boolean
+      user_isp_names?: any
+      include_child_isp?: boolean
+      show_total_isp_credit?: boolean
+      user_view?: boolean
+      user_ids?: string
+      voip_username?: string
+      admin?: string
+      action?: any
+      per_user_credit?: number
+      per_user_credit_op?: '=' | '>' | '<' | '>=' | '<='
+      isp_credit?: number
+      isp_credit_op?: '=' | '>' | '<' | '>=' | '<='
+      change_time_from?: string
+      change_time_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      change_time_to?: string
+      change_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      comment?: string
+      deleted_internet_username?: string
+      deleted_voip_username?: string
+      from: number
+      to: number
+      sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
+      desc: boolean
+    }) => {
+      privateMethod = 'report.getCreditChanges'
+      privateProps = {
+        auth_type: 'ADMIN',
+
+        conds: {
+          ...(comment_op && { comment_op }),
+          ...(isp_names && { isp_names }),
+          ...(show_total_per_user_credit && { show_total_per_user_credit }),
+          ...(user_isp_names && { user_isp_names }),
+          ...(include_child_isp && { include_child_isp }),
+          ...(show_total_isp_credit && { show_total_isp_credit }),
+          ...(user_view && { user_view }),
+          ...(user_ids && { user_ids }),
+          ...(voip_username && { voip_username }),
+          ...(action && { action }),
+          ...(per_user_credit && { per_user_credit }),
+          ...(per_user_credit_op && { per_user_credit_op }),
+          ...(isp_credit && { isp_credit }),
+          ...(isp_credit_op && { isp_credit_op }),
+          ...(comment && { comment }),
+          ...(deleted_internet_username && { deleted_internet_username }),
+          ...(deleted_voip_username && { deleted_voip_username }),
+          ...(admin && { admin }),
+          ...(change_time_from && { change_time_from }),
+          ...(change_time_from_unit && { change_time_from_unit }),
+          ...(change_time_to && { change_time_to }),
+          ...(change_time_to_unit && { change_time_to_unit }),
+        },
+        from,
+        to,
+        sort_by,
+        desc,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+
+    // Traffic Analyzer
+    adminGetTrafficAnalyzerLogs: async ({
+      username,
+      is_main_source,
+      url,
+      ip_dst,
+      port_dst,
+      port_src,
+      is_aux_source,
+      ip_src,
+      date_from,
+      date_from_unit,
+      date_from_ltgt,
+      date_from_op,
+      date_to,
+      date_to_unit,
+      date_to_ltgt,
+      date_to_op,
+      from,
+      to,
+      sort_by,
+      desc,
+    }: {
+      username?: string
+      is_main_source?: string
+      url?: string
+      ip_dst?: string
+      port_dst?: string
+      port_src?: string
+      is_aux_source?: string
+      ip_src?: string
+      date_from?: any
+      date_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      date_from_ltgt?: any
+      date_from_op?: '=' | '>' | '<' | '>=' | '<='
+      date_to?: any
+      date_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      date_to_ltgt?: any
+      date_to_op?: '=' | '>' | '<' | '>=' | '<='
+      from: number
+      to: number
+      sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
+      desc: boolean
+    }) => {
+      privateMethod = 'traffic_analyzer.getTrafficAnalyzerLogs'
+      privateProps = {
+        auth_type: 'ADMIN',
+
+        conds: {
+          ...(username && { username }),
+          ...(is_main_source && { is_main_source }),
+          ...(url && { url }),
+          ...(ip_dst && { ip_dst }),
+          ...(port_dst && { port_dst }),
+          ...(port_src && { port_src }),
+          ...(is_aux_source && { is_aux_source }),
+          ...(ip_src && { ip_src }),
+          ...(date_from && { date_from }),
+          ...(date_from_unit && { date_from_unit }),
+          ...(date_from_ltgt && { date_from_ltgt }),
+          ...(date_from_op && { date_from_op }),
+          ...(date_to && { date_to }),
+          ...(date_to_unit && { date_to_unit }),
+          ...(date_to_ltgt && { date_to_ltgt }),
+          ...(date_to_op && { date_to_op }),
+        },
+        from,
+        to,
+        sort_by,
+        desc,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
+    adminGetMostVisitedDomains: async ({
+      username,
+      data_unit,
+      classification,
+      group_name,
+      isp_name,
+      ras_desc,
+      date_from,
+      date_from_unit,
+      date_to,
+      date_to_unit,
+      from,
+      to,
+      sort_by,
+      desc,
+    }: {
+      username?: string
+      data_unit?: string
+      classification?: string
+      group_name?: string
+      isp_name?: string
+      ras_desc?: string
+      date_from?: any
+      date_from_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      date_to?: any
+      date_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
+      from: number
+      to: number
+      sort_by: 'change_time' | 'object_id' | 'admin_id' | 'event' | 'category' | 'isp_id'
+      desc: boolean
+    }) => {
+      privateMethod = 'traffic_analyzer.getMostVisitedDomains'
+      privateProps = {
+        auth_type: 'ADMIN',
+
+        conds: {
+          ...(username && { username }),
+          ...(data_unit && { data_unit }),
+          ...(classification && { classification }),
+          ...(group_name && { group_name }),
+          ...(isp_name && { isp_name }),
+          ...(ras_desc && { ras_desc }),
+          ...(date_from && { date_from }),
+          ...(date_from_unit && { date_from_unit }),
+          ...(date_to && { date_to }),
+          ...(date_to_unit && { date_to_unit }),
+        },
+        from,
+        to,
+        sort_by,
+        desc,
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
   }
 })()
 

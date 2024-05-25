@@ -1077,6 +1077,16 @@ const RPC = (() => {
 
       return privateCall({ sessionRequired: true })
     },
+
+    // Log Console
+    adminGetConsoleBuffer: async () => {
+      privateMethod = 'log_console.getConsoleBuffer'
+      privateProps = {
+        auth_type: 'ADMIN',
+      }
+
+      return privateCall({ sessionRequired: true })
+    },
   }
 })()
 

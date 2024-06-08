@@ -711,6 +711,7 @@ const RPC = (() => {
       logout_time_to_unit,
       show_total_credit_used,
       show_total_inouts,
+      show_total_duration,
       successful,
       service,
       ras_ip,
@@ -762,6 +763,7 @@ const RPC = (() => {
       logout_time_to_unit?: 'jalali' | 'gregorian' | 'years' | 'months' | 'days' | 'hours' | 'minutes'
       show_total_credit_used?: any
       show_total_inouts?: any
+      show_total_duration?: any
       successful?: 'yes' | 'no'
       service?: 'Internet' | 'VoIP'
       ras_ip?: string
@@ -825,6 +827,7 @@ const RPC = (() => {
           ...(logout_time_to_unit && { logout_time_to_unit }),
           ...(show_total_credit_used && { show_total_credit_used }),
           ...(show_total_inouts && { show_total_inouts }),
+          ...(show_total_duration && { show_total_duration }),
           ...(successful && { successful }),
           ...(service && { service }),
           ...(ras_ip && { ras_ip }),
